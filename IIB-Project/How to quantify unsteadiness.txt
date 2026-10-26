@@ -1,0 +1,29 @@
+In high-speed aerodynamics and fluid mechanics, shockwave unsteadiness (the rapid, oscillating motion of a shock wave) is typically quantified using a mix of statistical, spectral, and spatial experimental or computational metrics.
+Here are the primary ways to quantify this phenomenon, grouped by the type of data analysis:
+
+Spatial & Displacement Metrics
+
+These metrics focus on how far and where the shock wave moves over time.
+• Shock-Position Standard Deviation (\(\sigma _{x_{s}}\)): Measures the root-mean-square (RMS) deviation of the shock position from its mean location. A higher standard deviation indicates a larger physical footprint of the oscillation.
+• Intermittency Factor (γ): Quantifies the fraction of time a specific spatial point spends upstream versus downstream of the shock. It transitions smoothly from 0 (always upstream/unshocked) to 1 (always downstream/shocked) through the shock foot region.
+• Shock-Foot Footprint (\(\Delta x_{foot}\)): The total spatial extent along a wall or boundary layer where the shock wave moves. It is often defined as the region where 0.05 < γ < 0.95.
+
+Statistical Pressure Metrics
+
+Because shock waves introduce a sharp jump in pressure, wall-mounted or flow-field pressure transducers are excellent tools for quantification.
+• Wall Pressure RMS Peaks (\(\sigma _{p}\) or \(p_{rms}^{\prime }\)): The unsteadiness creates a distinct, massive peak in the RMS of wall pressure fluctuations right within the shock foot. The height and width of this peak directly quantify unsteadiness intensity.
+• Skewness and Kurtosis: Tracking the higher-order statistical moments of pressure signals near the shock. A highly skewed probability density function (PDF) reveals intermittent loading caused by the shock passing back and forth over a sensor.
+
+Frequency & Spectral Domain Metrics
+
+These metrics identify the time scales and physical drivers (e.g., downstream separation bubbles vs. upstream turbulent boundary layers) of the motion.
+• Power Spectral Density (PSD): Plots the energy of pressure or position fluctuations against frequency. Shock unsteadiness typically manifests as a large concentration of energy at low frequencies (Strouhal numbers \(Sr_L \sim 0.01 \text{ to } 0.05\)).
+• Strouhal Number (St or Sr): A dimensionless frequency used to categorize the unsteadiness scales. It is calculated as St = fL/U, where f is the dominant oscillation frequency, L is a characteristic length (like separation length), and U is the freestream velocity.
+• Coherence Function: Used to determine the causal relationship between upstream turbulent fluctuations and the shock motion, or between the shock and downstream separation bubble breathing.
+
+Advanced Data-Driven Methods
+
+Modern fluid dynamics heavily relies on extracting coherent structures from experimental images (like Schlieren or PIV) or CFD datasets.
+• Proper Orthogonal Decomposition (POD): Isolates the spatial modes and temporal coefficients of the flow. The lowest-frequency POD modes usually capture the bulk energy of the shock wave's breathing or sweeping motion.
+• Dynamic Mode Decomposition (DMD): Extracts modes based on pure frequencies. This allows researchers to isolate the exact spatial structure of the shock wave oscillating at a specific resonant frequency.
+

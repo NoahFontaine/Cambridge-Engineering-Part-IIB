@@ -1,0 +1,16 @@
+Questions for Project
+
+1. Does the log law of the wall apply for compressible flows?
+2. In general does the boundary layer theory that we learn in 3A1 apply to compressible flows, and high speed/supersonic flows that we are working on? Boundary layer has very small velocity so maybe yes?
+3. How does H, delta, and theta (integral BL properties) change in supersonic regime?
+4. Frequency of oscillation of Shock-Wave? Is there any multi-physics with feedback involved?
+5. For the isentropic Mach number plots, which direction do they go in?
+6. Separation hysteresis?
+7. Unsteadiness observed just before critical separation?
+
+Chapters 2 and 3 etc.
+
+review of what's been done
+
+report of figures etc
+
