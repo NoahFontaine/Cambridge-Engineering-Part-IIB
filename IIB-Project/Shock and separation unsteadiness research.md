@@ -159,6 +159,122 @@ For every statistic, report [K]:
 
 ---
 
+## 2B. Quantifying unsteadiness *behind* the shock
+
+The shock is only the start of the problem. For an intake, what ultimately matters is what the unsteady separation does to the flow that goes on to the fan. This section covers four downstream regions, each with its own metrics, and then how to link them to the shock.
+
+| Region | What is unsteady there | Why it matters |
+|---|---|---|
+| **1. Separation bubble** | Separation point, reattachment point, bubble size ("breathing"), reverse-flow state | Source of most downstream disturbance |
+| **2. Separated shear layer** | Vortex roll-up and shedding, shear-layer flapping | Medium/high-frequency content |
+| **3. Reattachment and recovering boundary layer** | Fluctuating wall pressure, u′ levels, time-varying shape factor | Determines the boundary layer entering the diffuser and fan |
+| **4. Throat / diffuser exit (fan-plane proxy)** | Time-variant total pressure and distortion | Engine compatibility and stability |
+
+### 2B.1 Region 1: separation bubble dynamics
+
+**Quantities to extract as time series** (from shadowgraph segmentation, plus wall-pressure or LDV where available):
+
+- Separation point x_sep(t), reattachment point x_R(t), bubble length L_sep(t) = x_R − x_sep, bubble height and area A_sep(t). For each: mean, σ, PDF, skewness, spectrum. In the 50 kHz shadowgraph (thesis Fig 7.15) the bubble is visible, so this is feasible now. Note that a shadowgraph "bubble" is a density-gradient feature and not a direct measure of reverse flow, so validate against LDV/oil flow [K].
+- **Reverse-flow fraction** (the fraction of time the flow near the wall is reversed), at fixed points (LDV) or as a map (PIV). Conditioning velocity fields on reverse-flow fraction is a standard way to define the mean separation and reattachment locations and their ±2σ excursions [S: a University of Washington MSc thesis on a speed-bump separation used exactly this with PIV].
+- **Bubble state indicator**: a binary "attached / separated" signal, giving dwell-time distributions, switching rate and the fraction of time separated. This is the downstream counterpart of intermittency γ, and it distinguishes a regular limit cycle (narrow dwell-time distribution) from random switching (broad or exponential).
+- **Separation–reattachment coupling**: cross-correlate x_sep(t) and x_R(t). In a swept-SBLI PIV study, separation and reattachment were broadband and correlated only in the low-frequency band, where "breathing" is seen; mid- and high-frequency unsteadiness appeared uncorrelated [S: Vanstone & Clemens, APS DFD 2018 abstract]. Whether your transonic bubble cycle behaves the same way is an open question and a possible result.
+
+**Two characteristic modes in separation bubbles** [S, from turbulent-separation-bubble literature; subsonic and supersonic examples]:
+
+| Mode | Description | Typical St (check the scaling length each paper used) |
+|---|---|---|
+| **Breathing** | Low-frequency contraction/expansion of the whole bubble and up-and-down motion of the shear layer, with wall-pressure fluctuations felt upstream of detachment and downstream of reattachment | ~0.01–0.05 on L_sep (e.g. ≈0.03 for shock-induced separation; ≈0.05 on L_sep in a pressure-induced speed-bump bubble; ≈0.01 in another large-bubble study) |
+| **Shedding** | Roll-up of spanwise vortices in the shear layer and their shedding past reattachment | much higher: ≈0.35 to ≈0.6 in the separation-bubble studies found |
+
+In a large pressure-induced bubble, the first POD mode held roughly 30% of the fluctuating kinetic energy and described breathing, with a bubble length variation of about 90% of its mean [S: JFM 2016, turbulent separation bubble study]. Peak wall-pressure fluctuation sat downstream of mean reattachment, at the same streamwise position as the peak vertical turbulence from convected structures [S, same paper]. Use this as a template for what to look for in your own data: **where is p_rms maximal relative to mean reattachment?**
+
+**Applying this to your case**: the thesis's ~600 Hz cycle involves the bubble forming, being swept downstream, and reforming. That is a large-amplitude event, not small breathing. Test explicitly whether your bubble shows (i) the 600 Hz cycle only, (ii) a lower-frequency breathing as well, or (iii) a shedding-type higher-frequency band. A premultiplied spectrum of A_sep(t) and of downstream pressure answers this directly.
+
+**Model to compare against**: Piponniau et al. propose that low-frequency unsteadiness arises from an imbalance between entrainment of fluid by the shear layer and the recharge of the bubble at reattachment [S, described in a paper citing it]. If your bubble length and shear-layer properties are measurable, this gives a *predicted* frequency scale to compare with data (details in Piponniau et al. 2009; read before using).
+
+### 2B.2 Region 2: separated shear layer
+
+- **Convection velocity U_c** of structures: from the lag of peak cross-correlation between two streamwise locations of the shadowgraph intensity (or of pressure). Typical value is a fraction of the edge velocity [K]; report it measured.
+- **Shear-layer thickness growth**: vorticity thickness δ_ω = ΔU / (∂u/∂y)_max from LDV profiles (needs several wall-normal points; you already take profiles) or PIV. Shedding frequency is often scaled as f·δ_ω/U_c and compared with mixing-layer values [S: the separation-bubble paper above did this and found good agreement with mixing-layer vortex frequencies].
+- **Turbulence statistics** from LDV where the shear layer is probed: u′/U_e, Reynolds stress −⟨u′v′⟩ (only if both velocity components are measured; check the LDV configuration in thesis Table 5.1), skewness and flatness of u. High near-wall u′ already exists in the thesis (u′/U_e up to ~0.4 near the wall, quoted from earlier work [T §5.4.4]).
+- **Space–time (x–t) diagram of the shear layer** along a line following the shear layer from shadowgraph: structures appear as inclined streaks whose slope is U_c.
+- **Spatial POD** of velocity (if PIV is available) or of shadowgraph intensity: separates breathing, shedding and convecting-structure modes; see §2.7.
+
+### 2B.3 Region 3: reattachment and the recovering boundary layer
+
+This is probably the most useful region for the "consequence" side of your project, because the thesis already measures the boundary layer at the throat with LDV [T §5.4, §7.2.1].
+
+- **Fluctuating wall pressure p_rms(x)** through and beyond reattachment (new transducers, §2.5). The maximum is expected near or just downstream of mean reattachment [S].
+- **Time-resolved boundary-layer integral parameters**: δ*, θ and H_i are normally obtained from mean profiles. For unsteady flow, report them as (a) the usual time-mean values, (b) values **conditioned on bubble state or phase** (e.g. just after bubble shedding vs. during a fully attached period), and (c) their spread. Conditioning is possible if every LDV burst timestamp is recorded and the camera is synchronised (§2B.6).
+- **Profile-level unsteadiness**: u′(y)/U_e, skewness S(u), the near-wall reverse-flow fraction at each y, and histograms (your Fig 7.18 already does this at four heights). Plot **how far downstream the reverse-flow fraction and u′ take to relax** back toward an undisturbed profile: a recovery length is a clean downstream metric.
+- **Wall shear stress fluctuations** τ_w′ via flush hot-film or Preston-type techniques [K, not verified]. The thesis uses LDV profile fitting for friction velocity [T §5.4.5]. A direct, unsteady τ_w sensor would be new capability and probably out of scope, but it is the most direct instantaneous separation sensor.
+- **Mean-flow consequence checks**: downstream mean pressure recovery and total-pressure loss with and without unsteadiness.
+
+### 2B.4 Region 4: throat / diffuser exit as a fan-plane proxy
+
+The rig has no fan, so true fan-face distortion metrics cannot be measured. But the intake-engine compatibility literature gives you the right *language*, and a few of its ideas can be applied to a quasi-2D rig.
+
+**What the intake literature does** [S]:
+- Intake researchers stress that **peak events** of unsteady distortion can affect engine stability even when mean distortion is acceptable (Gil-Prieto et al., *Aerosp. Sci. Technol.* 72, 2018). Mean values alone are therefore not sufficient. This applies directly to your project: an intermittent separation may be harmless in the mean but harmful in its peaks.
+- Peak distortion data is typically low-pass filtered at a frequency tied to the engine's minimum response time [S, same paper]. **Ask your supervisor or Rolls-Royce contact which frequency band matters.** A ~600 Hz event may be above or below the band that the fan responds to, and that determines whether it is damaging. (The paper reports frequencies of S-duct distortion descriptors inside the range where engine stability could be compromised, but that is for a different intake type.)
+- Standard descriptors (SAE ARP1420 style) include radial and circumferential total-pressure distortion indices such as DC(θ) (lowest sector-average total pressure relative to face average, normalised by dynamic head); see the descriptor definitions in the compressor-rig literature [S, DTIC fan-distortion report nomenclature]. These need a circumferential rake and are not directly available in a quasi-2D rig.
+- **Extreme Value Theory (EVT)** is used to predict peak distortion beyond the measured record, since testing times two orders of magnitude longer than typical would otherwise be needed (Tanguy et al., 2018; Gil-Prieto et al., 2018) [S]. It is relevant if you want to claim how bad the worst event could be. Results depend on sensitivity choices (de-clustering frequency, number of exceedances, record length), which those papers discuss.
+- Joint probability maps of two simultaneous distortion metrics, and POD of the total-pressure field at the duct exit, are used to find the underlying unsteady modes (MacManus et al., *AIAA J.* 55, 2017) [S]. Peak total-pressure and swirl events were found not to be synchronous.
+
+**Practical rig analogues** [K, my suggestions]:
+- **Fast-response total-pressure measurement** at the throat or a diffuser station: a small Kiel or pitot probe with a miniature transducer, traversed or in a fixed wall-normal array (e.g. 3–5 heights across the boundary layer).
+- **Quasi-2D distortion index** across the wall-normal direction: for example, ΔP = (p0,free-stream − p0,near-wall)/q, as a time series, plus its mean, rms, skewness, spectrum, and its extreme-value tail.
+- **Shape factor H(t)** from a near-wall and an outer sensor pair (two-point surrogate for the profile), if the full profile cannot be time-resolved.
+- **Unsteady blockage**: the time series of displacement thickness (or its proxy) is effectively an unsteady effective area change at the throat. It is the 2D equivalent of a distortion event.
+- Compare **time scales**: the bubble cycle period, the convection time from the bubble to the throat, and the fan blade-passing and response time scales. Even without a fan, writing these down shows whether the disturbance is quasi-steady, resonant or filtered from the fan's viewpoint.
+
+### 2B.5 Whole-field unsteadiness metrics (all regions at once)
+
+- **Time-resolved PIV** (if the lab has it; a 50 kHz PIV system has been used on supersonic SBLI by other groups [S]). Gives u′, v′, Reynolds stresses, reverse-flow maps, vorticity, shear-layer thickness, POD/DMD modes. Seeding a compressible, small-scale rig at kHz rates is demanding; check feasibility.
+- **Fluctuation maps from shadowgraph**: pixel SD (done already), skewness/kurtosis, spectral peak amplitude maps at the bubble frequency, and **coherence maps** relative to a reference pixel or reference pressure sensor. These tell you which regions *move together* with the shock.
+- **Energy fractions**: share of fluctuation energy captured by each POD mode (e.g. "mode 1 holds X%") gives a compact single-number characterisation of how dominated the unsteadiness is by one coherent motion [S: such a number is reported in the separation-bubble literature].
+- **Space-time correlation maps** R(Δx, τ) for estimating convection speeds and length scales.
+
+### 2B.6 Linking downstream behaviour to the shock: coupling metrics
+
+The thesis explicitly wants "the upstream separation response matched to downstream changes in the boundary layer state from LDV" [T §9.3]. Options:
+
+1. **Event-conditioned (phase-averaged) statistics**: detect bubble events in the high-speed video, then average pressure signals and LDV bursts in windows relative to that event time. Because LDV samples arrive at random times, the practical approach is to store every burst's arrival time and the camera trigger, then assign each burst a bubble phase or state afterwards [K]. This requires hardware synchronisation.
+2. **Cross-correlation and coherence** between shock/bubble signals (x_s, x_sep, A_sep) and downstream signals (wall pressure at several stations). The sign and size of the time lag tells you whether disturbances propagate downstream with the flow or upstream through the subsonic region, and the peak lag per station gives a propagation speed. In classical SBLI studies, bubble and reflected-shock wall-pressure signals were found in phase opposition at low frequency [S: Debiève & Dupont]. Look for the transonic analogue.
+3. **Transfer functions** between a shock-side signal and a downstream signal at the bubble frequency (gain and phase) [K].
+4. **Upstream-of-shock monitor**: include one upstream sensor so you can test whether upstream boundary-layer fluctuations precede shock/bubble events, which separates the "upstream" from the "downstream" mechanisms of §4 [S: Clemens & Narayanaswamy].
+5. **Pressure-wave propagation**: because the flow behind a transonic shock is subsonic, downstream pressure disturbances can propagate back to the shock [S: Babinsky & Harvey, Ch. 3]. Estimate the acoustic travel time from throat to shock and compare with the period of your oscillation. If the half-period is comparable with that travel time, an acoustic feedback loop is plausible and the downstream geometry (choke, exit aerofoil) becomes part of the mechanism [K, my inference].
+
+### 2B.7 Summary table: downstream metrics
+
+| Metric | Region | Instrument | Possible with existing data? |
+|---|---|---|---|
+| x_sep(t), x_R(t), L_sep(t), A_sep(t), PDFs and spectra | 1 | Shadowgraph segmentation | Yes (50 kHz video) |
+| Attached/separated dwell times, switching rate | 1 | Shadowgraph, near-wall LDV | Yes (video); LDV partly |
+| Reverse-flow fraction vs y | 1, 3 | LDV | Yes (raw bursts needed) |
+| Breathing vs shedding band energy, St on L_sep | 1, 2 | Spectra of A_sep, wall pressure | Video yes; pressure needs transducers |
+| Convection velocity U_c | 2 | Space–time correlation | Yes (video) |
+| Vorticity thickness, shear-layer growth | 2 | LDV or PIV profiles | Partly |
+| u′/U_e(y), skewness, Reynolds stress | 2, 3 | LDV | Yes (if components available) |
+| p_rms(x) through reattachment | 3 | Flush transducers | No |
+| State-conditioned δ*, θ, H_i | 3 | LDV + synced video | Needs timestamps and sync |
+| Recovery length of u′ and reverse flow | 3 | LDV traverses downstream | Partly |
+| Time-variant total pressure, wall-normal distortion index | 4 | Fast total-pressure probe(s) | No |
+| EVT-based peak distortion estimate | 4 | Long records of the above | After new data |
+| Joint PDFs of two distortion metrics, POD of total-pressure field | 4 | Rake or array | No |
+| Time-scale comparison (bubble, convection, acoustic, fan response) | 4 | Calculation | Yes, with the fan-response band from your supervisor |
+| Coherence and cross-correlation, shock ↔ downstream | all | Synced video + pressure | Partly |
+
+### 2B.8 Pitfalls specific to downstream measurements
+
+- **LDV limitations** [T §5.4.4, plus K]: velocity bias raises fluctuation estimates (about 4% near wall per the thesis); near-wall measurement is limited by probe-volume size and wall reflections; random sampling forbids direct FFTs; data rate falls in reversed, low-seeding regions, which can bias reverse-flow statistics. Report sample counts and data rates per point.
+- **Shadowgraph is line-of-sight integrated and sensitive to density gradients only**: a bubble or shear layer in the subsonic region behind the shock produces weak density gradients, so segmentation may under-detect it. Use thresholds validated against LDV or oil flow.
+- **Sidewall separations** exist near the walls [T §6.1], so centreline measurements may not represent the span. Check spanwise uniformity of the unsteady bubble if you can (e.g. with oil flow or a second LDV/pressure position off-centre).
+- **Different sensors, different bandwidths**: tubing-coupled tappings ~33 Hz [T §5.2], shadowgraph limited by frame rate and exposure, LDV by data rate, transducers by their own resonance. State the bandwidth of each statistic you report.
+- **Quasi-2D caveat**: results are for a quasi-2D rig, so you cannot claim real fan-face distortion. Phrase conclusions as "unsteady blockage / boundary-layer state at the throat".
+
+---
+
 ## 3. Practical measurement plan (suggested order)
 
 **Phase 0: re-analyse what exists (no new rig time)**
@@ -166,10 +282,12 @@ For every statistic, report [K]:
 2. Segment the bubble in the 50 kHz video; compute a bubble-presence time series and A_sep(t); get the cycle-time distribution. **Re-derive the 600 Hz properly** from the full record: the thesis itself calls it rough, and the number of panels you count as one cycle strongly affects it.
 3. POD/DMD on the 50 kHz sequence.
 4. Reprocess LDV raw data for backflow probability and histogram metrics.
+4b. **Downstream:** extract x_sep(t), x_R(t), A_sep(t) from the 50 kHz video, compute the cycle-time and dwell-time distributions, estimate the shear-layer convection velocity from space-time correlations, and compute time-mean and (if timestamps exist) state-conditioned u′ and reverse-flow fractions at the throat (§2B).
 
 **Phase 1: quantify on the rig**
 5. High-speed video at ≥ 10 kHz (preferably 20–50 kHz) across a *sweep* of M_entry (0.150 → 0.165 in fine steps, e.g. 0.0025) and MFS, to map the unsteady region of the parameter space. The thesis says it "may also occur at other M_entry values" and gives only one example [T §7.2.1].
 6. Add dynamic pressure transducers, synchronised with the camera. Measure p_rms(x), γ(x), spectra, coherence.
+6b. Add a fast-response total-pressure measurement at the throat or a diffuser station, synchronised with the camera and LDV, to quantify the downstream consequence and the shock-to-throat time lag (§2B.4, §2B.6).
 7. Reynolds-number test via P0 variation (the thesis lists this as unknown [T §9.3]); keep M_entry fixed.
 
 **Phase 2: control**
@@ -235,6 +353,9 @@ Report the same set for baseline and controlled cases, at the same M_entry, MFS 
 | p_rms peak and footprint Δx_foot | Down |
 | Time-mean separation extent (oil flow) | Down |
 | Downstream δ*, θ, H_i, and unsteadiness there (LDV) | Healthier, more steady |
+| Bubble length/area variability σ_Lsep, dwell-time distribution, switching rate | Narrower / fewer switches |
+| u′/U_e and reverse-flow fraction at the throat, and recovery length | Down / shorter |
+| Time-variant total-pressure fluctuation and peak (extreme-value) distortion at the throat or diffuser exit | Down |
 | Peak isentropic Mach and mean pressure recovery | Not significantly degraded |
 | Added drag or blockage proxy (e.g. a change in M_entry for the same tunnel setting) | Small |
 
@@ -251,6 +372,8 @@ Note: control that moves the system **away from the critical condition** (e.g. d
 5. Which control devices can be manufactured and fitted to the existing intake (3D-printed VGs? bleed slot?), and what tunnel time is available?
 6. Is the target the near-critical bubble cycling (case B), the baseline weak unsteadiness (case A), or both? Which M_entry/MFS conditions should be the "test cases"?
 7. Does the downstream configuration (choke, exit aerofoil) have any acoustic signature that could couple to the 600 Hz?
+8. What time-scale or frequency band is relevant for the fan (engine response time)? That decides whether a ~600 Hz disturbance matters for the engine, and which downstream metrics to prioritise.
+9. Is a fast-response total-pressure probe (or rake) available, and can the LDV record burst arrival times for synchronisation with the camera?
 
 ---
 
@@ -282,6 +405,17 @@ Note: control that moves the system **away from the critical condition** (e.g. d
 - A. Coschignano, *Normal shock wave–boundary layer interactions in transonic intakes at incidence*, PhD thesis, Cambridge, 2018. [S]
 - P. Doerffer, O. Szulc & F. Magagnato, "Unsteady shock wave–turbulent boundary layer interaction in the Laval nozzle," *TASK Quarterly* 9(1), 115–132, 2005. [S]
 
+**Downstream flow, separation bubbles and intake distortion**
+- Mohammed-Taifour & Weiss (authors and volume from memory), "Unsteadiness in a large turbulent separation bubble," *J. Fluid Mech.* (2016), doi 10.1017/jfm.2016.377. Breathing and shedding modes, POD. [S, abstract]
+- Weiss et al., turbulent separation bubble breathing and shedding modes, *C. R. Mécanique* (2015), doi 10.1016/j.crme.2015.09.003. [S, excerpts]
+- L. Vanstone & N. T. Clemens, "Shock-wave boundary-layer interaction unsteadiness mechanisms: an experimental investigation using 50 kHz PIV," APS DFD 2018 abstract. [S]
+- J. F. Debiève & P. Dupont, "Dependence between shock and separation bubble in a shock wave/boundary layer interaction," IUTAM 2007 proceedings. [S]
+- H. Annamalai, MSc thesis, University of Washington, 2022 (speed-bump separated flow: reverse-flow conditioning, POD, St ≈ 0.05 and ≈ 0.62). [S]
+- D. Gil-Prieto, D. G. MacManus, P. K. Zachos & A. Bautista, "Assessment methods for unsteady flow distortion in aero-engine intakes," *Aerosp. Sci. Technol.* 72, 292–304, 2018. [S]
+- G. Tanguy, D. G. MacManus, E. Garnier & P. G. Martin, "Characteristics of unsteady total pressure distortion for a complex aero-engine intake duct," *Aerosp. Sci. Technol.* 78, 297–311, 2018. [S]
+- D. G. MacManus, N. Chiereghin, D. Gil Prieto & P. Zachos, "Complex aero-engine intake ducts and dynamic distortion," *AIAA J.* 55(7), 2395–2409, 2017. [S]
+- SAE ARP1420 (inlet distortion descriptors; DC(θ) etc.). [K, standard reference; not read this session]
+
 **Flow control**
 - A. G. Panaras & F. K. Lu, "Micro-vortex generators for shock wave/boundary layer interactions," *Prog. Aerosp. Sci.* 74, 16–47, 2015. [S, via citations]
 - J. C. Lin, "Review of research on low-profile vortex generators to control boundary-layer separation," *Prog. Aerosp. Sci.* 38, 389–420, 2002. [S, via citations]
@@ -309,6 +443,9 @@ Your original `.txt` is reproduced here in condensed form. Comments in *italics*
 
 **Frequency and spectral metrics**
 - PSD, Strouhal number, coherence. *The 0.01–0.05 range is for the classical low-frequency band, scaled with separation length. Your ~600 Hz bubble cycle may be a different mechanism (§4.3). Report St on more than one length scale.*
+
+**Not in the original notes: downstream flow**
+- Your list focuses on the shock. Section 2B adds metrics for the separation bubble, shear layer, recovering boundary layer and throat/diffuser exit, and for coupling them to the shock.
 
 **Advanced methods**
 - POD, DMD. *Feasible immediately on the existing 50 kHz shadowgraph video (§2.7).*
