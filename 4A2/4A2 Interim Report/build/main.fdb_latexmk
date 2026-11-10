@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1794316571.53233 "/home/noah-fontaine/Documents/Cambridge-Engineering-Part-IIB/4A2/4A2 Interim Report/main.tex" "build/main.pdf" "main" 1794316572.22722 0
+["pdflatex"] 1794332032.67282 "/home/noah-fontaine/Documents/Cambridge-Engineering-Part-IIB/4A2/4A2 Interim Report/main.tex" "build/main.pdf" "main" 1794332034.33741 0
   "/etc/texmf/web2c/texmf.cnf" 1790865727.24332 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/noah-fontaine/Documents/Cambridge-Engineering-Part-IIB/4A2/4A2 Interim Report/main.tex" 1794316570.71433 1207 334c35abf30b5234f76ce015948b2246 ""
+  "/home/noah-fontaine/Documents/Cambridge-Engineering-Part-IIB/4A2/4A2 Interim Report/main.tex" 1794332032.57105 2265 5a8584a6dfa6287b7e35091400aa9d0f ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -22,10 +22,13 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti8.tfm" 1136768653 1504 1747189e0441d1c18f3ea56fafc1c480 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm" 1136768653 520 4889cce2180234b97cad636b6039c722 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb" 1248133631 35660 fb24af7afbadb71801619f1415838111 ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty" 1576625273 7734 b98cbb34c81f667027c1e3ebdbfce34b ""
   "/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty" 1572645307 480 5778104efadad304ced77548ca2184b1 ""
@@ -212,8 +215,12 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1769369718 41603 27f93b3067076450172040dcd57ca8b3 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1791046959 5418024 d27383b0a8fadef44c19c8c5a157ff8e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1790865739 2265701 40ed2a9e10dbad775521c8219db4e9ca ""
-  "build/main.aux" 1794316572.16576 149 bdbf4e2e9196311185dcabe6202f799a "pdflatex"
-  "main.tex" 1794316570.71433 1207 334c35abf30b5234f76ce015948b2246 ""
+  "build/main.aux" 1794332034.2711 1656 30adb738360126df76f0e57bbb9722ab "pdflatex"
+  "main.tex" 1794332032.57105 2265 5a8584a6dfa6287b7e35091400aa9d0f ""
+  "plots/contour_plots_bend_mach.png" 1794331668.9762 371851 bcd07f20bde411185d60e2c4bd7e0985 ""
+  "plots/contour_plots_bump_mach.png" 1794331643.68897 278800 4c17ccea147223d317536228dc4e479c ""
+  "plots/convergence_plot_bend.png" 1794331721.73512 297024 4ff08d1a0b6356853d529ca108d22076 ""
+  "plots/convergence_plot_bump.png" 1794331707.70064 216898 65a5689d3a958c9b8128748643a08860 ""
   (generated)
   "build/main.aux"
   "build/main.log"
