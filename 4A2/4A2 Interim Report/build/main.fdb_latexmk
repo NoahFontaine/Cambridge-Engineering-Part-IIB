@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1794334195.60501 "/home/noah-fontaine/Documents/Cambridge-Engineering-Part-IIB/4A2/4A2 Interim Report/main.tex" "build/main.pdf" "main" 1794334198.25707 0
+["pdflatex"] 1794337738.78948 "/home/noah-fontaine/Documents/Cambridge-Engineering-Part-IIB/4A2/4A2 Interim Report/main.tex" "build/main.pdf" "main" 1794337740.80953 0
   "/etc/texmf/web2c/texmf.cnf" 1790865727.24332 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/noah-fontaine/Documents/Cambridge-Engineering-Part-IIB/4A2/4A2 Interim Report/main.tex" 1794334192.79319 2549 7fde6e781ad4750e497c61d8e1eff4f5 ""
+  "/home/noah-fontaine/Documents/Cambridge-Engineering-Part-IIB/4A2/4A2 Interim Report/main.tex" 1794337736.59089 2563 98c4ea26567a4b1bf9be91311ff46535 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -215,12 +215,12 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1769369718 41603 27f93b3067076450172040dcd57ca8b3 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1791046959 5418024 d27383b0a8fadef44c19c8c5a157ff8e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1790865739 2265701 40ed2a9e10dbad775521c8219db4e9ca ""
-  "build/main.aux" 1794334198.19196 2071 97b6f84e433f4a22e16478377d2e9534 "pdflatex"
-  "main.tex" 1794334192.79319 2549 7fde6e781ad4750e497c61d8e1eff4f5 ""
+  "build/main.aux" 1794337740.74299 2080 944621a4722450262a3fcb8328ad1a9c "pdflatex"
+  "main.tex" 1794337736.59089 2563 98c4ea26567a4b1bf9be91311ff46535 ""
   "plots/contour_plots_bend_mach.png" 1794331668.9762 371851 bcd07f20bde411185d60e2c4bd7e0985 ""
   "plots/contour_plots_bump_mach.png" 1794331643.68897 278800 4c17ccea147223d317536228dc4e479c ""
   "plots/convergence_plot_bend.png" 1794331721.73512 297024 4ff08d1a0b6356853d529ca108d22076 ""
-  "plots/convergence_plot_bend_CFL.png" 1794334162.66112 1132068 0fbb2f16a70ec1e8de5a11c6b7b58222 ""
+  "plots/convergence_plot_bend_bump_CFL.png" 1794337718.32645 241532 05d429cb71f309c5a344968bbd3ade5a ""
   "plots/convergence_plot_bump.png" 1794331707.70064 216898 65a5689d3a958c9b8128748643a08860 ""
   (generated)
   "build/main.aux"
