@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1794418182.56839 "/home/noah-fontaine/Documents/Cambridge-Engineering-Part-IIB/4A2/4A2 Interim Report/main.tex" "build/main.pdf" "main" 1794418185.49823 0
+["pdflatex"] 1794426144.36623 "/home/noah-fontaine/Documents/Cambridge-Engineering-Part-IIB/4A2/4A2 Interim Report/main.tex" "build/main.pdf" "main" 1794426147.74463 0
   "/etc/texmf/web2c/texmf.cnf" 1790865727.24332 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/noah-fontaine/Documents/Cambridge-Engineering-Part-IIB/4A2/4A2 Interim Report/main.tex" 1794418182.37371 6328 a7fd013756d71c94658a6505a0b09673 ""
+  "/home/noah-fontaine/Documents/Cambridge-Engineering-Part-IIB/4A2/4A2 Interim Report/main.tex" 1794426144.25313 7054 3fa380e81ecef91f42733602b7795814 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -226,16 +226,18 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1769369718 41603 27f93b3067076450172040dcd57ca8b3 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1791046959 5418024 d27383b0a8fadef44c19c8c5a157ff8e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1790865739 2265701 40ed2a9e10dbad775521c8219db4e9ca ""
-  "build/main.aux" 1794418185.42433 3281 a383b7f233ada0ba0ce1b2a4d602e91c "pdflatex"
-  "main.tex" 1794418182.37371 6328 a7fd013756d71c94658a6505a0b09673 ""
+  "build/main.aux" 1794426147.6722 3893 f62fd1f5aa6afb1acba63085ce06d64c "pdflatex"
+  "main.tex" 1794426144.25313 7054 3fa380e81ecef91f42733602b7795814 ""
   "plots/contour_plots_bend_mach.png" 1794408574.88278 442544 6acc3cc60acd76a14ce9d347bf97efe1 ""
   "plots/contour_plots_bump_mach.png" 1794408586.91007 336112 a1efa109c28b5cf322000eb83414cf54 ""
   "plots/convergence_plot_CFL.png" 1794401173.91217 217335 c97059be52a4e66ea7a6aff197cf2d8e ""
   "plots/convergence_plot_bend.png" 1794331721.73512 297024 4ff08d1a0b6356853d529ca108d22076 ""
   "plots/convergence_plot_bump.png" 1794331707.70064 216898 65a5689d3a958c9b8128748643a08860 ""
   "plots/convergence_plot_bump_sfac_dro.png" 1794416617.51931 405515 b91c6cdfa2ef170e5abb3086c158d4cf ""
+  "plots/mesh_timing_bump_scaling.png" 1794420494.45492 251825 ff3c9ebddc13dc05027323de0361f307 ""
   "plots/simulation_time_bend_bump_CFL.png" 1794408634.53018 181038 525bb7b80fe606496820ae961a19e4e2 ""
   "plots/simulation_time_bend_bump_sfac.png" 1794403498.68208 121695 6ee8e6ac9639cc56bc2d51ce1e5c9795 ""
+  "plots/spacial_order_bump_residual.png" 1794425373.0914 264625 bc97577fa2cd758b229b18baf8852de8 ""
   (generated)
   "build/main.aux"
   "build/main.log"

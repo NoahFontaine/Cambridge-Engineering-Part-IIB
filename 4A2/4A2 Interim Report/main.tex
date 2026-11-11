@@ -31,6 +31,7 @@
 \usepgfplotslibrary{fillbetween}
 
 \geometry{margin=2cm}
+\setlength{\columnsep}{0.5cm}
 
 \setlist[itemize]{nosep, topsep=-0em}
 % \titlespacing*{\subsection}{0pt}{1.5ex plus 0.5ex minus 0.2ex}{0.5ex}
@@ -47,7 +48,7 @@
 
 \begin{document}
 
-\newgeometry{top=0.5cm, bottom=2cm, left=2cm, right=2cm}
+\newgeometry{top=0.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm}
 \afterpage{\restoregeometry}
 \maketitle
 
@@ -134,15 +135,31 @@ the solver starts requiring more than 20000 iterations to reach steady state.
 \begin{figure}[!h]
     \centering
     \includegraphics[width=\linewidth]{plots/convergence_plot_bump_sfac_dro.png}
-    \caption{Convergence results of the bump case with varying smoothing factors ($sfac$).}
+    \caption{Convergence results with varying smoothing factors ($sfac$).}
     \label{fig:convergence_smoothing}
 \end{figure}
 
 The effect of the smoothing factor ($sfac$) on the convergence of the solver on the convergence and stability is clear.
 Lower smoothing factors result in more oscillatory and slower convergence, but much lower average residuals.
-The relationship is non linear, and the effect of the smoothing factor is more pronounced at lower values. This is shown in \cref{fig:convergence_smoothing}.
+The relationship is non-linear (closer to logarithmic), and the effect of the smoothing factor is more pronounced at lower values.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\linewidth]{plots/spacial_order_bump_residual.png}
+    \caption{Convergence results of the bump case with varying mesh sizes.}
+    \label{fig:convergence_mesh}
+\end{figure}
+
+From \cref{fig:convergence_mesh} it is very easy to see that the solver is second order accurate in space. The average residuals (in \cref{fig:convergence_mesh}, $\rho$ is shown) scale $\propto 1/(ni)^2 \propto \Delta x^2$, where $x$ is the mesh size.
 
 \subsection{Runtime of the solver}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\linewidth]{plots/mesh_timing_bump_scaling.png}
+    \caption{Time results of the bump case with varying mesh sizes.}
+    \label{fig:time_simulation_mesh}
+\end{figure}
 
 \begin{figure}[!h]
     \centering

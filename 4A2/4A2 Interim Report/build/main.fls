@@ -397,6 +397,16 @@ INPUT ./plots/convergence_plot_bump_sfac_dro.png
 INPUT ./plots/convergence_plot_bump_sfac_dro.png
 INPUT ./plots/convergence_plot_bump_sfac_dro.png
 INPUT ./plots/convergence_plot_bump_sfac_dro.png
+INPUT ./plots/spacial_order_bump_residual.png
+INPUT ./plots/spacial_order_bump_residual.png
+INPUT ./plots/spacial_order_bump_residual.png
+INPUT ./plots/spacial_order_bump_residual.png
+INPUT ./plots/spacial_order_bump_residual.png
+INPUT ./plots/mesh_timing_bump_scaling.png
+INPUT ./plots/mesh_timing_bump_scaling.png
+INPUT ./plots/mesh_timing_bump_scaling.png
+INPUT ./plots/mesh_timing_bump_scaling.png
+INPUT ./plots/mesh_timing_bump_scaling.png
 INPUT ./plots/simulation_time_bend_bump_CFL.png
 INPUT ./plots/simulation_time_bend_bump_CFL.png
 INPUT ./plots/simulation_time_bend_bump_CFL.png
