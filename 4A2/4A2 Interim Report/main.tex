@@ -111,7 +111,8 @@ which is expected due to the nature of the solver, but is also unphysical.
 
 None of the residuals vanish, there is a "residual plateau" steady state error, which is due to different factors and explained in \cref{sec:accuracy}.
 
-Despite the same settings, the bump case seems to converge faster and with less residual oscillations than the bend case, implying higher stability.
+Despite the same settings, the bump case converges faster and with less residual oscillations than the bend case, implying higher stability.
+This shows that the solver is substantially sensitive to the geometry of the problem. For the corner case, for example, the solver was never stable and refused to converge, even with very high smoothing factors and very low CFL numbers.
 
 \section{Accuracy and parameter effects}
 

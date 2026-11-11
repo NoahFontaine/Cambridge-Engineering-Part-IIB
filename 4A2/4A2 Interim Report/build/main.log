@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.10.1)  11 NOV 2026 21:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.10.1)  11 NOV 2026 22:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -838,11 +838,8 @@ Package pdftex.def Info: plots/convergence_plot_bend.png  used on input line 107
 <plots/convergence_plot_CFL.png, id=9, 568.0422pt x 423.0204pt>
 File: plots/convergence_plot_CFL.png Graphic file (type png)
 <use plots/convergence_plot_CFL.png>
-Package pdftex.def Info: plots/convergence_plot_CFL.png  used on input line 124.
+Package pdftex.def Info: plots/convergence_plot_CFL.png  used on input line 125.
 (pdftex.def)             Requested size: 257.3552pt x 191.65482pt.
-
-Underfull \vbox (badness 3713) has occurred while \output is active []
-
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -852,12 +849,12 @@ Underfull \vbox (badness 3713) has occurred while \output is active []
 <plots/convergence_plot_bump_sfac_dro.png, id=27, 547.8066pt x 426.1521pt>
 File: plots/convergence_plot_bump_sfac_dro.png Graphic file (type png)
 <use plots/convergence_plot_bump_sfac_dro.png>
-Package pdftex.def Info: plots/convergence_plot_bump_sfac_dro.png  used on input line 138.
+Package pdftex.def Info: plots/convergence_plot_bump_sfac_dro.png  used on input line 139.
 (pdftex.def)             Requested size: 257.3552pt x 200.20697pt.
 <plots/spacial_order_bump_residual.png, id=28, 569.9694pt x 421.0932pt>
 File: plots/spacial_order_bump_residual.png Graphic file (type png)
 <use plots/spacial_order_bump_residual.png>
-Package pdftex.def Info: plots/spacial_order_bump_residual.png  used on input line 149.
+Package pdftex.def Info: plots/spacial_order_bump_residual.png  used on input line 150.
 (pdftex.def)             Requested size: 257.3552pt x 190.13914pt.
 
 
@@ -866,22 +863,22 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <plots/contour_plots_bump_density_residual.png, id=29, 610.1997pt x 212.4738pt>
 File: plots/contour_plots_bump_density_residual.png Graphic file (type png)
 <use plots/contour_plots_bump_density_residual.png>
-Package pdftex.def Info: plots/contour_plots_bump_density_residual.png  used on input line 164.
+Package pdftex.def Info: plots/contour_plots_bump_density_residual.png  used on input line 165.
 (pdftex.def)             Requested size: 253.88737pt x 88.40517pt.
 <plots/contour_plots_bend_density_residual.png, id=30, 610.1997pt x 257.0403pt>
 File: plots/contour_plots_bend_density_residual.png Graphic file (type png)
 <use plots/contour_plots_bend_density_residual.png>
-Package pdftex.def Info: plots/contour_plots_bend_density_residual.png  used on input line 170.
+Package pdftex.def Info: plots/contour_plots_bend_density_residual.png  used on input line 171.
 (pdftex.def)             Requested size: 253.88737pt x 106.9482pt.
 <plots/contour_plots_bump_density_second_derivative.png, id=31, 561.0561pt x 226.6869pt>
 File: plots/contour_plots_bump_density_second_derivative.png Graphic file (type png)
 <use plots/contour_plots_bump_density_second_derivative.png>
-Package pdftex.def Info: plots/contour_plots_bump_density_second_derivative.png  used on input line 192.
+Package pdftex.def Info: plots/contour_plots_bump_density_second_derivative.png  used on input line 193.
 (pdftex.def)             Requested size: 253.88737pt x 102.57889pt.
 <plots/contour_plots_bend_density_second_derivative.png, id=32, 551.9019pt x 271.2534pt>
 File: plots/contour_plots_bend_density_second_derivative.png Graphic file (type png)
 <use plots/contour_plots_bend_density_second_derivative.png>
-Package pdftex.def Info: plots/contour_plots_bend_density_second_derivative.png  used on input line 198.
+Package pdftex.def Info: plots/contour_plots_bend_density_second_derivative.png  used on input line 199.
 (pdftex.def)             Requested size: 253.88737pt x 124.78221pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -890,7 +887,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <plots/mesh_timing_bump_scaling.png, id=44, 558.6471pt x 421.575pt>
 File: plots/mesh_timing_bump_scaling.png Graphic file (type png)
 <use plots/mesh_timing_bump_scaling.png>
-Package pdftex.def Info: plots/mesh_timing_bump_scaling.png  used on input line 217.
+Package pdftex.def Info: plots/mesh_timing_bump_scaling.png  used on input line 218.
 (pdftex.def)             Requested size: 257.3552pt x 194.21631pt.
  [3 <./plots/contour_plots_bump_density_second_derivative.png> <./plots/contour_plots_bend_density_second_derivative.png> <./plots/mesh_timing_bump_scaling.png>] (build/main.aux)
  ***********
@@ -907,7 +904,7 @@ Here is how much of TeX's memory you used:
  59 hyphenation exceptions out of 8191
  99i,8n,108p,811b,590s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on build/main.pdf (3 pages, 3182575 bytes).
+Output written on build/main.pdf (3 pages, 3182788 bytes).
 PDF statistics:
  98 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream
