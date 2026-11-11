@@ -3,6 +3,7 @@
 \usepackage{graphicx}
 \usepackage{fancyhdr}
 \usepackage{geometry}
+\usepackage{afterpage}
 \usepackage{xcolor, soul}
 \usepackage{changepage}  % allows temporary margin adjustments
 \usepackage{amsmath}
@@ -46,6 +47,8 @@
 
 \begin{document}
 
+\newgeometry{top=0.5cm, bottom=2cm, left=2cm, right=2cm}
+\afterpage{\restoregeometry}
 \maketitle
 
 \section{Results: bump and bend cases}
@@ -69,21 +72,19 @@ The Mach number contours and the convergence plots for both cases are shown belo
 \end{figure}
 
 Due to the symmetric nature of both cases, it is clear that there are some accuracy errors present in the flow.
-In \Cref{fig:bump_mach}, while the highest Mach number is expected to be at the top of the bump, the Mach number countours are not symmetric about the centerline.
-Furthermore, the flow speeds on either side are not equal, with the flow fore of the bump quicker than the flow aft. This is not physical if we 
+In \cref{fig:bump_mach}, while the highest Mach number is expected to be at the top of the bump, the Mach number contours are not symmetric about the centerline.
+The flow speeds on either side are also not equal, with the flow fore of the bump quicker than aft. This is not physical if we 
 consider inviscid flow, as the basic Euler solver uses.
-
-The solution in \Cref{fig:bend_mach} also does not show the expected symmetric flow field,
-and also shows a supersonic region in the exit inside bend. This region does not terminate abruptly in a shockwave,
-which is expected due to the nature of the solver, but is also unphysical.
-
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\linewidth]{plots/convergence_plot_bump.png}
+    \includegraphics[width=\linewidth]{plots/convergence_plot_bump.png}
     \caption{Bump case convergence results.}
     \label{fig:bump_convergence}
 \end{figure}
+
+\Cref{fig:bump_convergence} and \cref{fig:bend_convergence} show that, in both cases,
+the residuals decrease rapidly in the first 4000 iterations, before plateauing at average values of around $10^{-3}$.
 
 
 \subsection{Bend case}
@@ -95,6 +96,11 @@ which is expected due to the nature of the solver, but is also unphysical.
     \label{fig:bend_mach}
 \end{figure}
 
+
+The solution in \cref{fig:bend_mach} also does not show the expected symmetric flow field,
+and also shows a supersonic region in the exit inside bend. This region does not terminate abruptly in a shockwave,
+which is expected due to the nature of the solver, but is also unphysical.
+
 \begin{figure}[!h]
     \centering
     \includegraphics[width=\linewidth]{plots/convergence_plot_bend.png}
@@ -102,26 +108,41 @@ which is expected due to the nature of the solver, but is also unphysical.
     \label{fig:bend_convergence}
 \end{figure}
 
-\Cref{fig:bump_convergence} and \Cref{fig:bend_convergence} show that, in both cases,
-the residuals decrease rapidly in the first 4000 iterations, before plateauing at average values of around $10^{-3}$.
-
 None of the residuals vanish, there is a "residual plateau" steady state error, which is due to different factors and explained in \hl{cite section here}.
 
 Despite the same settings, the bump case seems to converge faster and with less residual oscillations than the bend case, implying higher stability.
 
 \section{Accuracy and parameter effects}
-% Discuss accuracy, CFL number, smoothing factor, mesh size,
-% stability, and runtime. Support the discussion with figures.
 
-\subsection{Effects of varying CFL number}
+\subsection{Accuracy and stability}
+
 
 \begin{figure}[!h]
     \centering
     \includegraphics[width=\linewidth]{plots/convergence_plot_CFL.png}
-    \caption{Convergence results of the bend and bump cases with varying CFL numbers.}
+    \caption{Convergence results of the bend and bump cases with varying CFL numbers (no. of iterations $= 20000$).}
     \label{fig:convergence_cfl}
 \end{figure}
 
+For "reasonable" values of CFL number, \cref{fig:convergence_cfl} clearly shows
+that average error scales linearly. CFL $\propto \Delta t$, which proves that this basic solver is first order accurate in time.
+
+For very small CFL numbers (CFL $\lesssim 0.01$), this relationship becomes harder to verify using the
+same 20000 iterations. This is because it takes more iterations to converge, and 
+the solver starts requiring more than 20000 iterations to reach steady state.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\linewidth]{plots/convergence_plot_bump_sfac_dro.png}
+    \caption{Convergence results of the bump case with varying smoothing factors ($sfac$).}
+    \label{fig:convergence_smoothing}
+\end{figure}
+
+The effect of the smoothing factor ($sfac$) on the convergence of the solver on the convergence and stability is clear.
+Lower smoothing factors result in more oscillatory and slower convergence, but much lower average residuals.
+The relationship is non linear, and the effect of the smoothing factor is more pronounced at lower values. This is shown in \cref{fig:convergence_smoothing}.
+
+\subsection{Runtime of the solver}
 
 \begin{figure}[!h]
     \centering
@@ -130,7 +151,6 @@ Despite the same settings, the bump case seems to converge faster and with less 
     \label{fig:time_simulation_cfl}
 \end{figure}
 
-\subsection{Effects of varying smoothing factor}
 
 \begin{figure}[!h]
     \centering
@@ -139,7 +159,11 @@ Despite the same settings, the bump case seems to converge faster and with less 
     \label{fig:time_simulation_smoothing}
 \end{figure}
 
-\subsection{Effects of varying mesh size}
+
+It is obvious that both the smoothing factor ($sfac$) and the CFL number have no effect
+on the runtime of each iteration, as they are only used to "scale" the update of the solution.
+However, they do have a significant effect on the number of iterations required to reach steady state,
+and therefore the total runtime of the solver. This is shown in \hl{cite figure here!}
 
 \section{Conclusions}
 
