@@ -146,16 +146,17 @@ The relationship is non-linear (closer to logarithmic), and the effect of the sm
 \begin{figure}[!h]
     \centering
     \includegraphics[width=\linewidth]{plots/spacial_order_bump_residual.png}
-    \caption{Convergence results of the bump case with varying mesh sizes.}
+    \caption{Convergence results (bump case) with varying mesh sizes.}
     \label{fig:convergence_mesh}
 \end{figure}
 
 From \cref{fig:convergence_mesh} it is very easy to see that the solver is second order accurate in space.
 The average residuals (in \cref{fig:convergence_mesh}, $\rho$ is shown) scale $\propto 1/(ni)^2 \propto \Delta x^2$,
-where $x$ is the mesh size. \hl{talk about why not completely 2nd order}.
+where $x$ is the mesh size.
+The relationship is not exactly 2\textsuperscript{nd} order, as the mesh is not uniform, there are
+small boundary condition errors, and as the number of cells increases, any floating point errors become more and more significant.
 
-
-\begin{figure*}
+\begin{figure}[!h]
     \centering
     \begin{subfigure}[b]{0.48\textwidth}
         \centering
@@ -171,9 +172,19 @@ where $x$ is the mesh size. \hl{talk about why not completely 2nd order}.
     \end{subfigure}
     \caption{Density residual contours for the bump and bend cases.}
     \label{fig:density_residual_contours}
-\end{figure*}
+\end{figure}
 
-\begin{figure*}
+Looking at the density residual contours in \cref{fig:density_residual_contours},
+it is clear that the residuals are not uniformly distributed. In the bump case, they are largest in regions of high curvature (on the bump), where the mesh quality
+is less good and where the flow properties change more rapidly. This is expected as the solver is second order accurate in space.
+In the bend case, the residuals are largest on the walls, where the boundary conditions lie.
+
+Comparing this to the contours of the second spatial derivative of density in \cref{fig:density_second_derivative_contours},
+it is clear that the residuals are largest in regions where the second derivative is largest, which as
+the smoothing factor is proportional to the second derivative ($sfac \propto \nabla^2 \rho$), explains why the smoothing factor
+has such a large effect on the accuracy of the solver!
+
+\begin{figure}[!h]
     \centering
     \begin{subfigure}[b]{0.48\textwidth}
         \centering
@@ -189,17 +200,14 @@ where $x$ is the mesh size. \hl{talk about why not completely 2nd order}.
     \end{subfigure}
     \caption{Contours of the second spatial derivative of density for the bump and bend cases.}
     \label{fig:density_second_derivative_contours}
-\end{figure*}
+\end{figure}
 
-Looking at the density residual contours in \cref{fig:density_residual_contours},
-it is clear that the residuals are not uniformly distributed. In the bump case, they are largest in regions of high curvature (on the bump), where the mesh quality
-is less good and where the flow properties change more rapidly. This is expected as the solver is second order accurate in space.
-In the bend case, the residuals are largest on the walls, where the boundary conditions lie.
+The steady state "residual plateau" is therefore a consequence of the smoothing factor
+adding artificial viscosity to the system and fighting any gradients in the flow field.
 
-Comparing this to the contours of the second spatial derivative of density in \cref{fig:density_second_derivative_contours},
-it is clear that the residuals are largest in regions where the second derivative is largest, which as
-the smoothing factor is proportional to the second derivative ($sfac \propto \nabla^2 \rho$), explains why the smoothing factor
-has such a large effect on the accuracy of the solver.
+This is only really helpful for adding stability to the solver, reduce oscillations, and allowing
+the solver to converge faster as \cref{fig:convergence_smoothing} depicts.
+
 
 \subsection{Runtime of the solver}
 
@@ -229,13 +237,26 @@ has such a large effect on the accuracy of the solver.
 It is obvious that both the smoothing factor ($sfac$) and the CFL number have no effect
 on the runtime of each iteration, as they are only used to "scale" the update of the solution.
 However, they do have a significant effect on the number of iterations required to reach steady state,
-and therefore the total runtime of the solver. This is shown for $sfac$ in \cref{fig:convergence_smoothing}
-and the effect of CFL is similar.
+and therefore the total runtime of the solver. This is shown for CFL in \cref{fig:convergence_cfl}, where
+the solver starts needing more than 20000 iterations to converge as CFL decreases, and for $sfac$ in \cref{fig:convergence_smoothing},
+where lower values result in slower and more oscillatory convergence.
+
+Evidently, setting the CFL number or the smoothing factor to a number $\in ]-\infty,0]\cup[1,+\infty[$ makes the solver unstable and diverge completely.
 
 \Cref{fig:time_simulation_mesh} shows that the runtime of the solver scales with close to the cube of the mesh size.
 This makes sense, as the number of cells in the mesh (and therefore the number of calculations per iteration) scales with $ni \cdot nj \propto ni^2$,
-and the number of iterations required to reach steady state scales more or less linearly with $ni$.
+and the number of iterations required to reach steady state scales more or less linearly with $ni$, $sfac$, and CFL.
 
 \section{Conclusions}
+
+\begin{itemize}
+    \item The solver is first order accurate in time and second order accurate in space.
+    \item The solver is stable for CFL numbers and smoothing factors $\in ]0,1[$.
+    \item The solver is more stable and converges faster for the bump case than the bend case, despite using the same parameters.
+    \item The smoothing factor ($sfac$) has a large effect on the accuracy of the solver, as it fights all property changes.
+    \item The solver is more stable and converges faster for higher CFL numbers (by needing fewer iterations), but this increases the error linearly.
+    \item The solver is more stable and converges faster for higher smoothing factors (by needing fewer iterations), but the error is also higher.
+    \item The runtime is most sensitive to the mesh size, scaling with close to its cube.
+\end{itemize}
 
 \end{document}
