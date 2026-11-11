@@ -6,7 +6,7 @@
 \usepackage{xcolor, soul}
 \usepackage{changepage}  % allows temporary margin adjustments
 \usepackage{amsmath}
-\usepackage[font=footnotesize, textfont=it, justification=centering]{caption}
+\usepackage[font=footnotesize, justification=centering]{caption}
 \usepackage{subcaption}
 \usepackage{wrapfig}
 \usepackage{multirow}
@@ -25,7 +25,6 @@
 \usepackage[inline]{enumitem}
 \usepackage{overpic}
 \usepackage[normalem]{ulem}
-\captionsetup[sub]{textfont=it,font=footnotesize,justification=centering}
 \usetikzlibrary{intersections}
 \usepgfplotslibrary{fillbetween}
 
@@ -83,22 +82,31 @@
 % Discuss accuracy, CFL number, smoothing factor, mesh size,
 % stability, and runtime. Support the discussion with figures.
 
-\subsection{Effect of varying CFL number}
+\subsection{Effects of varying CFL number}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{plots/convergence_plot_bend_bump_CFL.png}
+    \includegraphics[width=\linewidth]{plots/convergence_plot_CFL.png}
     \caption{Convergence results of the bend and bump cases with varying CFL numbers.}
-    \label{fig:bend_convergence_cfl}
+    \label{fig:convergence_cfl}
 \end{figure}
+
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{plots/simulation_time_bend_bump_CFL.png}
     \caption{Time results of the bend and bump cases with varying CFL numbers.}
-    \label{fig:bend_simulation_cfl}
+    \label{fig:time_simulation_cfl}
 \end{figure}
 
+\subsection{Effects of varying smoothing factor}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{plots/simulation_time_bend_bump_sfac.png}
+    \caption{Time results of the bend and bump cases with varying smoothing factors ($sfac$).}
+    \label{fig:time_simulation_smoothing}
+\end{figure}
 
 \section{Conclusions}
 
