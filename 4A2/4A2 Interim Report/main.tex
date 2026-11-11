@@ -23,6 +23,7 @@
 \usepackage{cleveref}
 \usepackage{physics}
 \usepackage[inline]{enumitem}
+\usepackage{titlesec}
 \usepackage{overpic}
 \usepackage[normalem]{ulem}
 \usetikzlibrary{intersections}
@@ -30,8 +31,11 @@
 
 \geometry{margin=2cm}
 
-\setlength{\fboxsep}{0pt} % Padding between border and image
-\setlength{\fboxrule}{0.5pt} % Thickness of the border
+\setlist[itemize]{nosep, topsep=-0em}
+% \titlespacing*{\subsection}{0pt}{1.5ex plus 0.5ex minus 0.2ex}{0.5ex}
+
+% \setlength{\fboxsep}{0pt} % Padding between border and image
+% \setlength{\fboxrule}{0.5pt} % Thickness of the border
 
 \title{\textbf{4A2 CFD Interim Report}}
 \author{
@@ -46,37 +50,64 @@
 
 \section{Results: bump and bend cases}
 
+Both the bump and the bend cases were run with the same parameters:
+\begin{itemize}[noitemsep]
+    \item CFL number: 0.4
+    \item Smoothing factor: 0.3
+    \item Mesh size: $ni = 53, nj = 37$
+    \item Maximum number of iterations: 10000
+\end{itemize}
+The Mach number contours and the convergence plots for both cases are shown below.
+
 \subsection{Bump case}
 
-\begin{figure}[H]
+\begin{figure}[!h]
     \centering
     \includegraphics[width=\linewidth]{plots/contour_plots_bump_mach.png}
     \caption{Bump case Mach number results.}
     \label{fig:bump_mach}
 \end{figure}
 
+Due to the symmetric nature of both cases, it is clear that there are some accuracy errors present in the flow.
+In \Cref{fig:bump_mach}, while the highest Mach number is expected to be at the top of the bump, the Mach number countours are not symmetric about the centerline.
+Furthermore, the flow speeds on either side are not equal, with the flow fore of the bump quicker than the flow aft. This is not physical if we 
+consider inviscid flow, as the basic Euler solver uses.
+
+The solution in \Cref{fig:bend_mach} also does not show the expected symmetric flow field,
+and also shows a supersonic region in the exit inside bend. This region does not terminate abruptly in a shockwave,
+which is expected due to the nature of the solver, but is also unphysical.
+
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{plots/convergence_plot_bump.png}
+    \includegraphics[width=0.8\linewidth]{plots/convergence_plot_bump.png}
     \caption{Bump case convergence results.}
     \label{fig:bump_convergence}
 \end{figure}
 
+
 \subsection{Bend case}
 
-\begin{figure}[H]
+\begin{figure}[!h]
     \centering
     \includegraphics[width=\linewidth]{plots/contour_plots_bend_mach.png}
     \caption{Bend case Mach number results.}
     \label{fig:bend_mach}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[!h]
     \centering
     \includegraphics[width=\linewidth]{plots/convergence_plot_bend.png}
     \caption{Bend case convergence results.}
     \label{fig:bend_convergence}
 \end{figure}
+
+\Cref{fig:bump_convergence} and \Cref{fig:bend_convergence} show that, in both cases,
+the residuals decrease rapidly in the first 4000 iterations, before plateauing at average values of around $10^{-3}$.
+
+None of the residuals vanish, there is a "residual plateau" steady state error, which is due to different factors and explained in \hl{cite section here}.
+
+Despite the same settings, the bump case seems to converge faster and with less residual oscillations than the bend case, implying higher stability.
 
 \section{Accuracy and parameter effects}
 % Discuss accuracy, CFL number, smoothing factor, mesh size,
@@ -84,7 +115,7 @@
 
 \subsection{Effects of varying CFL number}
 
-\begin{figure}[H]
+\begin{figure}[!h]
     \centering
     \includegraphics[width=\linewidth]{plots/convergence_plot_CFL.png}
     \caption{Convergence results of the bend and bump cases with varying CFL numbers.}
@@ -92,7 +123,7 @@
 \end{figure}
 
 
-\begin{figure}[H]
+\begin{figure}[!h]
     \centering
     \includegraphics[width=\linewidth]{plots/simulation_time_bend_bump_CFL.png}
     \caption{Time results of the bend and bump cases with varying CFL numbers.}
@@ -101,12 +132,14 @@
 
 \subsection{Effects of varying smoothing factor}
 
-\begin{figure}[H]
+\begin{figure}[!h]
     \centering
     \includegraphics[width=\linewidth]{plots/simulation_time_bend_bump_sfac.png}
     \caption{Time results of the bend and bump cases with varying smoothing factors ($sfac$).}
     \label{fig:time_simulation_smoothing}
 \end{figure}
+
+\subsection{Effects of varying mesh size}
 
 \section{Conclusions}
 
