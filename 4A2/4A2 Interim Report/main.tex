@@ -72,10 +72,11 @@ The Mach number contours and the convergence plots for both cases are shown belo
     \label{fig:bump_mach}
 \end{figure}
 
-Due to the symmetric nature of both cases, it is clear that there are some accuracy errors present in the flow.
-In \cref{fig:bump_mach}, while the highest Mach number is expected to be at the top of the bump, the Mach number contours are not symmetric about the centerline.
-The flow speeds on either side are also not equal, with the flow fore of the bump quicker than aft. This is not physical if we 
-consider inviscid flow, as the basic Euler solver uses.
+Due to the symmetric nature of both cases, it is clear that there are accuracy errors present in the flow.
+In \cref{fig:bump_mach}, while the highest Mach number is expected to be at the top of the bump, the Mach number contours are not symmetric about the centerline, indicating the presence
+of drag. This is not physical in inviscid flows that this basic Euler solver uses. Furthermore,
+flow being inviscid and with no heat input, it is supposed to be isentropic
+with no stagnation pressure or stagnation temperature loses. Looking at \cref{fig:flow_ratios} this is not the case.
 
 \begin{figure}[H]
     \centering
@@ -100,7 +101,7 @@ the residuals decrease rapidly in the first 4000 iterations, before plateauing a
 
 The solution in \cref{fig:bend_mach} also does not show the expected symmetric flow field,
 and also shows a supersonic region in the exit inside bend. This region does not terminate abruptly in a shockwave,
-which is expected due to the nature of the solver, but is also unphysical.
+which is expected due to the isentropic nature of the solver, but is also unphysical.
 
 \begin{figure}[!h]
     \centering
@@ -109,7 +110,7 @@ which is expected due to the nature of the solver, but is also unphysical.
     \label{fig:bend_convergence}
 \end{figure}
 
-None of the residuals vanish, there is a "residual plateau" steady state error, which is due to different factors and explained in \cref{sec:accuracy}.
+None of the residuals vanish, there is a "residual plateau" steady state error, which is explained in \cref{sec:accuracy}.
 
 Despite the same settings, the bump case converges faster and with less residual oscillations than the bend case, implying higher stability.
 This shows that the solver is substantially sensitive to the geometry of the problem. For the corner case, for example, the solver was never stable and refused to converge, even with very high smoothing factors and very low CFL numbers.
@@ -119,6 +120,12 @@ This shows that the solver is substantially sensitive to the geometry of the pro
 \subsection{Accuracy and stability}
 \label{sec:accuracy}
 
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\linewidth]{plots/flow_ratios_bend_bump.png}
+    \caption{Property ratios for the bend (dotted) and bump (solid).}
+    \label{fig:flow_ratios}
+\end{figure}
 
 \begin{figure}[!h]
     \centering
@@ -140,6 +147,10 @@ the solver starts requiring more than 20000 iterations to reach steady state.
     \caption{Convergence results with varying smoothing factors ($sfac$).}
     \label{fig:convergence_smoothing}
 \end{figure}
+
+Evidently, setting the CFL number or the smoothing factor to a number $\in ]-\infty,0]\cup[1,+\infty[$ makes the solver unstable and diverge completely.
+The solver uses a central-differencing scheme in space and a forward Euler scheme in time, which is inherently unstable and requires artificial viscosity to be added to the system to stabilize it.
+This is done by introducing a non-zero smoothing factor ($sfac$), which is proportional to the second spatial derivative of the flow properties.
 
 The effect of the smoothing factor ($sfac$) on the convergence of the solver on the convergence and stability is clear.
 Lower smoothing factors result in more oscillatory and slower convergence, but much lower average residuals.
@@ -239,11 +250,9 @@ the solver to converge faster as \cref{fig:convergence_smoothing} depicts.
 It is obvious that both the smoothing factor ($sfac$) and the CFL number have no effect
 on the runtime of each iteration, as they are only used to "scale" the update of the solution.
 However, they do have a significant effect on the number of iterations required to reach steady state,
-and therefore the total runtime of the solver. This is shown for CFL in \cref{fig:convergence_cfl}, where
-the solver starts needing more than 20000 iterations to converge as CFL decreases, and for $sfac$ in \cref{fig:convergence_smoothing},
-where lower values result in slower and more oscillatory convergence.
-
-Evidently, setting the CFL number or the smoothing factor to a number $\in ]-\infty,0]\cup[1,+\infty[$ makes the solver unstable and diverge completely.
+and therefore the total runtime of the solver. This is shown for CFL in \cref{fig:convergence_cfl}, where more iterations are needed
+ to converge as CFL decreases. The relationship is approximately linear: it takes $\approx$ double the iterations when CFL is halved. This
+ makes sense as CFL $\propto \Delta t$ so it takes more iterations for information to travel across the domain. For $sfac$ in \cref{fig:convergence_smoothing}, lower values result in slower and more oscillatory convergence.
 
 \Cref{fig:time_simulation_mesh} shows that the runtime of the solver scales with close to the cube of the mesh size.
 This makes sense, as the number of cells in the mesh (and therefore the number of calculations per iteration) scales with $ni \cdot nj \propto ni^2$,
@@ -253,8 +262,9 @@ and the number of iterations required to reach steady state scales more or less 
 
 \begin{itemize}
     \item The solver is first order accurate in time and second order accurate in space.
-    \item The solver is stable for CFL numbers and smoothing factors $\in ]0,1[$.
-    \item The solver is more stable and converges faster for the bump case than the bend case, despite using the same parameters.
+    \item The solver using a central-differencing and forward windup in time,
+    it is inherently unstable and requires artificial viscosity by introducing non-zero $sfac$. It is stable for CFL numbers and smoothing factors $\in ]0,1[$.
+    \item The stability, convergence, and accuracy of the solver is highly sensitive to the geometry of the problem.
     \item The smoothing factor ($sfac$) has a large effect on the accuracy of the solver, as it fights all property changes.
     \item The solver is more stable and converges faster for higher CFL numbers (by needing fewer iterations), but this increases the error linearly.
     \item The solver is more stable and converges faster for higher smoothing factors (by needing fewer iterations), but the error is also higher.
