@@ -1,0 +1,355 @@
+% =====================================================================
+%  Interim presentation – MEng project (Cambridge)
+%  Compile twice (progress bar needs the total frame count):
+%      pdflatex interim_presentation.tex
+%  Placeholders are drawn as dashed boxes: \placeholder{w}{h}{label}
+%  Swap them for \includegraphics[width=...]{your_figure}
+% =====================================================================
+\documentclass[aspectratio=169,11pt]{beamer}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[scaled=.92]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{tikz,booktabs,amsmath}
+\usetikzlibrary{calc,positioning,arrows.meta}
+
+% ---------- palette ----------
+\definecolor{navy}{HTML}{0B1F3A}
+\definecolor{teal}{HTML}{00998F}
+\definecolor{amber}{HTML}{F2A541}
+\definecolor{coral}{HTML}{E4572E}
+\definecolor{mist}{HTML}{EEF2F6}
+\definecolor{accent}{HTML}{00998F}
+
+% ---------- beamer theme ----------
+\setbeamertemplate{navigation symbols}{}
+\setbeamercolor{normal text}{fg=navy,bg=white}
+\setbeamercolor{structure}{fg=teal}
+\setbeamercolor{block title}{fg=white,bg=navy}
+\setbeamercolor{block body}{fg=navy,bg=mist}
+\setbeamercolor{alerted text}{fg=coral}
+\setbeamerfont{block title}{series=\bfseries,size=\small}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\setbeamertemplate{itemize item}{\color{teal}\scriptsize$\blacksquare$}
+\setbeamertemplate{itemize subitem}{\color{teal}\tiny$\blacksquare$}
+\setbeamertemplate{enumerate item}{\color{teal}\bfseries\insertenumlabel.}
+\setbeamerfont{itemize/enumerate body}{size=\normalsize}
+\setbeamerfont{itemize/enumerate subbody}{size=\small}
+\setbeamerfont{caption}{size=\scriptsize}
+\setbeamertemplate{caption}{\centering\insertcaption\par}
+\setbeamersize{text margin left=1.1cm,text margin right=1.1cm}
+
+% ---------- section names (edit here, keep 5 or adjust the loop) ----------
+\newcommand{\navitems}{1/Motivation,2/Background,3/Methods,4/Initial results,5/Next steps}
+
+% ---------- headline: section tracker ----------
+\tikzset{
+  navon/.style ={fill=teal,text=white,rounded corners=6pt,minimum width=2.55cm,minimum height=.5cm,font=\scriptsize\bfseries},
+  navoff/.style={fill=mist,text=navy!55,rounded corners=6pt,minimum width=2.55cm,minimum height=.5cm,font=\scriptsize}
+}
+\setbeamertemplate{headline}{%
+  \vbox to 1.05cm{\vfill
+  \hspace*{1.1cm}\begin{tikzpicture}
+    \foreach \n/\t in \navitems {%
+      \ifnum\n=\value{section}\def\st{navon}\else\def\st{navoff}\fi
+      \node[\st,anchor=west] at ({(\n-1)*2.7cm},0) {\n\ \t};}
+  \end{tikzpicture}\vfill}}
+
+% ---------- footline: moving progress bar ----------
+% \setbeamertemplate{footline}{%
+%   \begin{tikzpicture}
+%     \pgfmathsetmacro{\prog}{\insertframenumber/\inserttotalframenumber*\paperwidth}
+%     \fill[mist] (0,0) rectangle (\paperwidth,.09);
+%     \fill[teal] (0,0) rectangle (\prog pt,.09) ;
+%     \fill[amber] (\prog pt,.045) circle (.09);
+%   \end{tikzpicture}\par
+%   \vspace{-1pt}
+%   \hbox to \paperwidth{\hspace*{1.1cm}\color{navy!60}\scriptsize Noah Fontaine \textbar\ Interim presentation \textbar\ MEng project
+%     \hfill \bfseries\insertframenumber\hspace*{1.1cm}}\vskip4pt}
+
+% footline: author | title ..... page, full-width progress bar (same as mock deck)
+\setbeamertemplate{footline}{%
+  \leavevmode
+  \vbox{%
+    \hbox to \paperwidth{%
+      \hspace{1.6em}\usebeamercolor[fg]{footline}\usebeamerfont{footline}%
+      \color{navy!60}\scriptsize\insertshortauthor\ \ \textbar\ \ \insertshorttitle
+      \hfill \insertframenumber\hspace{1.6em}}%
+    \vskip 1.2ex
+    \hbox{\color{mist}\rule{\paperwidth}{3pt}\hspace{-\paperwidth}%
+          \color{accent}\rule{\dimexpr\paperwidth*\insertframenumber/\inserttotalframenumber\relax}{3pt}}}}
+
+
+% ---------- frame title ----------
+\setbeamertemplate{frametitle}{%
+  \vskip-.15cm
+  {\Large\bfseries\color{navy}\insertframetitle\par}
+  \vskip2pt\begin{tikzpicture}\fill[teal] (0,0) rectangle (1.4,.05);\end{tikzpicture}\vskip2pt}
+
+% ---------- helpers ----------
+\newcommand{\chip}[1]{\tikz[baseline=(t.base)]\node[fill=teal!15,text=teal,rounded corners=2pt,inner sep=3pt](t){\tiny\bfseries #1};}
+\newcommand{\placeholder}[3]{\begin{tikzpicture}\node[draw=teal!70,dashed,rounded corners=3pt,fill=teal!5,text=teal!60!black,minimum width=#1,minimum height=#2,align=center,font=\small]{#3};\end{tikzpicture}}
+\newcommand{\card}[3]{% colour, title, body
+  \begin{tikzpicture}\node[draw=none,fill=mist,rounded corners=4pt,text width=\linewidth-1.2cm,inner sep=7pt,
+     path picture={\fill[#1] (path picture bounding box.south west) rectangle ([xshift=4pt]path picture bounding box.north west);}]
+  {\small\bfseries\color{#1}#2\\[2pt]\normalfont\color{navy}#3};\end{tikzpicture}}
+
+% ---------- section divider ----------
+\AtBeginSection[]{%
+  \begin{frame}[plain]
+    \begin{tikzpicture}[remember picture,overlay]
+      \fill[navy] (current page.south west) rectangle (current page.north east);
+      \fill[teal] ([xshift=1.5cm,yshift=-.3cm]current page.west) rectangle +(2.2,.06);
+      \node[anchor=south west,text=teal,font=\fontsize{60}{60}\selectfont\bfseries] at ([xshift=1.4cm,yshift=.1cm]current page.west) {\thesection};
+      \node[anchor=north west,text=white,font=\Huge\bfseries] at ([xshift=1.5cm,yshift=-.55cm]current page.west) {\insertsectionhead};
+    \end{tikzpicture}
+  \end{frame}}
+
+% ---------- title info ----------
+\title{Quantifying shock and separation unsteadiness}
+\subtitle{in a transonic intake lip under crosswind}
+\author{Noah Fontaine}
+\institute{Department of Engineering, University of Cambridge}
+\date{Interim presentation \textbar\ November 2026}
+
+\begin{document}
+
+% ================= TITLE =================
+\begin{frame}[plain]
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[navy] (current page.south west) rectangle (current page.north east);
+    \fill[teal] ([xshift=1.2cm,yshift=-.6cm]current page.west) rectangle +(.08,3.4);
+    \node[anchor=south west,text=teal,font=\small\bfseries] at ([xshift=1.5cm,yshift=1.7cm]current page.west) {MEng PROJECT \textbullet\ INTERIM PRESENTATION};
+    \node[anchor=north west,text=white,align=left,font=\fontsize{27}{31}\selectfont\bfseries] at ([xshift=1.5cm,yshift=1.55cm]current page.west) {Quantifying shock and\\separation unsteadiness};
+    \node[anchor=north west,text=white!75,font=\large] at ([xshift=1.5cm,yshift=-.95cm]current page.west) {in a transonic intake lip under crosswind};
+    \node[anchor=south west,text=white,align=left,font=\small] at ([xshift=1.5cm,yshift=.5cm]current page.south west)
+      {\bfseries Noah Fontaine\\[1pt]\normalfont\color{white!70}Department of Engineering, University of Cambridge\\Supervisor: \textcolor{amber}{[Supervisor name]} \textbar\ November 2026};
+  \end{tikzpicture}
+\end{frame}
+
+% ================= OUTLINE =================
+\begin{frame}{Outline}
+  \begin{columns}[T]
+    \column{.55\textwidth}
+    \begin{enumerate}\setlength\itemsep{.55em}
+      \item \textbf{Motivation} --- why crosswind, why unsteadiness
+      \item \textbf{Background} --- SBLI physics, the rig, prior work
+      \item \textbf{Methods} --- 3 lip profiles, diagnostics, analysis
+      \item \textbf{Initial results} --- first look at the data
+      \item \textbf{Next steps} --- plan to the final report
+    \end{enumerate}
+    \column{.42\textwidth}
+    \card{teal}{Project in one line}{Characterise how the shock-induced separation unsteadiness on an intake lip changes with \textbf{lip thickness}.}
+  \end{columns}
+\end{frame}
+
+% ================= 1 MOTIVATION =================
+\section{Motivation}
+
+\begin{frame}{Why do short, slim nacelles care about crosswind?}
+  \begin{columns}[T]
+    \column{.52\textwidth}
+    \begin{itemize}\setlength\itemsep{.45em}
+      \item Low-FPR, large-fan engines need \textbf{shorter, thinner intakes} for lower drag and weight
+      \item In strong crosswind the windward lip over-accelerates the flow $\rightarrow$ local supersonic region ended by a \textbf{shock}
+      \item Shock--boundary-layer interaction (SBLI) can \alert{separate} the boundary layer $\rightarrow$ fan-plane distortion
+      \item Thin lips = high curvature = worst case
+    \end{itemize}
+    \column{.45\textwidth}\centering
+    \placeholder{5.6cm}{4.6cm}{Fig.: crosswind schematic\\(thesis Fig.\ 1.1 / 2.15)}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Aims and research questions}
+  \begin{columns}[T]
+    \column{.48\textwidth}
+    \card{teal}{Aim}{Characterise and quantify the unsteadiness of the shock and separation on the crosswind intake lip.}\\[6pt]
+    \card{amber}{Comparison}{Baseline vs.\ \textbf{thinner} vs.\ \textbf{thicker} lip profile.}
+    \column{.48\textwidth}
+    \textbf{Research questions}
+    \begin{enumerate}\setlength\itemsep{.4em}
+      \item Where in the $(M_{\mathrm{entry}},\,\mathrm{MFS})$ space does unsteadiness occur?
+      \item What are its frequency, amplitude and structure?
+      \item How do these change with lip thickness?
+      \item \textcolor{amber}{[Add / refine]}
+    \end{enumerate}
+  \end{columns}
+\end{frame}
+
+% ================= 2 BACKGROUND =================
+\section{Background}
+
+\begin{frame}{Transonic SBLI on a curved lip \hfill \chip{BACKGROUND}}
+  \begin{columns}[T]
+    \column{.5\textwidth}
+    \begin{itemize}\setlength\itemsep{.4em}
+      \item Flat-plate separation onset at shock Mach number $\approx 1.30$--$1.35$, roughly independent of shape factor $H$
+      \item Interaction length $L^*/\delta^* = 70\,(H_i-1)$
+      \item Curvature effects on onset: \textbf{disputed} in literature
+      \item Separation bubbles can reduce shock drag but raise buffet risk
+    \end{itemize}
+    \column{.47\textwidth}\centering
+    \placeholder{5.6cm}{4.4cm}{Fig.: attached vs.\ separated\\transonic SBLI}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{The CUED crosswind rig \hfill \chip{BACKGROUND}}
+  \begin{columns}[T]
+    \column{.55\textwidth}\centering
+    \placeholder{6.6cm}{4.4cm}{Fig.: rig schematic with\\red / green / blue flow paths}
+    \column{.42\textwidth}
+    \begin{itemize}\setlength\itemsep{.4em}
+      \item Quasi-2D, blow-down tunnel, full optical access
+      \item $Re \approx 1\times10^{6}$, near-engine
+      \item \textbf{Mass flow split} (MFS) $\sim$ engine power
+      \item \textbf{Entry Mach} $M_{\mathrm{entry}}$ $\sim$ crosswind and power
+      \item Matched 25 kt crosswind at $M_{\mathrm{entry}}=0.155$, MFS $=0.75$
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{What the previous work found \hfill \chip{BACKGROUND}}
+  \begin{columns}[T]
+    \column{.31\textwidth}\card{teal}{Separation onset}{Shock-induced separation only at a peak $M_{is}=1.44$ -- above flat-plate limit.}
+    \column{.31\textwidth}\card{amber}{Unsteadiness}{Bubble forms, sheds, reattaches at $\sim$600\,Hz near critical $M_{\mathrm{entry}}\approx0.1575$.}
+    \column{.31\textwidth}\card{coral}{Downstream effect}{LDV at the throat: intermittent reverse flow near the wall.}
+  \end{columns}
+  \vspace{.4cm}
+  \begin{block}{The gap}
+    Frequency was \emph{estimated by eye}, at one condition, on one lip. No quantification, no map, no geometry dependence.
+  \end{block}
+\end{frame}
+
+% ================= 3 METHODS =================
+\section{Methods}
+
+\begin{frame}{Three lip profiles \hfill \chip{METHOD}}
+  \centering
+  \begin{columns}[T]
+    \column{.3\textwidth}\centering\placeholder{3.7cm}{2.6cm}{Thin lip}\\[3pt]\small\bfseries Thinner
+    \column{.3\textwidth}\centering\placeholder{3.7cm}{2.6cm}{Baseline}\\[3pt]\small\bfseries Baseline
+    \column{.3\textwidth}\centering\placeholder{3.7cm}{2.6cm}{Thick lip}\\[3pt]\small\bfseries Thicker
+  \end{columns}
+  \vspace{.3cm}
+  {\small
+  \begin{tabular}{@{}lccc@{}}\toprule
+     & Thinner & Baseline & Thicker\\\midrule
+    Throat thickness $D$ [mm] & -- & -- & --\\
+    Contraction ratio & -- & -- & --\\
+    Highlight radius [mm] & -- & -- & --\\\bottomrule
+  \end{tabular}}
+\end{frame}
+
+\begin{frame}{Diagnostics and analysis pipeline \hfill \chip{METHOD}}
+  \begin{columns}[T]
+    \column{.4\textwidth}
+    \textbf{Measurements}
+    \begin{itemize}\setlength\itemsep{.3em}
+      \item High-speed shadowgraph, 50\,kHz
+      \item Surface static pressures
+      \item LDV at the throat
+      \item Oil flow
+    \end{itemize}
+    \column{.56\textwidth}
+    \textbf{Analysis}\vspace{2pt}\\
+    \begin{tikzpicture}[node distance=.35cm,
+        s/.style={draw=none,fill=mist,rounded corners=3pt,minimum width=5.1cm,minimum height=.62cm,font=\scriptsize,text=navy}]
+      \node[s,fill=teal,text=white](a){\bfseries Pixel statistics (mean, SD, kurtosis)};
+      \node[s,below=of a](b){Shock tracking: $x_s(t)$, $\sigma_{x_s}$, PDF};
+      \node[s,below=of b](c){$x$--$t$ diagrams, Welch PSD, Strouhal number};
+      \node[s,below=of c](d){Intermittency $\gamma(x)$, bubble state, dwell times};
+      \node[s,below=of d](e){POD / DMD modes};
+      \foreach \i/\j in {a/b,b/c,c/d,d/e}{\draw[-{Latex[length=1.5mm]},teal] (\i) -- (\j);}
+    \end{tikzpicture}
+  \end{columns}
+\end{frame}
+
+% ================= 4 INITIAL RESULTS =================
+\section{Initial results}
+
+\begin{frame}{Where is the unsteadiness? \hfill \chip{RESULT}}
+  \begin{columns}[T]
+    \column{.5\textwidth}\centering
+    \placeholder{5.6cm}{3.6cm}{SD of pixel intensity\\(one lip, near-critical)}
+    \column{.5\textwidth}\centering
+    \placeholder{5.6cm}{3.6cm}{Unsteadiness index heatmap\\$M_{\mathrm{entry}}$ vs.\ MFS}
+  \end{columns}
+  \vspace{.2cm}
+  \begin{block}{Takeaway}\small [One sentence: where unsteadiness lives and how large the region is.]\end{block}
+\end{frame}
+
+\begin{frame}{Shock motion in time \hfill \chip{RESULT}}
+  \begin{columns}[T]
+    \column{.5\textwidth}\centering
+    \placeholder{5.6cm}{3.6cm}{$x$--$t$ diagram\\(about 20\,ms window)}
+    \column{.5\textwidth}\centering
+    \placeholder{5.6cm}{3.6cm}{PSD of $x_s(t)$\\with peak and $St$}
+  \end{columns}
+  \vspace{.2cm}
+  \begin{block}{Takeaway}\small [Dominant frequency, is it narrow or broadband, how many cycles recorded.]\end{block}
+\end{frame}
+
+\begin{frame}{Early lip-profile comparison \hfill \chip{RESULT}}
+  \centering
+  {\small
+  \begin{tabular}{@{}lccc@{}}\toprule
+     & Thinner & Baseline & Thicker\\\midrule
+    Critical $M_{\mathrm{entry}}$ & -- & 0.1575 & --\\
+    Peak $M_{is}$ at onset & -- & 1.44 & --\\
+    Dominant $f$ [Hz] & -- & $\sim$600 & --\\
+    $St$ & -- & -- & --\\
+    $\sigma_{x_s}/D$ & -- & -- & --\\
+    Footprint $\Delta x_{\mathrm{foot}}/D$ & -- & -- & --\\\bottomrule
+  \end{tabular}}\\[6pt]
+  {\scriptsize\color{navy!60}Baseline values taken from the earlier thesis; fill in the rest as data are processed.}
+\end{frame}
+
+% ================= 5 NEXT STEPS =================
+\section{Next steps}
+
+\begin{frame}{Plan to the final report}
+  \begin{tikzpicture}[x=1.3cm,y=-.62cm]
+    \foreach \i/\m in {0/Nov,1/Dec,2/Jan,3/Feb,4/Mar,5/Apr,6/May}{
+      \node[font=\scriptsize\bfseries,text=navy!60] at (\i+4.3,0) {\m};}
+    \foreach \r/\t/\s/\e/\c in {
+      1/Process baseline data/0/1.3/teal,
+      2/Thin lip campaign/1/2.8/amber,
+      3/Thick lip campaign/2.5/4/amber,
+      4/Spectra and modal analysis/1.5/4.5/teal,
+      5/Cross-lip comparison/4/5.3/coral,
+      6/Report writing/4.5/7/navy}{
+      \node[anchor=east,font=\scriptsize] at (3.7,\r) {\t};
+      \fill[\c,rounded corners=2pt] (\s+3.9,\r-.3) rectangle (\e+3.9,\r+.3);}
+    \draw[amber,thick,dashed] (3.9,.5) -- (3.9,6.6);
+    \node[font=\tiny,text=amber!80!black,anchor=south] at (3.9,.4) {now};
+  \end{tikzpicture}
+  \vspace{.1cm}\par{\scriptsize\color{navy!60}Dates are placeholders --- edit bars in the TikZ loop.}
+\end{frame}
+
+\begin{frame}{Risks and open questions}
+  \begin{columns}[T]
+    \column{.48\textwidth}
+    \card{coral}{Risks}{\begin{itemize}\setlength\itemsep{1pt}\item Rig time and lip manufacture\item Frame-rate / resolution limits\item Convergence of statistics\end{itemize}}
+    \column{.48\textwidth}
+    \card{teal}{Open questions}{\begin{itemize}\setlength\itemsep{1pt}\item Does Reynolds number matter?\item Do pressure transducers fit the budget?\item Which $L$ for $St$?\end{itemize}}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Summary}
+  \begin{enumerate}\setlength\itemsep{.6em}
+    \item Thin lips make crosswind SBLI separation a real design risk
+    \item The rig has shown an unsteady separation bubble ($\sim$600\,Hz), but not quantified it
+    \item I will map and quantify it for \textbf{three lip profiles}
+    \item \textcolor{amber}{[Add your headline early result here]}
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}[plain]
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[navy] (current page.south west) rectangle (current page.north east);
+    \node[text=white,font=\fontsize{34}{36}\selectfont\bfseries] at (current page.center) {Questions?};
+    \fill[teal] ([xshift=-1.1cm,yshift=-.9cm]current page.center) rectangle +(2.2,.06);
+  \end{tikzpicture}
+\end{frame}
+
+\end{document}
