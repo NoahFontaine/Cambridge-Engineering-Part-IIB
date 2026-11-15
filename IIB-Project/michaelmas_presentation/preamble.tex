@@ -1,0 +1,96 @@
+% =====================================================================
+%  Shared presentation preamble
+% =====================================================================
+\documentclass[aspectratio=169,11pt]{beamer}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[scaled=.92]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{tikz,booktabs,amsmath}
+\usetikzlibrary{calc,positioning,arrows.meta}
+
+% ---------- palette ----------
+\definecolor{navy}{HTML}{0B1F3A}
+\definecolor{teal}{HTML}{00998F}
+\definecolor{amber}{HTML}{F2A541}
+\definecolor{coral}{HTML}{E4572E}
+\definecolor{mist}{HTML}{EEF2F6}
+\definecolor{accent}{HTML}{00998F}
+
+% ---------- beamer theme ----------
+\setbeamertemplate{navigation symbols}{}
+\setbeamercolor{normal text}{fg=navy,bg=white}
+\setbeamercolor{structure}{fg=teal}
+\setbeamercolor{block title}{fg=white,bg=navy}
+\setbeamercolor{block body}{fg=navy,bg=mist}
+\setbeamercolor{alerted text}{fg=coral}
+\setbeamerfont{block title}{series=\bfseries,size=\small}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\setbeamertemplate{itemize item}{\color{teal}\scriptsize$\blacksquare$}
+\setbeamertemplate{itemize subitem}{\color{teal}\tiny$\blacksquare$}
+\setbeamertemplate{enumerate item}{\color{teal}\bfseries\insertenumlabel.}
+\setbeamerfont{itemize/enumerate body}{size=\normalsize}
+\setbeamerfont{itemize/enumerate subbody}{size=\small}
+\setbeamerfont{caption}{size=\scriptsize}
+\setbeamertemplate{caption}{\centering\insertcaption\par}
+\setbeamersize{text margin left=1.1cm,text margin right=1.1cm}
+
+% ---------- section names (edit here, keep 5 or adjust the loop) ----------
+\newcommand{\navitems}{1/Motivation,2/Background,3/Methods,4/Initial results,5/Next steps}
+
+% ---------- headline: section tracker ----------
+\tikzset{
+  navon/.style ={fill=teal,text=white,rounded corners=6pt,minimum width=2.55cm,minimum height=.5cm,font=\scriptsize\bfseries},
+  navoff/.style={fill=mist,text=navy!55,rounded corners=6pt,minimum width=2.55cm,minimum height=.5cm,font=\scriptsize}
+}
+\setbeamertemplate{headline}{%
+  \vbox to 1.05cm{\vfill
+  \hspace*{1.1cm}\begin{tikzpicture}
+    \foreach \n/\t in \navitems {%
+      \ifnum\n=\value{section}\def\st{navon}\else\def\st{navoff}\fi
+      \node[\st,anchor=west] at ({(\n-1)*2.7cm},0) {\n\ \t};}
+  \end{tikzpicture}\vfill}}
+
+% ---------- footline: moving progress bar ----------
+\setbeamertemplate{footline}{%
+  \leavevmode
+  \vbox{%
+    \hbox to \paperwidth{%
+      \hspace{1.6em}\usebeamercolor[fg]{footline}\usebeamerfont{footline}%
+      \insertshortauthor\ \ \textbar\ \ \insertshorttitle
+      \hfill \insertframenumber\hspace{1.6em}}%
+    \vskip 1.2ex
+    \hbox{\color{mist}\rule{\paperwidth}{3pt}\hspace{-\paperwidth}%
+          \color{accent}\rule{\dimexpr\paperwidth*\insertframenumber/\inserttotalframenumber\relax}{3pt}}}}
+
+% ---------- frame title ----------
+\setbeamertemplate{frametitle}{%
+  \vskip-.15cm
+  {\Large\bfseries\color{navy}\insertframetitle\par}
+  \vskip2pt\begin{tikzpicture}\fill[teal] (0,0) rectangle (1.4,.05);\end{tikzpicture}\vskip2pt}
+
+% ---------- helpers ----------
+\newcommand{\chip}[1]{\tikz[baseline=(t.base)]\node[fill=teal!15,text=teal,rounded corners=2pt,inner sep=3pt](t){\tiny\bfseries #1};}
+\newcommand{\placeholder}[3]{\begin{tikzpicture}\node[draw=teal!70,dashed,rounded corners=3pt,fill=teal!5,text=teal!60!black,minimum width=#1,minimum height=#2,align=center,font=\small]{#3};\end{tikzpicture}}
+\newcommand{\card}[3]{% colour, title, body
+  \begin{tikzpicture}\node[draw=none,fill=mist,rounded corners=4pt,text width=\linewidth-1.2cm,inner sep=7pt,
+     path picture={\fill[#1] (path picture bounding box.south west) rectangle ([xshift=4pt]path picture bounding box.north west);}]
+  {\small\bfseries\color{#1}#2\\[2pt]\normalfont\color{navy}#3};\end{tikzpicture}}
+
+% ---------- section divider ----------
+\AtBeginSection[]{%
+  \begin{frame}[plain]
+    \begin{tikzpicture}[remember picture,overlay]
+      \fill[navy] (current page.south west) rectangle (current page.north east);
+      \fill[teal] ([xshift=1.5cm,yshift=-.3cm]current page.west) rectangle +(2.2,.06);
+      \node[anchor=south west,text=teal,font=\fontsize{60}{60}\selectfont\bfseries] at ([xshift=1.4cm,yshift=.1cm]current page.west) {\thesection};
+      \node[anchor=north west,text=white,font=\Huge\bfseries] at ([xshift=1.5cm,yshift=-.55cm]current page.west) {\insertsectionhead};
+    \end{tikzpicture}
+  \end{frame}}
+
+% ---------- title info ----------
+\title{Quantifying shock and separation unsteadiness}
+\subtitle{in a transonic intake lip under crosswind}
+\author{Noah Fontaine}
+\institute{Department of Engineering, University of Cambridge}
+\date{Interim presentation \textbar\ November 2026}
