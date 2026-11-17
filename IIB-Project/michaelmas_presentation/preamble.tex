@@ -67,18 +67,17 @@
 
 % ---------- frame title ----------
 \setbeamertemplate{frametitle}{%
-  \vskip.12cm
-  \begin{beamercolorbox}[wd=\textwidth,sep=0pt,center]{frametitle}
-    {\large\bfseries\color{navy}\insertframetitle\par}
-  \end{beamercolorbox}
-  \vskip-50pt
-  \begin{center}
-    \vskip-10pt
-    {\makebox[\textwidth][c]{\color{teal!60}\rule{1.08\textwidth}{1pt}}\par}
-    \vskip-1.5pt
-    % {\color{sky!35}\rule{1.1cm}{1.2pt}\par}
-  \end{center}
-  \vskip.05cm}
+  \nointerlineskip
+  \vbox to 1.05cm{%
+    \vfil
+    \hbox to \textwidth{\hfil{\large\bfseries\color{navy}\insertframetitle}\hfil}%
+    \vfil
+  }%
+  \nointerlineskip
+  \hbox to \textwidth{\hfil
+    \makebox[\textwidth][c]{\color{teal!60}\rule{1.08\textwidth}{1pt}}%
+    \hfil}%
+  \vskip.12cm}
 
 % ---------- helpers ----------
 \newcommand{\chip}[1]{\tikz[baseline=(t.base)]\node[fill=sky!35,text=teal,inner sep=3pt](t){\tiny\bfseries #1};}
