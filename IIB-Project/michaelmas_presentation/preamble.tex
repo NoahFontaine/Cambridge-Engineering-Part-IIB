@@ -12,20 +12,21 @@
 % ---------- palette ----------
 \definecolor{navy}{HTML}{0B1F3A}
 \definecolor{teal}{HTML}{00998F}
+\definecolor{sky}{HTML}{A9DCE8}
 \definecolor{amber}{HTML}{F2A541}
 \definecolor{coral}{HTML}{E4572E}
-\definecolor{mist}{HTML}{EEF2F6}
+\definecolor{mist}{HTML}{F2F8FA}
 \definecolor{accent}{HTML}{00998F}
 
 % ---------- beamer theme ----------
 \setbeamertemplate{navigation symbols}{}
 \setbeamercolor{normal text}{fg=navy,bg=white}
 \setbeamercolor{structure}{fg=teal}
-\setbeamercolor{block title}{fg=white,bg=navy}
+\setbeamercolor{block title}{fg=navy,bg=sky!35}
 \setbeamercolor{block body}{fg=navy,bg=mist}
 \setbeamercolor{alerted text}{fg=coral}
 \setbeamerfont{block title}{series=\bfseries,size=\small}
-\setbeamertemplate{blocks}[rounded][shadow=false]
+\setbeamertemplate{blocks}[default]
 \setbeamertemplate{itemize item}{\color{teal}\scriptsize$\blacksquare$}
 \setbeamertemplate{itemize subitem}{\color{teal}\tiny$\blacksquare$}
 \setbeamertemplate{enumerate item}{\color{teal}\bfseries\insertenumlabel.}
@@ -34,59 +35,46 @@
 \setbeamerfont{caption}{size=\scriptsize}
 \setbeamertemplate{caption}{\centering\insertcaption\par}
 \setbeamersize{text margin left=1.1cm,text margin right=1.1cm}
-
-% ---------- section names (edit here, keep 5 or adjust the loop) ----------
-\newcommand{\navitems}{1/Motivation,2/Background,3/Methods,4/Initial results,5/Next steps}
-
-% ---------- headline: section tracker ----------
-\tikzset{
-  navon/.style ={fill=teal,text=white,rounded corners=6pt,minimum width=2.55cm,minimum height=.5cm,font=\scriptsize\bfseries},
-  navoff/.style={fill=mist,text=navy!55,rounded corners=6pt,minimum width=2.55cm,minimum height=.5cm,font=\scriptsize}
-}
-\setbeamertemplate{headline}{%
-  \vbox to 1.05cm{\vfill
-  \hspace*{1.1cm}\begin{tikzpicture}
-    \foreach \n/\t in \navitems {%
-      \ifnum\n=\value{section}\def\st{navon}\else\def\st{navoff}\fi
-      \node[\st,anchor=west] at ({(\n-1)*2.7cm},0) {\n\ \t};}
-  \end{tikzpicture}\vfill}}
+\setbeamertemplate{headline}{}
 
 % ---------- footline: moving progress bar ----------
 \setbeamertemplate{footline}{%
+  \ifnum\value{framenumber}>1
   \leavevmode
   \vbox{%
+  
     \hbox to \paperwidth{%
       \hspace{1.6em}\usebeamercolor[fg]{footline}\usebeamerfont{footline}%
       \insertshortauthor\ \ \textbar\ \ \insertshorttitle
       \hfill \insertframenumber\hspace{1.6em}}%
-    \vskip 1.2ex
-    \hbox{\color{mist}\rule{\paperwidth}{3pt}\hspace{-\paperwidth}%
-          \color{accent}\rule{\dimexpr\paperwidth*\insertframenumber/\inserttotalframenumber\relax}{3pt}}}}
+    % \ifnum\value{framenumber}>1
+      \vskip 1.2ex
+      \hbox{\color{white}\rule{\paperwidth}{2pt}\hspace{-\paperwidth}%
+            \color{teal!60}\rule{\dimexpr\paperwidth*\insertframenumber/\inserttotalframenumber\relax}{2pt}}%
+  }\fi}
 
 % ---------- frame title ----------
 \setbeamertemplate{frametitle}{%
-  \vskip-.15cm
-  {\Large\bfseries\color{navy}\insertframetitle\par}
-  \vskip2pt\begin{tikzpicture}\fill[teal] (0,0) rectangle (1.4,.05);\end{tikzpicture}\vskip2pt}
+  \vskip.12cm
+  \begin{beamercolorbox}[wd=\textwidth,sep=0pt,center]{frametitle}
+    {\large\bfseries\color{navy}\insertframetitle\par}
+  \end{beamercolorbox}
+  \vskip-50pt
+  \begin{center}
+    \vskip-10pt
+    {\makebox[\textwidth][c]{\color{teal!60}\rule{1.08\textwidth}{1pt}}\par}
+    \vskip-1.5pt
+    % {\color{sky!35}\rule{1.1cm}{1.2pt}\par}
+  \end{center}
+  \vskip.05cm}
 
 % ---------- helpers ----------
-\newcommand{\chip}[1]{\tikz[baseline=(t.base)]\node[fill=teal!15,text=teal,rounded corners=2pt,inner sep=3pt](t){\tiny\bfseries #1};}
-\newcommand{\placeholder}[3]{\begin{tikzpicture}\node[draw=teal!70,dashed,rounded corners=3pt,fill=teal!5,text=teal!60!black,minimum width=#1,minimum height=#2,align=center,font=\small]{#3};\end{tikzpicture}}
+\newcommand{\chip}[1]{\tikz[baseline=(t.base)]\node[fill=sky!35,text=teal,inner sep=3pt](t){\tiny\bfseries #1};}
+\newcommand{\placeholder}[3]{\begin{tikzpicture}\node[draw=sky,dashed,fill=mist,text=navy!60,minimum width=#1,minimum height=#2,align=center,font=\small]{#3};\end{tikzpicture}}
 \newcommand{\card}[3]{% colour, title, body
-  \begin{tikzpicture}\node[draw=none,fill=mist,rounded corners=4pt,text width=\linewidth-1.2cm,inner sep=7pt,
+  \begin{tikzpicture}\node[draw=none,fill=mist,text width=\linewidth-1.2cm,inner sep=7pt,
      path picture={\fill[#1] (path picture bounding box.south west) rectangle ([xshift=4pt]path picture bounding box.north west);}]
   {\small\bfseries\color{#1}#2\\[2pt]\normalfont\color{navy}#3};\end{tikzpicture}}
-
-% ---------- section divider ----------
-\AtBeginSection[]{%
-  \begin{frame}[plain]
-    \begin{tikzpicture}[remember picture,overlay]
-      \fill[navy] (current page.south west) rectangle (current page.north east);
-      \fill[teal] ([xshift=1.5cm,yshift=-.3cm]current page.west) rectangle +(2.2,.06);
-      \node[anchor=south west,text=teal,font=\fontsize{60}{60}\selectfont\bfseries] at ([xshift=1.4cm,yshift=.1cm]current page.west) {\thesection};
-      \node[anchor=north west,text=white,font=\Huge\bfseries] at ([xshift=1.5cm,yshift=-.55cm]current page.west) {\insertsectionhead};
-    \end{tikzpicture}
-  \end{frame}}
 
 % ---------- title info ----------
 \title{Quantifying transonic shock and separation unsteadiness}

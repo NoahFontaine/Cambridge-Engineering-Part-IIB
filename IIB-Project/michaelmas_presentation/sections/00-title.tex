@@ -1,12 +1,18 @@
 % ================= TITLE =================
-\begin{frame}[plain]
+\begin{frame}
   \begin{tikzpicture}[remember picture,overlay]
-    \fill[navy] (current page.south west) rectangle (current page.north east);
-    \fill[teal] ([xshift=1.2cm,yshift=-.6cm]current page.west) rectangle +(.08,3.4);
-    \node[anchor=south west,text=teal,font=\small\bfseries] at ([xshift=1.5cm,yshift=1.7cm]current page.west) {MEng PROJECT \textbullet\ INTERIM PRESENTATION};
-    \node[anchor=north west,text=white,align=left,font=\fontsize{27}{31}\selectfont\bfseries] at ([xshift=1.5cm,yshift=1.55cm]current page.west) {Quantifying transonic shock and\\separation unsteadiness};
-    \node[anchor=north west,text=white!75,font=\large] at ([xshift=1.5cm,yshift=-.95cm]current page.west) {in a curved nacelle intake lip under crosswind};
-    \node[anchor=south west,text=white,align=left,font=\small] at ([xshift=1.5cm,yshift=.5cm]current page.south west)
-      {\bfseries Noah Fontaine\\[1pt]\normalfont\color{white!70}Department of Engineering, University of Cambridge\\Supervisor: Luke Dickinson \textbar\ November 2026};
+    \fill[sky] (current page.south west) rectangle ([yshift=.08cm]current page.south east);
+    \fill[teal] (current page.south west) rectangle ([xshift=.36\paperwidth,yshift=.08cm]current page.south west);
+    \node[align=center,text=navy,font=\fontsize{25}{30}\selectfont\bfseries,text width=.82\paperwidth]
+      at ([yshift=1.35cm]current page.center) {Quantifying transonic shock and\\separation unsteadiness};
+    \node[align=center,text=navy!70,font=\large,text width=.8\paperwidth]
+      at ([yshift=.1cm]current page.center) {in a curved nacelle intake lip under crosswind};
+    \draw[teal,line width=1.4pt] ([xshift=-.65cm,yshift=-.48cm]current page.center) -- ([xshift=.65cm,yshift=-.48cm]current page.center);
+    \node[align=center,text=navy,font=\small]
+      at ([yshift=-1.05cm]current page.center) {\bfseries Noah Fontaine\\[3pt]
+      \normalfont Department of Engineering, University of Cambridge\\
+      Supervisor: Luke Dickinson \textbar\ November 2026};
+    \node[anchor=north,text=teal,font=\scriptsize\bfseries]
+      at ([yshift=-.15cm]current page.north) {MEng PROJECT \textbullet\ INTERIM PRESENTATION};
   \end{tikzpicture}
 \end{frame}

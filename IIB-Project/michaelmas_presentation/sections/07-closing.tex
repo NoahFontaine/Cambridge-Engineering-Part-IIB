@@ -1,7 +1,7 @@
-\begin{frame}[plain]
+\begin{frame}
   \begin{tikzpicture}[remember picture,overlay]
-    \fill[navy] (current page.south west) rectangle (current page.north east);
-    \node[text=white,font=\fontsize{34}{36}\selectfont\bfseries] at (current page.center) {Questions?};
-    \fill[teal] ([xshift=-1.1cm,yshift=-.9cm]current page.center) rectangle +(2.2,.06);
+    \node[text=navy,font=\fontsize{34}{36}\selectfont\bfseries] at ([yshift=.25cm]current page.center) {Questions?};
+    \draw[teal,line width=1.4pt] ([xshift=-1.1cm,yshift=-.55cm]current page.center) -- ([xshift=1.1cm,yshift=-.55cm]current page.center);
+    \node[text=navy!60,font=\small] at ([yshift=-.95cm]current page.center) {Noah Fontaine \textbar\ University of Cambridge};
   \end{tikzpicture}
 \end{frame}
