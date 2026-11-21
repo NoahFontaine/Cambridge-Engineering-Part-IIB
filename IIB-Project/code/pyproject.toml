@@ -1,0 +1,19 @@
+[project]
+name = "shock-separation-analysis"
+version = "0.1.0"
+description = "Video analysis for shock and separation unsteadiness"
+requires-python = ">=3.13"
+dependencies = [
+    "matplotlib>=3.8",
+    "numpy>=1.26",
+    "opencv-python-headless>=4.9",
+    "openpyxl>=3.1",
+    "scipy>=1.12",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
