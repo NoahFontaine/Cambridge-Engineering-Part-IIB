@@ -8,6 +8,7 @@ These scripts implement selected image-based methods in [`../Quantifying_Shock_a
 - space-time diagram and Welch shock-position spectrum;
 - optional hysteresis-based video intermittency \(\gamma(x)\) and footprint;
 - optional thresholded bubble-signature area/state, cycle and dwell-time statistics.
+- ROI-masked statistics, streamline-motion tracking, Proper Orthogonal Decomposition (POD), and Dynamic Mode Decomposition (DMD) in separate scripts.
 
 The analysis is deliberately transparent and tunable rather than using a pretrained object detector. Shadowgraph intensity is not a direct measurement of density, separation, or reverse flow. In particular, bubble-signature area is only an image-based proxy; validate masks and states against representative frames, LDV, or other measurements before treating them as physical bubble dimensions.
 
@@ -23,7 +24,79 @@ uv sync --extra dev
 
 Run commands with `uv run ...` (or activate `.venv` if you prefer). Dependencies are declared in `pyproject.toml` and pinned in `uv.lock`.
 
+## Split workflow (recommended)
+
+Select ROIs separately for each run, using the middle frame of every video:
+
+```bash
+uv run python select_rois.py \
+  --input-dir ../michaelmas_data/videos \
+  --output results/rois.json
+```
+
+Drag shock, separation-bubble, and boundary-layer/light-streamline boxes in the displayed frame, then press Enter to accept each one. Shock and bubble ROIs may be skipped for cases without those features; the boundary-layer ROI is required for motion tracking. For the optional aerofoil exclusion, click inside the dark aerofoil: the connected dark region is previewed as a filled overlay with an outline. Click again to reseed, use `+` / `-` to adjust the intensity tolerance, Enter to accept, or Esc to skip. The stored exclusion is a polygon rather than a rectangular box, so the non-square aerofoil outline is excluded without masking adjacent flow.
+
+The generated manifest is editable. Set `"regime"` to `"subsonic"` or `"sbli"` (or `null`), set `"wall_edge"` to `"top"` or `"bottom"` according to the wall's position in the boundary-layer ROI, and tune `"attached_fraction"` / `"detached_fraction"` as needed. The tracker classifies the light streamline by its distance from the wall: it reports attached, detached, transition, or intermittent behavior. The continuous distance signal's Welch spectrum reports its dominant motion frequency. This is an image-based proxy rather than a direct measurement of reversed flow. Shock presence, bubble-signature presence, regime, and attachment are kept as separate signals; regime is not inferred from images.
+
+Pixel maps and decomposition use the union of the selected shock, bubble, and boundary-layer ROIs, minus the optional exclusion ROI. Pixels outside that mask are `NaN` in the maps and are excluded from scalar indices, POD, and DMD. This prevents the aerofoil interior and distant flow regions from dominating skewness and kurtosis.
+
+All commands below accept `--input-dir` for batch runs or `--video` for one run. Batch commands require `--workbook` with each run's original camera acquisition rate. For one video, use `--fps N` instead. The MP4 playback frame rate is not the physical sampling rate.
+
+### Pixel statistics and scalar unsteadiness (1.1 and 1.2)
+
+```bash
+uv run python pixel_statistics.py \
+  --input-dir ../michaelmas_data/videos \
+  --roi-config results/rois.json \
+  --output-dir results/pixel_statistics \
+  --workbook ../michaelmas_runs.xlsx \
+  --frame-step 1
+```
+
+Writes mean, SD, skewness, and kurtosis maps plus `unsteadiness.csv`. Its time signals are ROI-mean absolute and RMS deviations from the temporal mean and the fraction of ROI pixels exceeding `--sd-threshold`; Welch PSDs are written when enough samples exist.
+
+### Shock, bubble, and boundary-layer tracking (1.3)
+
+```bash
+uv run python track_flow.py \
+  --input-dir ../michaelmas_data/videos \
+  --roi-config results/rois.json \
+  --output-dir results/tracking \
+  --workbook ../michaelmas_runs.xlsx \
+  --frame-step 1
+```
+
+Shock detection is skipped if its ROI is absent. Bubble-signature detection is optional and remains an image proxy; inspect `bubble_signature.csv` and tune `--bubble-diff-threshold` using representative frames. Boundary-layer outputs include `boundary_layer_motion.csv`, attachment-state labels, and a streamline-distance PSD when enough samples exist.
+
+### Proper Orthogonal Decomposition (1.11)
+
+```bash
+uv run python pod_analysis.py \
+  --input-dir ../michaelmas_data/videos \
+  --roi-config results/rois.json \
+  --output-dir results/pod \
+  --workbook ../michaelmas_runs.xlsx \
+  --max-snapshots 300 --rank 20
+```
+
+POD uses an SVD of mean-subtracted ROI snapshots and writes spatial modes, temporal coefficients, and modal energy fractions.
+
+### Dynamic Mode Decomposition (1.12)
+
+```bash
+uv run python dmd_analysis.py \
+  --input-dir ../michaelmas_data/videos \
+  --roi-config results/rois.json \
+  --output-dir results/dmd \
+  --workbook ../michaelmas_runs.xlsx \
+  --max-snapshots 300 --rank 20
+```
+
+DMD uses consecutive, uncentered ROI snapshots and writes spatial modes, eigenvalues, frequencies, and growth rates. POD and DMD automatically thin long videos to at most `--max-snapshots` snapshots. Interpret frequencies using the acquisition rate and resulting snapshot interval. Use every frame for quantitative frequency work when possible; larger frame steps can alias oscillations.
+
 ## Single-video example
+
+The `analyze_shadowgraph.py` and `batch_analyze_videos.py` examples below document the earlier combined workflow; they do not consume the per-video ROI manifest or mask maps to the selected regions. Use the split scripts above when excluding the aerofoil or distant regions.
 
 First make a contact sheet to inspect the flow and choose ROIs without analyzing the full video:
 
