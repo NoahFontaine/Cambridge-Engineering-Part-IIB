@@ -55,6 +55,68 @@ def _overall_state(states: list[str]) -> str:
     return "intermittent"
 
 
+def write_shock_motion_video(
+    video: Path,
+    output: Path,
+    positions: list[float],
+    times: list[float],
+    shock_roi: tuple[int, int, int, int],
+    frame_step: int,
+    scale: float,
+    playback_fps: float,
+) -> None:
+    native_width, native_height, _ = video_dimensions(video)
+    width = max(1, round(native_width * scale))
+    height = max(1, round(native_height * scale))
+    output_fps = playback_fps / frame_step
+    if not math.isfinite(output_fps) or output_fps <= 0:
+        raise ValueError("Video playback frame rate must be positive")
+    padded_width, padded_height = width + width % 2, height + height % 2
+    writer = cv2.VideoWriter(
+        str(output),
+        cv2.VideoWriter_fourcc(*"mp4v"),
+        output_fps,
+        (padded_width, padded_height),
+    )
+    if not writer.isOpened():
+        writer.release()
+        raise OSError(f"Could not create shock-motion video: {output}")
+
+    frame_count = 0
+    try:
+        for frame_count, (_, gray) in enumerate(
+            iter_frames(video, frame_step, scale), start=1
+        ):
+            if frame_count > len(positions) or frame_count > len(times):
+                raise ValueError("Shock-motion video frames do not match tracked samples")
+            annotated = cv2.cvtColor(gray, cv2.COLOR_GRAY2BGR)
+            x0, y0, x1, y1 = shock_roi
+            cv2.rectangle(annotated, (x0, y0), (x1 - 1, y1 - 1), (0, 200, 0), 1)
+            position = positions[frame_count - 1]
+            if math.isfinite(position):
+                shock_x = int(round(position))
+                cv2.line(annotated, (shock_x, 0), (shock_x, height - 1), (0, 0, 255), 2)
+                location = f"Shock x: {position:.1f} px"
+            else:
+                location = "Shock not detected"
+            label = f"t = {times[frame_count - 1] * 1000:.2f} ms | {location}"
+            cv2.rectangle(annotated, (0, 0), (min(width - 1, 430), 30), (0, 0, 0), -1)
+            cv2.putText(
+                annotated, label, (8, 21), cv2.FONT_HERSHEY_SIMPLEX,
+                0.5, (255, 255, 255), 1, cv2.LINE_AA,
+            )
+            if padded_width != width or padded_height != height:
+                annotated = cv2.copyMakeBorder(
+                    annotated, 0, padded_height - height, 0, padded_width - width,
+                    cv2.BORDER_REPLICATE,
+                )
+            writer.write(annotated)
+        if frame_count != len(positions) or frame_count != len(times):
+            raise ValueError("Shock-motion video frames do not match tracked samples")
+    finally:
+        writer.release()
+
+
 def analyze(
     video: Path,
     output: Path,
@@ -194,7 +256,13 @@ def analyze(
         raise ValueError(f"No frames were decoded from {video}")
     effective_fps = fps / frame_step
     shock_peak = None
+    shock_motion_video = None
     if shock_roi is not None:
+        shock_motion_video = output / "shock_motion.mp4"
+        write_shock_motion_video(
+            video, shock_motion_video, shock_positions, time_values, shock_roi,
+            frame_step, scale, container_fps,
+        )
         shock_array = np.asarray(shock_positions, dtype=float)
         shock_valid = np.isfinite(shock_array)
         write_csv(
@@ -278,6 +346,9 @@ def analyze(
             "not_requested" if shock_roi is None
             else "present" if shock_missing is not None and shock_missing < 1
             else "not_detected"
+        ),
+        "shock_motion_video": (
+            str(shock_motion_video.resolve()) if shock_motion_video is not None else None
         ),
         "shock_missing_fraction": shock_missing,
         "shock_mean_x_px": shock_mean,

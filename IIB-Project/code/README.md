@@ -66,7 +66,7 @@ uv run python track_flow.py \
   --frame-step 1
 ```
 
-Shock detection is skipped if its ROI is absent. Bubble-signature detection is optional and remains an image proxy; inspect `bubble_signature.csv` and tune `--bubble-diff-threshold` using representative frames. Boundary-layer outputs include `boundary_layer_motion.csv`, attachment-state labels, and a streamline-distance PSD when enough samples exist.
+Shock detection is skipped if its ROI is absent. For each run with a configured shock ROI, the output directory also contains `shock_motion.mp4`, showing the tracked shock location over the frames and its time within the run. The video follows the input playback cadence (adjusted for `--frame-step`); its marker reports analysis-pixel coordinates. Bubble-signature detection is optional and remains an image proxy; inspect `bubble_signature.csv` and tune `--bubble-diff-threshold` using representative frames. Boundary-layer outputs include `boundary_layer_motion.csv`, attachment-state labels, and a streamline-distance PSD when enough samples exist.
 
 ### Proper Orthogonal Decomposition (1.11)
 
@@ -93,6 +93,19 @@ uv run python dmd_analysis.py \
 ```
 
 DMD uses consecutive, uncentered ROI snapshots and writes spatial modes, eigenvalues, frequencies, and growth rates. POD and DMD automatically thin long videos to at most `--max-snapshots` snapshots. Interpret frequencies using the acquisition rate and resulting snapshot interval. Use every frame for quantitative frequency work when possible; larger frame steps can alias oscillations.
+
+### PSD peak and POD visualization
+
+After running the pixel-statistics and POD analyses, summarize and visualize the saved results:
+
+```bash
+uv run python visualize_analysis.py \
+  --psd-dir results \
+  --pod-dir results/pod \
+  --output-dir results/visualizations
+```
+
+The PSD search defaults to the `results` tree, so it includes spectra from pixel statistics and tracking; use a narrower `--psd-dir` if you want to limit the source data. The script marks local PSD peaks in per-run plots and writes `psd_peak_summary.csv` with each peak's frequency, power, prominence, and rank. `psd_peak_frequencies.png` compares each signal's strongest peak across runs. For POD, it writes per-run energy, coefficient time-series, and coefficient-spectrum diagnostics, plus energy and dominant-frequency heatmaps. `pod_mode_summary.csv` reports each mode's energy fraction and dominant coefficient frequency; `pod_mode_frequency_peaks.csv` lists all detected modal spectral peaks. Peak detection uses local prominence of at least 5% of the maximum spectrum by default; adjust with `--peak-prominence-fraction`. POD frequencies are computed from the saved coefficient time stamps, so their resolution is bounded by the analyzed record duration and snapshot spacing.
 
 ## Single-video example
 

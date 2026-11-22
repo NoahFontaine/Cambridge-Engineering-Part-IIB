@@ -1,10 +1,11 @@
 from pathlib import Path
 
+import cv2
 import numpy as np
 
 from analyze_shadowgraph import hysteresis_update, parse_roi, track_shock
 from shadowgraph_pipeline import roi_mask, scaled_settings, video_settings
-from track_flow import _overall_state, _region_state
+from track_flow import _overall_state, _region_state, write_shock_motion_video
 
 
 def test_parse_roi_returns_native_pixel_bounds():
@@ -47,6 +48,40 @@ def test_attachment_classification_supports_intermittent_states():
     assert _region_state(0.5, 0.35, 0.65) == "transition"
     assert _overall_state(["attached"] * 9 + ["detached"]) == "attached"
     assert _overall_state(["attached"] * 5 + ["detached"] * 5) == "intermittent"
+
+
+def test_shock_motion_video_marks_tracked_position_and_time(tmp_path: Path):
+    source = tmp_path / "source.avi"
+    writer = cv2.VideoWriter(
+        str(source), cv2.VideoWriter_fourcc(*"MJPG"), 30, (64, 48)
+    )
+    assert writer.isOpened()
+    try:
+        for _ in range(3):
+            writer.write(np.full((48, 64, 3), 100, dtype=np.uint8))
+    finally:
+        writer.release()
+
+    output = tmp_path / "shock_motion.mp4"
+    write_shock_motion_video(
+        source, output, [20.0, float("nan"), 24.0], [0.0, 0.1, 0.2],
+        (10, 5, 40, 35), 1, 1.0, 30.0,
+    )
+
+    capture = cv2.VideoCapture(str(output))
+    try:
+        assert capture.isOpened()
+        assert int(capture.get(cv2.CAP_PROP_FRAME_COUNT)) == 3
+        ok, frame = capture.read()
+        assert ok
+        assert frame[40, 20, 2] > frame[40, 20, 1] + 30
+        ok, frame = capture.read()
+        assert ok
+        ok, frame = capture.read()
+        assert ok
+        assert frame[40, 24, 2] > frame[40, 24, 1] + 30
+    finally:
+        capture.release()
 
 
 def test_single_video_can_match_manifest_key_from_video_root():
