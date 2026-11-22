@@ -176,25 +176,28 @@ def roi_mask(
     rois: dict[str, object],
     shape: tuple[int, int],
     include: tuple[str, ...] = ("shock", "separation_bubble", "boundary_layer"),
+    full_frame: bool = False,
 ) -> np.ndarray:
     height, width = shape
-    mask = np.zeros((height, width), dtype=bool)
-    for name in include:
-        roi = rois[name]
-        if roi is not None:
-            assert isinstance(roi, tuple)
-            x0, y0, x1, y1 = roi
-            mask[y0:y1, x0:x1] = True
-    excluded_mask = rois.get("exclude_mask")
-    if excluded_mask is not None:
-        assert isinstance(excluded_mask, np.ndarray)
-        mask[excluded_mask] = False
-    else:
-        excluded = rois["exclude"]
-        if excluded is not None:
-            assert isinstance(excluded, tuple)
-            x0, y0, x1, y1 = excluded
-            mask[y0:y1, x0:x1] = False
+    mask = np.ones((height, width), dtype=bool) if full_frame else np.zeros((height, width), dtype=bool)
+    if not full_frame:
+        for name in include:
+            roi = rois[name]
+            if roi is not None:
+                assert isinstance(roi, tuple)
+                x0, y0, x1, y1 = roi
+                mask[y0:y1, x0:x1] = True
+    if not full_frame:
+        excluded_mask = rois.get("exclude_mask")
+        if excluded_mask is not None:
+            assert isinstance(excluded_mask, np.ndarray)
+            mask[excluded_mask] = False
+        else:
+            excluded = rois["exclude"]
+            if excluded is not None:
+                assert isinstance(excluded, tuple)
+                x0, y0, x1, y1 = excluded
+                mask[y0:y1, x0:x1] = False
     if not mask.any():
         raise ValueError("No analysis ROI is configured; select at least one flow ROI")
     return mask

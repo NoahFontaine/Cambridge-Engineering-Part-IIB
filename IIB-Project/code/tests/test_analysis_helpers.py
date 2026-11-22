@@ -73,3 +73,21 @@ def test_polygon_exclusion_masks_only_the_selected_shape():
     assert not mask[2, 2]
     assert not mask[5, 1]
     assert mask[5, 5]
+
+
+def test_full_frame_analysis_mask_includes_aerofoil_polygon():
+    record = {
+        "rois": {
+            "shock": [0, 0, 2, 2],
+            "separation_bubble": None,
+            "boundary_layer": [0, 0, 2, 2],
+            "exclude": {"polygon": [[1, 1], [3, 1], [1, 3]]},
+        }
+    }
+    rois = scaled_settings(record, 5, 5, 1.0)
+    mask = roi_mask(rois, (5, 5), full_frame=True)
+    assert mask.sum() == 25
+    assert mask[1, 1]
+    assert mask[2, 1]
+    assert mask[4, 4]
+    assert mask[4, 0]

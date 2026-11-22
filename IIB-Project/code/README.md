@@ -38,7 +38,7 @@ Drag shock, separation-bubble, and boundary-layer/light-streamline boxes in the 
 
 The generated manifest is editable. Set `"regime"` to `"subsonic"` or `"sbli"` (or `null`), set `"wall_edge"` to `"top"` or `"bottom"` according to the wall's position in the boundary-layer ROI, and tune `"attached_fraction"` / `"detached_fraction"` as needed. The tracker classifies the light streamline by its distance from the wall: it reports attached, detached, transition, or intermittent behavior. The continuous distance signal's Welch spectrum reports its dominant motion frequency. This is an image-based proxy rather than a direct measurement of reversed flow. Shock presence, bubble-signature presence, regime, and attachment are kept as separate signals; regime is not inferred from images.
 
-Pixel maps and decomposition use the union of the selected shock, bubble, and boundary-layer ROIs, minus the optional exclusion ROI. Pixels outside that mask are `NaN` in the maps and are excluded from scalar indices, POD, and DMD. This prevents the aerofoil interior and distant flow regions from dominating skewness and kurtosis.
+Pixel statistics, POD, and DMD use the **entire frame, including the aerofoil**. Their maps and modes do not apply the aerofoil exclusion polygon or limit analysis to the shock, bubble, or boundary-layer boxes. The shock, bubble, and boundary-layer boxes and aerofoil exclusion remain available for the tracking workflow.
 
 All commands below accept `--input-dir` for batch runs or `--video` for one run. Batch commands require `--workbook` with each run's original camera acquisition rate. For one video, use `--fps N` instead. The MP4 playback frame rate is not the physical sampling rate.
 

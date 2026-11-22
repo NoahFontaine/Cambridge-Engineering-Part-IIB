@@ -27,7 +27,7 @@ def load_snapshots(
     width = max(1, round(native_width * scale))
     height = max(1, round(native_height * scale))
     rois = scaled_settings(record, width, height, scale)
-    mask = roi_mask(rois, (height, width))
+    mask = roi_mask(rois, (height, width), full_frame=True)
     capture_frame_count = 0
     import cv2
 

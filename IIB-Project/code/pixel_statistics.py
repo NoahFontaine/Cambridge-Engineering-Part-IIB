@@ -48,7 +48,7 @@ def analyze(
     width = max(1, int(round(native_width * scale)))
     height = max(1, int(round(native_height * scale)))
     rois = scaled_settings(record, width, height, scale)
-    mask = roi_mask(rois, (height, width))
+    mask = roi_mask(rois, (height, width), full_frame=True)
     count = 0
     sums = [np.zeros((height, width), dtype=np.float64) for _ in range(4)]
     for _, gray in iter_frames(video, frame_step, scale):
