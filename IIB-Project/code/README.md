@@ -107,6 +107,21 @@ uv run python visualize_analysis.py \
 
 The PSD search defaults to the `results` tree, so it includes spectra from pixel statistics and tracking; use a narrower `--psd-dir` if you want to limit the source data. The script marks local PSD peaks in per-run plots and writes `psd_peak_summary.csv` with each peak's frequency, power, prominence, and rank. `psd_peak_frequencies.png` compares each signal's strongest peak across runs. For POD, it writes per-run energy, coefficient time-series, and coefficient-spectrum diagnostics, plus energy and dominant-frequency heatmaps. `pod_mode_summary.csv` reports each mode's energy fraction and dominant coefficient frequency; `pod_mode_frequency_peaks.csv` lists all detected modal spectral peaks. Peak detection uses local prominence of at least 5% of the maximum spectrum by default; adjust with `--peak-prominence-fraction`. POD frequencies are computed from the saved coefficient time stamps, so their resolution is bounded by the analyzed record duration and snapshot spacing.
 
+### Animate the leading POD modes as smooth harmonic oscillations
+
+Create one four-panel video per run from the four modes with the highest energy fractions:
+
+```bash
+uv run python pod_mode_videos.py \
+  --pod-dir results/pod \
+  --output-dir results/pod_mode_videos_smooth \
+  --video-fps 30 \
+  --display-frequency-hz 1 \
+  --cycles 3
+```
+
+Each panel shows one mode's spatial field multiplied by an idealized sinusoidal-harmonic coefficient. Its frequency is estimated from the saved POD coefficient spectrum and fitted to the coefficient history; the animation then slows each mode to the chosen display frequency (1 Hz by default) so oscillations are easy to see. Playback stays at 30 fps, giving 30 frames per cycle, and the default three cycles make a smooth, three-second video. The panel and `pod_mode_videos.csv` report both the measured POD frequency and the displayed frequency. These are illustrative SHM animations, not reconstructions of the original time-varying flow. The color scale remains fixed during each mode's animation.
+
 ## Single-video example
 
 The `analyze_shadowgraph.py` and `batch_analyze_videos.py` examples below document the earlier combined workflow; they do not consume the per-video ROI manifest or mask maps to the selected regions. Use the split scripts above when excluding the aerofoil or distant regions.
