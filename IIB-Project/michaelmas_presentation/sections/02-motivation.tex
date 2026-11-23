@@ -1,17 +1,87 @@
 % ================= 1 MOTIVATION =================
 \section{Motivation}
 
-\begin{frame}{Why do short, slim nacelles care about crosswind?}
+\begin{frame}{Engine design trend}
+  \centering
+  \textbf{\textcolor{teal}{Larger turbofan engines are more efficient}}\par\vspace{.15cm}
   \begin{columns}[T]
-    \column{.52\textwidth}
-    \begin{itemize}\setlength\itemsep{.45em}
-      \item Low-FPR, large-fan engines need \textbf{shorter, thinner intakes} for lower drag and weight
-      \item In strong crosswind the windward lip over-accelerates the flow $\rightarrow$ local supersonic region ended by a \textbf{shock}
-      \item Shock--boundary-layer interaction (SBLI) can \alert{separate} the boundary layer $\rightarrow$ fan-plane distortion
-      \item Thin lips = high curvature = worst case
+    \column{.47\textwidth}\centering
+    \includegraphics[width=6.2cm,height=4.6cm,keepaspectratio]{figures/old_engine.png}\par
+    \textbf{Smaller fan, lower bypass ratio}\par
+    \textbf{$D_{\mathrm{current}}$}
+
+    \column{.47\textwidth}\centering
+    \includegraphics[width=6.2cm,height=4.6cm,keepaspectratio]{figures/new_engine.png}\par
+    \textbf{\textcolor{teal}{Larger fan, higher bypass ratio}}\par
+    \textbf{$D_{\mathrm{future}}>D_{\mathrm{current}}$}
+  \end{columns}
+  \vspace{.10cm}
+  \textbf{\textcolor{coral}{Larger nacelles have more wetted area and more drag}}
+\end{frame}
+
+\begin{frame}{Reducing nacelle drag}
+  \begin{columns}[T]
+    \column{.56\textwidth}\centering
+    \includegraphics[width=7.0cm,height=5.3cm,keepaspectratio]{figures/engine_shorter_nacelle.png}
+
+    \column{.40\textwidth}
+    \card{teal}{Cruise design objective}{Reduce nacelle wetted area and wave drag.}\\[8pt]
+    \card{amber}{Design response}{Use a shorter, sharper nacelle lip.}\\[8pt]
+    \card{coral}{Unwanted effect}{The lip becomes more highly curved.}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Crosswind creates an off-design threat}
+  \begin{columns}[T]
+    \column{.58\textwidth}\centering
+    \includegraphics[width=7.2cm,height=5.2cm,keepaspectratio]{figures/engine_crosswind.png}
+
+    \column{.38\textwidth}
+    \begin{itemize}\setlength\itemsep{.50em}
+      \item High curvature at the windward lip
+      \item Strong acceleration of the external flow
+      \item Local supersonic region forms
+      \item A shock terminates the supersonic flow
+      \item Shock--boundary-layer interaction can cause \alert{separation}
     \end{itemize}
-    \column{.45\textwidth}\centering
-    \placeholder{5.6cm}{4.6cm}{Fig.: crosswind schematic\\(thesis Fig.\ 1.1 / 2.15)}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Three possible windward-lip flowfields}
+  \centering
+  \begin{columns}[T]
+    \column{.31\textwidth}\centering
+    \includegraphics[width=4.25cm,height=3.65cm,keepaspectratio]{figures/subsonic_separated.png}\par\vspace{2pt}
+    \textbf{Subsonic}\par\small\alert{Separated boundary layer}
+
+    \column{.31\textwidth}\centering
+    \includegraphics[width=4.25cm,height=3.65cm,keepaspectratio]{figures/supersonic_attached.png}\par\vspace{2pt}
+    \textbf{Supersonic}\par\small Attached boundary layer
+
+    \column{.31\textwidth}\centering
+    \includegraphics[width=4.25cm,height=3.65cm,keepaspectratio]{figures/supersonic_separated.png}\par\vspace{2pt}
+    \textbf{Supersonic}\par\small\alert{Shock-induced separation}
+  \end{columns}
+  \vspace{.18cm}
+  \textbf{The research question:} how do shock location and separation unsteadiness change with lip profile?
+\end{frame}
+
+\begin{frame}{Replicating an engine intake in the wind tunnel}
+  \begin{columns}[T]
+    \column{.48\textwidth}\centering
+    \includegraphics[width=6.1cm,height=4.8cm,keepaspectratio]{figures/wind_tunnel.png}
+
+    \column{.48\textwidth}\centering
+    \includegraphics[width=6.1cm,height=4.8cm,keepaspectratio]{figures/engine_in_windtunnel.png}
+  \end{columns}
+  \vspace{.10cm}
+  \begin{columns}[T]
+    \column{.48\textwidth}\centering
+    \textbf{Quasi-two-dimensional lip section}\par
+    \small Full optical access and a controllable test section
+    \column{.48\textwidth}\centering
+    \textbf{Engine geometry, tunnel environment}\par
+    \small Crosswind reproduced by relative flow; mass-flow split controls engine power
   \end{columns}
 \end{frame}
 

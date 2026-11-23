@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.10.1)  17 NOV 2026 20:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.10.1)  23 NOV 2026 21:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1003,29 +1003,29 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 8.
  (./sections/00-title.tex
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 22.99995pt on input line 18.
+(Font)              scaled to size 13.79997pt on input line 16.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 22.99995pt on input line 18.
+(Font)              scaled to size 13.79997pt on input line 16.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 18.
+(Font)              scaled to size 11.03998pt on input line 16.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 18.
+(Font)              scaled to size 9.19998pt on input line 16.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 9.19998pt on input line 18.
+(Font)              scaled to size 9.19998pt on input line 16.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 18.
+(Font)              scaled to size 7.35999pt on input line 16.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 7.35999pt on input line 18.
+(Font)              scaled to size 7.35999pt on input line 16.
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
-8.
+6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/b/n' will be
-(Font)              scaled to size 7.35999pt on input line 18.
+(Font)              scaled to size 7.35999pt on input line 16.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 3.68pt on input line 18.
+(Font)              scaled to size 3.68pt on input line 16.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-di
@@ -1034,95 +1034,158 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 10.07397pt on input line 15.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 13.24796pt on input line 15.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 11.03998pt on input line 15.
  [2
 
 ]) (./sections/02-motivation.tex
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 1
-6.
+<figures/old_engine.png, id=46, 307.476pt x 211.8825pt>
+File: figures/old_engine.png Graphic file (type png)
+<use figures/old_engine.png>
+Package pdftex.def Info: figures/old_engine.png  used on input line 20.
+(pdftex.def)             Requested size: 176.4079pt x 121.56314pt.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 2
+0.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 16.
+(Font)              scaled to size 10.07397pt on input line 20.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 16.
+(Font)              scaled to size 7.35999pt on input line 20.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 4.59999pt on input line 16.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-6.
+(Font)              scaled to size 5.51999pt on input line 20.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
+0.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-16.
+20.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-16.
+20.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 16.
+(Font)              <10.95> on input line 20.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 16.
+(Font)              <8> on input line 20.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 16.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
+(Font)              <6> on input line 20.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 4.59999pt on input line 16.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 16.
-LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 7.35999pt on input line 16.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 16.
-LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 5.51999pt on input line 16.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 16.
-LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 4.59999pt on input line 16.
-LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 16.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 16.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 16.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 20.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 10.07397pt on input line 16.
- [3
-
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}]
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 32
+(Font)              scaled to size 10.07397pt on input line 20.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 20.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 7.35999pt on input line 20.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 20.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 5.51999pt on input line 20.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 20
 .
- (/usr/share/texmf/tex/latex/lm/t1lmr.fd
+
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-[4
+<figures/new_engine.png, id=48, 672.5125pt x 486.81876pt>
+File: figures/new_engine.png Graphic file (type png)
+<use figures/new_engine.png>
+Package pdftex.def Info: figures/new_engine.png  used on input line 20.
+(pdftex.def)             Requested size: 176.4089pt x 127.69897pt.
+ [3
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvip
-s/lm/lm-mathit.enc}]) (./sections/03-background.tex [5
+s/lm/lm-mathit.enc} <./figures/old_engine.png> <./figures/new_engine.png>]
+<figures/engine_shorter_nacelle.png, id=59, 1195.46625pt x 854.44218pt>
+File: figures/engine_shorter_nacelle.png Graphic file (type png)
+<use figures/engine_shorter_nacelle.png>
+Package pdftex.def Info: figures/engine_shorter_nacelle.png  used on input line
+ 32.
+(pdftex.def)             Requested size: 199.15875pt x 142.34583pt.
+ [4
 
-] [6
+ <./figures/engine_shorter_nacelle.png>]
+<figures/engine_crosswind.png, id=66, 1084.05pt x 880.79062pt>
+File: figures/engine_crosswind.png Graphic file (type png)
+<use figures/engine_crosswind.png>
+Package pdftex.def Info: figures/engine_crosswind.png  used on input line 48.
+(pdftex.def)             Requested size: 182.08607pt x 147.94493pt.
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 4.59999pt on input line 48.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 48.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 4.59999pt on input line 48.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 48.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 4.59999pt on input line 48.
+ [5
+
+ <./figures/engine_crosswind.png>]
+<figures/subsonic_separated.png, id=74, 889.82437pt x 695.59875pt>
+File: figures/subsonic_separated.png Graphic file (type png)
+<use figures/subsonic_separated.png>
+Package pdftex.def Info: figures/subsonic_separated.png  used on input line 67.
+
+(pdftex.def)             Requested size: 120.92218pt x 94.528pt.
+<figures/supersonic_attached.png, id=75, 642.14906pt x 559.33969pt>
+File: figures/supersonic_attached.png Graphic file (type png)
+<use figures/supersonic_attached.png>
+Package pdftex.def Info: figures/supersonic_attached.png  used on input line 67
+.
+(pdftex.def)             Requested size: 119.22684pt x 103.85175pt.
+<figures/supersonic_separated.png, id=76, 522.45187pt x 572.1375pt>
+File: figures/supersonic_separated.png Graphic file (type png)
+<use figures/supersonic_separated.png>
+Package pdftex.def Info: figures/supersonic_separated.png  used on input line 6
+7.
+(pdftex.def)             Requested size: 94.82649pt x 103.84457pt.
+ [6
+
+ <./figures/subsonic_separated.png> <./figures/supersonic_attached.png> <./figu
+res/supersonic_separated.png>]
+<figures/wind_tunnel.png, id=85, 1347.53438pt x 677.53125pt>
+File: figures/wind_tunnel.png Graphic file (type png)
+<use figures/wind_tunnel.png>
+Package pdftex.def Info: figures/wind_tunnel.png  used on input line 86.
+(pdftex.def)             Requested size: 173.56125pt x 87.26543pt.
+<figures/engine_in_windtunnel.png, id=86, 1215.03937pt x 766.36313pt>
+File: figures/engine_in_windtunnel.png Graphic file (type png)
+<use figures/engine_in_windtunnel.png>
+Package pdftex.def Info: figures/engine_in_windtunnel.png  used on input line 8
+6.
+(pdftex.def)             Requested size: 173.55278pt x 109.46513pt.
+
+[7
+
+ <./figures/wind_tunnel.png> <./figures/engine_in_windtunnel.png>] [8
+
+])
+(./sections/03-background.tex [9
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}] [10
 
 ]
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
@@ -1143,33 +1206,32 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 43.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 6.43999pt on input line 43.
- [7
+ [11
+
+]) (./sections/04-methods.tex [12
+
+] [13
 
 ])
-(./sections/04-methods.tex [8
-
-] [9
-
-]) (./sections/05-results.tex [10
-
-] [11
-
-]
-[12
-
-]) (./sections/06-next-steps.tex [13
-
-] [14
+(./sections/05-results.tex [14
 
 ] [15
+
+] [16
+
+]) (./sections/06-next-steps.tex
+[17
+
+] [18
+
+] [19
 
 ]) (./sections/07-closing.tex
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 31.27994pt on input line 7.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 31.27994pt on input line 7.
-
-[16
+ [20
 
 ])
 \tf@nav=\write6
@@ -1190,13 +1252,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 0B8AA50DC2DDDA947F59B22E04E6244D;481.
  ) 
 Here is how much of TeX's memory you used:
- 25758 strings out of 469438
- 506397 string characters out of 5468410
- 878469 words of memory out of 5000000
- 53806 multiletter control sequences out of 15000+600000
- 716980 words of font info for 121 fonts, out of 8000000 for 9000
+ 25899 strings out of 469438
+ 510283 string characters out of 5468410
+ 881068 words of memory out of 5000000
+ 53939 multiletter control sequences out of 15000+600000
+ 715404 words of font info for 120 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 133i,13n,126p,420b,1201s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 133i,19n,126p,420b,1203s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr
 /share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/publi
@@ -1206,10 +1268,10 @@ public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/
 uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
 
-Output written on build/main.pdf (16 pages, 144561 bytes).
+Output written on build/main.pdf (20 pages, 2407958 bytes).
 PDF statistics:
- 221 PDF objects out of 1000 (max. 8388607)
- 158 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
- 83 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 232 PDF objects out of 1000 (max. 8388607)
+ 162 compressed objects within 2 object streams
+ 46 named destinations out of 1000 (max. 500000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 
