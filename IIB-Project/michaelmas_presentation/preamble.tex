@@ -38,31 +38,47 @@
 \setbeamertemplate{headline}{}
 
 % ---------- footline: moving progress bar ----------
-\newcommand{\navitems}{1/Motivation,2/Background,3/Methods,4/Initial results,5/Next steps}
-\tikzset{
-  navon/.style={fill=teal!12,text=teal,rounded corners=2pt,minimum width=2.35cm,minimum height=.34cm,inner sep=2pt,font=\scriptsize\bfseries},
-  navoff/.style={fill=mist,text=navy!65,rounded corners=2pt,minimum width=2.35cm,minimum height=.34cm,inner sep=2pt,font=\scriptsize}
-}
+% \newcommand{\navitems}{1/Motivation,2/Background,3/Methods,4/Initial results,5/Next steps}
+% \tikzset{
+%   navon/.style={fill=teal!12,text=teal,rounded corners=2pt,minimum width=2.35cm,minimum height=.34cm,inner sep=2pt,font=\scriptsize\bfseries},
+%   navoff/.style={fill=mist,text=navy!65,rounded corners=2pt,minimum width=2.35cm,minimum height=.34cm,inner sep=2pt,font=\scriptsize}
+% }
+% \setbeamertemplate{footline}{%
+%   \ifnum\value{framenumber}>1
+%   \leavevmode
+%   \vbox{%
+%     \hbox to \paperwidth{%
+%       \ifnum\value{section}>0
+%         \hfil
+%         \begin{tikzpicture}[baseline=(current bounding box.center)]
+%           \foreach \n/\t in \navitems {%
+%             \ifnum\n=\value{section}\def\st{navon}\else\def\st{navoff}\fi
+%             \node[\st] at ({(\n-1)*2.55cm},0) {\t};}
+%         \end{tikzpicture}%
+%         \hfil
+%       \else
+%         \hfil
+%       \fi
+%       \llap{\insertframenumber\hspace{1.6em}}}%
+%       \vskip 1.2ex
+%       \hbox{\color{white}\rule{\paperwidth}{2pt}\hspace{-\paperwidth}%
+%             \color{teal!60}\rule{\dimexpr\paperwidth*\insertframenumber/\inserttotalframenumber\relax}{2pt}}%
+%   }\fi}
+
 \setbeamertemplate{footline}{%
   \ifnum\value{framenumber}>1
   \leavevmode
   \vbox{%
+    \vskip 0.2ex
     \hbox to \paperwidth{%
-      \ifnum\value{section}>0
-        \hfil
-        \begin{tikzpicture}[baseline=(current bounding box.center)]
-          \foreach \n/\t in \navitems {%
-            \ifnum\n=\value{section}\def\st{navon}\else\def\st{navoff}\fi
-            \node[\st] at ({(\n-1)*2.55cm},0) {\t};}
-        \end{tikzpicture}%
-        \hfil
-      \else
-        \hfil
-      \fi
-      \llap{\insertframenumber\hspace{1.6em}}}%
-      \vskip 1.2ex
-      \hbox{\color{white}\rule{\paperwidth}{2pt}\hspace{-\paperwidth}%
-            \color{teal!60}\rule{\dimexpr\paperwidth*\insertframenumber/\inserttotalframenumber\relax}{2pt}}%
+      \hspace{1.6em}%
+      \insertshortauthor \hspace{0.25em} | \hspace{0.25em} \inserttitle
+      \hfil
+      \insertframenumber\hspace{1.6em}%
+    }%
+    \vskip 1.2ex
+    \hbox{\color{white}\rule{\paperwidth}{2pt}\hspace{-\paperwidth}%
+          \color{teal!60}\rule{\dimexpr\paperwidth*\insertframenumber/\inserttotalframenumber\relax}{2pt}}%
   }\fi}
 
 % ---------- frame title ----------
@@ -89,8 +105,8 @@
   {\small\bfseries\color{#1}#2\\[2pt]\normalfont\color{navy}#3};\end{tikzpicture}}
 
 % ---------- title info ----------
-\title{QShock-induced boundary-layer separation unsteadiness}
-\subtitle{in jet engines under crosswind}
-\author{Noah Fontaine}
+\title[MEng Project]{Shock-induced boundary-layer separation unsteadiness}
+\subtitle{in jet intakes under crosswind}
+\author[Noah Fontaine]{Noah Fontaine}
 \institute{Department of Engineering, University of Cambridge}
 \date{Michaelmas presentation \textbar\ November 2026}
