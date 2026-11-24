@@ -62,7 +62,7 @@
       \uncover<2->{\item \textbf{Higher risk of separation of the flow}}
       \uncover<3->{\item Stronger acceleration of the flow}
       \uncover<4->{\item Flow can reach supersonic speeds}
-      \uncover<5->{\item \textbf{More frequent SBL interations and \\ \hspace{-1.2em} separation}}
+      \uncover<5->{\item \textbf{More frequent SBLI separation}}
     \end{itemize}
   \end{columns}
 \end{frame}
@@ -92,29 +92,106 @@
 
 \begin{frame}{How we replicate the engine intake in the wind tunnel}
   \centering
-    \only<1>{\includegraphics[width=10.1cm,keepaspectratio]{figures/engine_in_windtunnel.png}}
-    \only<2>{\includegraphics[width=10.1cm,keepaspectratio]{figures/wind_tunnel.png}}
-    \only<3->{\includegraphics[width=10.1cm,keepaspectratio]{figures/wind_tunnel_with_flow.png}}
-  \vspace{.10cm}
+  \only<1>{\includegraphics[width=10.1cm,keepaspectratio]{figures/engine_in_windtunnel.png}}
+  \only<2>{\includegraphics[width=10.1cm,keepaspectratio]{figures/wind_tunnel.png}}
+  \only<3->{\includegraphics[width=10.1cm,keepaspectratio]{figures/wind_tunnel_with_flow.png}}
+  \par\vspace{.10cm}
   \only<4->{
     \vspace{.10cm}
-    \textbf{Tunable inlet Mach number $M_{entry}$}\par
+    \textbf{Tuneable inlet Mach number $M_{entry}$}\par
     \small By adjusting the angle of an airfoil aft of the working section.
   }
 \end{frame}
 
-\begin{frame}{Aims and research questions}
+\begin{frame}{Aim and research questions}
+  \centering
+  \begin{tikzpicture}[
+    state/.style={align=center, inner sep=0pt, font=\tiny},
+    transition/.style={<->, >=Stealth, draw=teal, line width=1pt}
+  ]
+    \node[state] (sub-attached) at (-1.6,1.3)
+      {Subsonic attached\\[-0pt]
+      \includegraphics[width=2.1cm]{figures/round_subsonic_attached.png}};
+    \node[state] (sub-separated) at (1.6,1.3)
+      {Subsonic separated\\[-0pt]
+      \includegraphics[width=2.1cm]{figures/round_subsonic_separated.png}};
+    \node[state] (super-attached) at (-1.6,-1.3)
+      {\includegraphics[width=2.1cm]{figures/round_supersonic_attached.png}\\[-1pt]
+       Supersonic attached};
+    \node[state] (super-separated) at (1.6,-1.3)
+      {\includegraphics[width=2.1cm]{figures/round_supersonic_separated.png}\\[-1pt]
+       Supersonic separated};
+
+    \path[transition] (sub-attached.north east) to[bend left=20] (sub-separated.north west);
+    \path[transition] (super-attached.south east) to[bend right=20] (super-separated.south west);
+    \path[transition] (sub-attached.202.5) to[bend right=20] (super-attached.157.5);
+    \path[transition] (sub-separated.337.5) to[bend left=20] (super-separated.22.5);
+    \path[transition] (super-attached.22.5) -- (sub-separated.202.5);
+    \path[transition] (sub-attached.337.5) -- (super-separated.157.5);
+  \end{tikzpicture}
+  \only<2->{
+  \begin{block}{Aim}
+    Characterise the shock--boundary-layer interaction unsteadiness as the flow transitions between different flow states.
+  \end{block}}
+\end{frame}
+
+\begin{frame}{Aim and research questions}
+  % \card{teal}{Aim}{Characterise the shock--boundary-layer interaction unsteadiness.}
   \begin{columns}[T]
     \column{.48\textwidth}
-    \card{teal}{Aim}{Characterise and quantify the unsteadiness of the shock and separation on the crosswind intake lip.}\\[6pt]
-    \card{amber}{Comparison}{Baseline vs.\ \textbf{thinner} vs.\ \textbf{thicker} lip profile.}
+    \centering
+    \begin{tikzpicture}[
+      state/.style={align=center, inner sep=0pt, font=\tiny},
+      transition/.style={<->, >=Stealth, draw=teal, line width=1pt}
+    ]
+      \node[state] (sub-attached) at (-1.2,1)
+        {\includegraphics[width=2cm]{figures/round_subsonic_attached.png}};
+      \node[state] (sub-separated) at (1.2,1)
+        {\includegraphics[width=2cm]{figures/round_subsonic_separated.png}};
+      \node[state] (super-attached) at (-1.2,-1)
+        {\includegraphics[width=2cm]{figures/round_supersonic_attached.png}};
+      \node[state] (super-separated) at (1.2,-1)
+        {\includegraphics[width=2cm]{figures/round_supersonic_separated.png}};
+
+      \path[transition] (sub-attached.67.5) to[bend left=20] (sub-separated.112.5);
+      \path[transition] (super-attached.292.5) to[bend right=20] (super-separated.247.5);
+      \path[transition] (sub-attached.202.5) to[bend right=20] (super-attached.157.5);
+      \path[transition] (sub-separated.337.5) to[bend left=20] (super-separated.22.5);
+      \path[transition] (super-attached.22.5) -- (sub-separated.202.5);
+      \path[transition] (sub-attached.337.5) -- (super-separated.157.5);
+    \end{tikzpicture}
+    \vspace{.18cm}
+    \begin{tikzpicture}[
+      legend card/.style={
+        draw=none, fill=mist, text width=1.05cm, inner sep=4pt,
+        align=center, font=\tiny
+      }
+    ]
+      \node[legend card, path picture={
+        \fill[teal] (path picture bounding box.south west)
+          rectangle ([xshift=3pt]path picture bounding box.north west);
+      }] at (-1.6,0)
+        {\textbf{\textcolor{teal}{Q1}}\\[-1pt]\textcolor{navy}{Onset}};
+      \node[legend card, path picture={
+        \fill[coral] (path picture bounding box.south west)
+          rectangle ([xshift=3pt]path picture bounding box.north west);
+      }] at (0,0)
+        {\textbf{\textcolor{coral}{Q2--3}}\\[-1pt]\textcolor{navy}{Regions \& flow}};
+      \node[legend card, path picture={
+        \fill[amber] (path picture bounding box.south west)
+          rectangle ([xshift=3pt]path picture bounding box.north west);
+      }] at (1.6,0)
+        {\textbf{\textcolor{amber}{Q4--5}}\\[-1pt]\textcolor{navy}{Profile \& control}};
+    \end{tikzpicture}
+    % \card{amber}{Comparison}{\textbf{Baseline} vs.\ \textbf{thinner} vs.\ \textbf{thicker} lip profile.}
     \column{.48\textwidth}
     \textbf{Research questions}
     \begin{enumerate}\setlength\itemsep{.4em}
-      \item Where in the $(M_{\mathrm{entry}},\,\mathrm{MFS})$ space does unsteadiness occur?
-      \item What are its frequency, amplitude and structure?
-      \item How do these change with lip thickness?
-      \item \textcolor{amber}{[Add / refine]}
+      \uncover<2->{\item[\textcolor{teal}{\smash{\rule[-1.8em]{1.5pt}{2.8em}}}\hspace{.25em}\textcolor{teal}{\bfseries 1.}] At what $M_{\mathrm{entry}}$ values does unsteadiness occur?}
+      \uncover<3->{\item[\textcolor{coral}{\smash{\rule[-6.5em]{1.5pt}{7.3em}}}\hspace{.25em}\textcolor{teal}{\bfseries 2.}] What is the $M_{\mathrm{entry}}$ range window of each unsteady region?}
+      \uncover<4->{\item[\hspace{1.5pt}\hspace{.25em}\textcolor{teal}{\bfseries 3.}] What frequencies, amplitudes and flow structures characterise the unsteadiness?}
+      \uncover<5->{\item[\textcolor{amber}{\smash{\rule[-4.4em]{1.5pt}{5em}}}\hspace{.25em}\textcolor{teal}{\bfseries 4.}] How does it vary with lip profile?}
+      \uncover<6->{\item[\hspace{1.5pt}\hspace{.25em}\textcolor{teal}{\bfseries 5.}] How do SBLI control elements affect its onset?}
     \end{enumerate}
   \end{columns}
 \end{frame}
