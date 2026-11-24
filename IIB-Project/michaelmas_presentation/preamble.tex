@@ -33,7 +33,14 @@
 \setbeamerfont{itemize/enumerate body}{size=\normalsize}
 \setbeamerfont{itemize/enumerate subbody}{size=\small}
 \setbeamerfont{caption}{size=\scriptsize}
-\setbeamertemplate{caption}{\centering\insertcaption\par}
+\setbeamercolor{caption name}{fg=navy}
+\renewcommand{\figurename}{Fig.}
+\setbeamertemplate{caption}{%
+  \centering
+  \usebeamerfont{caption}%
+  \usebeamercolor[fg]{caption name}%
+  \insertcaptionname~\insertcaptionnumber:\ \insertcaption\par
+}
 \setbeamersize{text margin left=1.1cm,text margin right=1.1cm}
 \setbeamertemplate{headline}{}
 

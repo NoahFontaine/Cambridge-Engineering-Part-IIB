@@ -3,86 +3,104 @@
 
 \begin{frame}{Engine design trend}
   \centering
-  \textbf{\textcolor{teal}{Larger turbofan engines are more efficient}}\par\vspace{.15cm}
-  \begin{columns}[T]
+  \vspace{-0.55cm}{Turbofan engines are getting larger as they are more efficient}\par
+  \vspace{.35cm}
+  \begin{columns}[c]
     \column{.47\textwidth}\centering
-    \includegraphics[width=6.2cm,height=4.6cm,keepaspectratio]{figures/old_engine.png}\par
-    \textbf{Smaller fan, lower bypass ratio}\par
-    \textbf{$D_{\mathrm{current}}$}
-
+    \includegraphics[width=5.5cm,keepaspectratio]{figures/old_engine.png}
     \column{.47\textwidth}\centering
-    \includegraphics[width=6.2cm,height=4.6cm,keepaspectratio]{figures/new_engine.png}\par
-    \textbf{\textcolor{teal}{Larger fan, higher bypass ratio}}\par
-    \textbf{$D_{\mathrm{future}}>D_{\mathrm{current}}$}
+    \includegraphics[width=6.5cm,height=4.6cm,keepaspectratio]{figures/new_engine.png}\par
   \end{columns}
-  \vspace{.10cm}
-  \textbf{\textcolor{coral}{Larger nacelles have more wetted area and more drag}}
+  \vspace{.50cm}
+  \begin{columns}[T]
+    \column{0.47\textwidth}\centering
+    \footnotesize{OLD: smaller fan, lower bypass ratio}
+    \column{0.47\textwidth}\centering
+    \footnotesize\textcolor{teal}{NEW: Larger fan, higher bypass ratio}
+  \end{columns}
+  \vspace{.35cm}
+  \only<2>{\textbf{\textcolor{red}{Problem: larger nacelles have more drag}}}
 \end{frame}
 
-\begin{frame}{Reducing nacelle drag}
-  \begin{columns}[T]
-    \column{.56\textwidth}\centering
-    \includegraphics[width=7.0cm,height=5.3cm,keepaspectratio]{figures/engine_shorter_nacelle.png}
-
-    \column{.40\textwidth}
-    \card{teal}{Cruise design objective}{Reduce nacelle wetted area and wave drag.}\\[8pt]
-    \card{amber}{Design response}{Use a shorter, sharper nacelle lip.}\\[8pt]
-    \card{coral}{Unwanted effect}{The lip becomes more highly curved.}
+\begin{frame}{How do we reduce nacelle drag?}
+  \only<1>{\centering\includegraphics[width=7.0cm,height=5.3cm,keepaspectratio]{figures/new_engine.png}}
+  \only<2>{
+  \begin{columns}[c]
+    \column{.52\textwidth}\centering
+    \includegraphics[width=7.0cm,height=5.3cm,keepaspectratio]{figures/new_engine.png}
+    \column{.42\textwidth}
   \end{columns}
+  }
+  \only<3->{
+    \begin{columns}[c]
+      \column{.52\textwidth}\centering
+      \includegraphics[width=7.0cm,height=5.3cm,keepaspectratio]{figures/engine_shorter_nacelle.png}
+
+      \column{.45\textwidth}
+      \begin{itemize}\setlength\itemsep{1em}
+        \item Use a shorter, sharper nacelle.
+        \item Increase the curvature of the lip.
+      \end{itemize}
+      \uncover<4>{
+      \vspace{1em}
+      \hspace{0.8em}
+      \card{amber}{Challenge}{What happens during off-design conditions?}}
+    \end{columns}
+  }
 \end{frame}
 
 \begin{frame}{Crosswind creates an off-design threat}
-  \begin{columns}[T]
-    \column{.58\textwidth}\centering
+  \begin{columns}[c]
+    \column{.62\textwidth}\centering
     \includegraphics[width=7.2cm,height=5.2cm,keepaspectratio]{figures/engine_crosswind.png}
 
-    \column{.38\textwidth}
-    \begin{itemize}\setlength\itemsep{.50em}
-      \item High curvature at the windward lip
-      \item Strong acceleration of the external flow
-      \item Local supersonic region forms
-      \item A shock terminates the supersonic flow
-      \item Shock--boundary-layer interaction can cause \alert{separation}
+    \column{.50\textwidth}
+    \begin{itemize}\setlength\itemsep{1em}
+      \setlength{\itemindent}{-1em}
+      \setlength{\leftmargin}{-3em}
+      \item Smaller radius of curvature at the lip
+      \uncover<2->{\item \textbf{Higher risk of separation of the flow}}
+      \uncover<3->{\item Stronger acceleration of the flow}
+      \uncover<4->{\item Flow can reach supersonic speeds}
+      \uncover<5->{\item \textbf{More frequent SBL interations and \\ \hspace{-1.2em} separation}}
     \end{itemize}
   \end{columns}
 \end{frame}
 
-\begin{frame}{Three possible windward-lip flowfields}
+\begin{frame}{Possible windward-lip flowfields}
   \centering
   \begin{columns}[T]
-    \column{.31\textwidth}\centering
-    \includegraphics[width=4.25cm,height=3.65cm,keepaspectratio]{figures/subsonic_separated.png}\par\vspace{2pt}
-    \textbf{Subsonic}\par\small\alert{Separated boundary layer}
+    \column{.235\textwidth}\centering
+    \includegraphics[width=3.15cm,height=3.65cm,keepaspectratio]{figures/subsonic_attached.png}\par\vspace{2pt}
+    \textbf{Subsonic}\par\small Attached boundary layer
 
-    \column{.31\textwidth}\centering
-    \includegraphics[width=4.25cm,height=3.65cm,keepaspectratio]{figures/supersonic_attached.png}\par\vspace{2pt}
+    \column{.235\textwidth}\centering
+    \includegraphics[width=3.15cm,height=3.65cm,keepaspectratio]{figures/subsonic_separated.png}\par\vspace{2pt}
+    \textbf{Subsonic}\par\small\alert{Diffusive boundary layer separation}
+
+    \column{.235\textwidth}\centering
+    \includegraphics[width=3.15cm,height=3.65cm,keepaspectratio]{figures/supersonic_attached.png}\par\vspace{2pt}
     \textbf{Supersonic}\par\small Attached boundary layer
 
-    \column{.31\textwidth}\centering
-    \includegraphics[width=4.25cm,height=3.65cm,keepaspectratio]{figures/supersonic_separated.png}\par\vspace{2pt}
+    \column{.235\textwidth}\centering
+    \includegraphics[width=3.15cm,height=3.65cm,keepaspectratio]{figures/supersonic_separated.png}\par\vspace{2pt}
     \textbf{Supersonic}\par\small\alert{Shock-induced separation}
   \end{columns}
   \vspace{.18cm}
-  \textbf{The research question:} how do shock location and separation unsteadiness change with lip profile?
+  % \textbf{The research question:} How do these states couple together.....
 \end{frame}
 
-\begin{frame}{Replicating an engine intake in the wind tunnel}
-  \begin{columns}[T]
-    \column{.48\textwidth}\centering
-    \includegraphics[width=6.1cm,height=4.8cm,keepaspectratio]{figures/wind_tunnel.png}
-
-    \column{.48\textwidth}\centering
-    \includegraphics[width=6.1cm,height=4.8cm,keepaspectratio]{figures/engine_in_windtunnel.png}
-  \end{columns}
+\begin{frame}{How we replicate the engine intake in the wind tunnel}
+  \centering
+    \only<1>{\includegraphics[width=10.1cm,keepaspectratio]{figures/engine_in_windtunnel.png}}
+    \only<2>{\includegraphics[width=10.1cm,keepaspectratio]{figures/wind_tunnel.png}}
+    \only<3->{\includegraphics[width=10.1cm,keepaspectratio]{figures/wind_tunnel_with_flow.png}}
   \vspace{.10cm}
-  \begin{columns}[T]
-    \column{.48\textwidth}\centering
-    \textbf{Quasi-two-dimensional lip section}\par
-    \small Full optical access and a controllable test section
-    \column{.48\textwidth}\centering
-    \textbf{Engine geometry, tunnel environment}\par
-    \small Crosswind reproduced by relative flow; mass-flow split controls engine power
-  \end{columns}
+  \only<4->{
+    \vspace{.10cm}
+    \textbf{Tunable inlet Mach number $M_{entry}$}\par
+    \small By adjusting the angle of an airfoil aft of the working section.
+  }
 \end{frame}
 
 \begin{frame}{Aims and research questions}
