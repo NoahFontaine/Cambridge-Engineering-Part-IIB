@@ -94,12 +94,23 @@
   \centering
   \only<1>{\includegraphics[width=10.1cm,keepaspectratio]{figures/engine_in_windtunnel.png}}
   \only<2>{\includegraphics[width=10.1cm,keepaspectratio]{figures/wind_tunnel.png}}
-  \only<3->{\includegraphics[width=10.1cm,keepaspectratio]{figures/wind_tunnel_with_flow.png}}
+  \only<3>{\includegraphics[width=10.1cm,keepaspectratio]{figures/wind_tunnel_with_flow.png}}
+  \only<4->{\includegraphics[width=10.1cm,keepaspectratio]{figures/wind_tunnel_tuneable.png}}
   \par\vspace{.10cm}
   \only<4->{
     \vspace{.10cm}
-    \textbf{Tuneable inlet Mach number $M_{entry}$}\par
-    \small By adjusting the angle of an airfoil aft of the working section.
+    \begin{columns}[c]
+      \begin{column}{0.5\textwidth}
+        \centering
+        \textbf{Tuneable $M_{entry}$}\par
+        \small From the angle of an aerofoil aft of the WS.
+      \end{column}
+      \begin{column}{0.5\textwidth}
+        \centering
+        \textbf{Adjustable ``engine power''}\par
+        \small By controlling the ``Mass Flow Split'' ($MFS$).
+      \end{column}
+    \end{columns}
   }
 \end{frame}
 
@@ -137,7 +148,7 @@
 
 \begin{frame}{Aim and research questions}
   % \card{teal}{Aim}{Characterise the shock--boundary-layer interaction unsteadiness.}
-  \begin{columns}[T]
+  \begin{columns}[c]
     \column{.48\textwidth}
     \centering
     \begin{tikzpicture}[
@@ -160,38 +171,59 @@
       \path[transition] (super-attached.22.5) -- (sub-separated.202.5);
       \path[transition] (sub-attached.337.5) -- (super-separated.157.5);
     \end{tikzpicture}
-    \vspace{.18cm}
+    % \vspace{5cm}
+    % \begin{tikzpicture}[
+    %   legend card/.style={
+    %     draw=none, fill=mist, text width=1.05cm, inner sep=4pt,
+    %     align=center, font=\tiny
+    %   }
+    % ]
+    %   \node[legend card, path picture={
+    %     \fill[teal] (path picture bounding box.south west)
+    %       rectangle ([xshift=3pt]path picture bounding box.north west);
+    %   }] at (-1.6,0)
+    %     {\textbf{\textcolor{teal}{Q1}}\\[-1pt]\textcolor{navy}{Onset}};
+    %   \node[legend card, path picture={
+    %     \fill[coral] (path picture bounding box.south west)
+    %       rectangle ([xshift=3pt]path picture bounding box.north west);
+    %   }] at (0,0)
+    %     {\textbf{\textcolor{coral}{Q2--3}}\\[-1pt]\textcolor{navy}{Regions \& flow}};
+    %   \node[legend card, path picture={
+    %     \fill[amber] (path picture bounding box.south west)
+    %       rectangle ([xshift=3pt]path picture bounding box.north west);
+    %   }] at (1.6,0)
+    %     {\textbf{\textcolor{amber}{Q4--5}}\\[-1pt]\textcolor{navy}{Profile \& control}};
+    % \end{tikzpicture}
+    \par\vspace{0.8cm}
+    \centering
     \begin{tikzpicture}[
       legend card/.style={
-        draw=none, fill=mist, text width=1.05cm, inner sep=4pt,
-        align=center, font=\tiny
+        draw=none, fill=mist, text width=1.45cm, inner sep=5pt,
+        align=center, font=\scriptsize\bfseries
       }
     ]
-      \node[legend card, path picture={
+      \uncover<2->{\node[legend card, path picture={
         \fill[teal] (path picture bounding box.south west)
           rectangle ([xshift=3pt]path picture bounding box.north west);
-      }] at (-1.6,0)
-        {\textbf{\textcolor{teal}{Q1}}\\[-1pt]\textcolor{navy}{Onset}};
-      \node[legend card, path picture={
+      }] at (-2.1,0) {\textcolor{teal}{Onset}};}
+      \uncover<3->{\node[legend card, path picture={
         \fill[coral] (path picture bounding box.south west)
           rectangle ([xshift=3pt]path picture bounding box.north west);
-      }] at (0,0)
-        {\textbf{\textcolor{coral}{Q2--3}}\\[-1pt]\textcolor{navy}{Regions \& flow}};
-      \node[legend card, path picture={
+      }] at (0,0) {\textcolor{coral}{Modelling}};}
+      \uncover<4->{\node[legend card, path picture={
         \fill[amber] (path picture bounding box.south west)
           rectangle ([xshift=3pt]path picture bounding box.north west);
-      }] at (1.6,0)
-        {\textbf{\textcolor{amber}{Q4--5}}\\[-1pt]\textcolor{navy}{Profile \& control}};
+      }] at (2.1,0) {\textcolor{amber}{Comparison}};}
     \end{tikzpicture}
-    % \card{amber}{Comparison}{\textbf{Baseline} vs.\ \textbf{thinner} vs.\ \textbf{thicker} lip profile.}
+
     \column{.48\textwidth}
     \textbf{Research questions}
     \begin{enumerate}\setlength\itemsep{.4em}
       \uncover<2->{\item[\textcolor{teal}{\smash{\rule[-1.8em]{1.5pt}{2.8em}}}\hspace{.25em}\textcolor{teal}{\bfseries 1.}] At what $M_{\mathrm{entry}}$ values does unsteadiness occur?}
-      \uncover<3->{\item[\textcolor{coral}{\smash{\rule[-6.5em]{1.5pt}{7.3em}}}\hspace{.25em}\textcolor{teal}{\bfseries 2.}] What is the $M_{\mathrm{entry}}$ range window of each unsteady region?}
-      \uncover<4->{\item[\hspace{1.5pt}\hspace{.25em}\textcolor{teal}{\bfseries 3.}] What frequencies, amplitudes and flow structures characterise the unsteadiness?}
-      \uncover<5->{\item[\textcolor{amber}{\smash{\rule[-4.4em]{1.5pt}{5em}}}\hspace{.25em}\textcolor{teal}{\bfseries 4.}] How does it vary with lip profile?}
-      \uncover<6->{\item[\hspace{1.5pt}\hspace{.25em}\textcolor{teal}{\bfseries 5.}] How do SBLI control elements affect its onset?}
+      \uncover<3->{\item[\textcolor{coral}{\smash{\rule[-6.1em]{1.5pt}{7.0em}}}\hspace{.25em}\textcolor{teal}{\bfseries 2.}] What is the $M_{\mathrm{entry}}$ range window of each unsteady region?}
+      \uncover<3->{\item[\hspace{1.5pt}\hspace{.25em}\textcolor{teal}{\bfseries 3.}] What frequencies, amplitudes and flow structures characterise the unsteadiness?}
+      \uncover<4->{\item[\textcolor{amber}{\smash{\rule[-3.5em]{1.5pt}{4.3em}}}\hspace{.25em}\textcolor{teal}{\bfseries 4.}] How does it vary with lip profile?}
+      \uncover<4->{\item[\hspace{1.5pt}\hspace{.25em}\textcolor{teal}{\bfseries 5.}] How do SBLI control elements affect its onset?}
     \end{enumerate}
   \end{columns}
 \end{frame}
