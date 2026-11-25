@@ -90,87 +90,206 @@
   % \textbf{The research question:} How do these states couple together.....
 \end{frame}
 
-\begin{frame}{How we replicate the engine intake in the wind tunnel}
-  \centering
-  \only<1>{\includegraphics[width=10.1cm,keepaspectratio]{figures/engine_in_windtunnel.png}}
-  \only<2>{\includegraphics[width=10.1cm,keepaspectratio]{figures/wind_tunnel.png}}
-  \only<3>{\includegraphics[width=10.1cm,keepaspectratio]{figures/wind_tunnel_with_flow.png}}
-  \only<4->{\includegraphics[width=10.1cm,keepaspectratio]{figures/wind_tunnel_tuneable.png}}
-  \par\vspace{.10cm}
-  \only<4->{
-    \vspace{.10cm}
-    \begin{columns}[c]
-      \begin{column}{0.5\textwidth}
-        \centering
-        \textbf{Tuneable $M_{entry}$}\par
-        \small From the angle of an aerofoil aft of the WS.
-      \end{column}
-      \begin{column}{0.5\textwidth}
-        \centering
-        \textbf{Adjustable ``engine power''}\par
-        \small By controlling the ``Mass Flow Split'' ($MFS$).
-      \end{column}
-    \end{columns}
-  }
-\end{frame}
-
-\begin{frame}{Aim and research questions}
+\begin{frame}{Focus of the study}
   \centering
   \begin{tikzpicture}[
-    state/.style={align=center, inner sep=0pt, font=\tiny},
-    transition/.style={<->, >=Stealth, draw=teal, line width=1pt}
+    x=1.1cm,y=1.1cm,
+    every node/.style={font=\small,text=navy},
+    point/.style={rectangle,minimum size=5pt,inner sep=0pt}
   ]
-    \node[state] (sub-attached) at (-1.6,1.3)
-      {Subsonic attached\\[-0pt]
-      \includegraphics[width=2.1cm]{figures/round_subsonic_attached.png}};
-    \node[state] (sub-separated) at (1.6,1.3)
-      {Subsonic separated\\[-0pt]
-      \includegraphics[width=2.1cm]{figures/round_subsonic_separated.png}};
-    \node[state] (super-attached) at (-1.6,-1.3)
-      {\includegraphics[width=2.1cm]{figures/round_supersonic_attached.png}\\[-1pt]
-       Supersonic attached};
-    \node[state] (super-separated) at (1.6,-1.3)
-      {\includegraphics[width=2.1cm]{figures/round_supersonic_separated.png}\\[-1pt]
-       Supersonic separated};
+    \draw[navy,line width=.9pt,-{Stealth[length=2.2mm]}]
+      (0,0) -- (0,5);
+    \draw[navy,line width=.9pt,-{Stealth[length=2.2mm]}]
+      (0,0) -- (5,0);
 
-    \path[transition] (sub-attached.north east) to[bend left=20] (sub-separated.north west);
-    \path[transition] (super-attached.south east) to[bend right=20] (super-separated.south west);
-    \path[transition] (sub-attached.202.5) to[bend right=20] (super-attached.157.5);
-    \path[transition] (sub-separated.337.5) to[bend left=20] (super-separated.22.5);
-    \path[transition] (super-attached.22.5) -- (sub-separated.202.5);
-    \path[transition] (sub-attached.337.5) -- (super-separated.157.5);
+    \node[point,draw=amber,fill=amber] (p1) at (1,1) {};
+    \uncover<2->{\node[point,draw=cyan,fill=cyan] (p2) at (4,1) {};}
+    \uncover<3->{\node[point,draw=red,fill=red] (p3) at (4,4) {};}
+
+    \uncover<2->{\draw[navy!65,line width=.7pt,-{Stealth[length=1.8mm]},
+        shorten <=5pt,shorten >=5pt]
+        (p1) -- (p2);}
+    \uncover<3->{\draw[navy!65,line width=.7pt,-{Stealth[length=1.8mm]},
+        shorten <=5pt,shorten >=5pt]
+        (p2) -- (p3);}
+
+    \node[anchor=west,align=center,inner sep=0pt] (flow-image) at (7.7,2.5) {%
+      \begin{minipage}{4.2cm}\centering
+        \only<1>{%
+          \includegraphics[width=3.8cm]{figures/round_subsonic_separated_yellow.png}\\
+          \textbf{Subsonic}\par\small Diffusive boundary layer separation
+        }
+        \only<2>{%
+          \includegraphics[width=3.8cm]{figures/round_subsonic_attached.png}\\
+          \textbf{Subsonic}\par\small Attached boundary layer
+        }
+        \only<3>{%
+          \includegraphics[width=3.8cm]{figures/round_supersonic_separated_red.png}\\
+          \textbf{Supersonic}\par\small Shock-induced separation
+        }
+      \end{minipage}
+    };
+
+    \only<1>{\draw[amber,line width=.9pt,-{Stealth[length=2mm]},
+      shorten <=4pt,shorten >=5pt] (p1) to[out=0,in=180,looseness=1.2] (flow-image.west);}
+    \only<2>{\draw[cyan!80!black,line width=.9pt,-{Stealth[length=2mm]},
+      shorten <=4pt,shorten >=5pt] (p2) to[out=0,in=180,looseness=1.2] (flow-image.west);}
+    \only<3>{\draw[red!80!black,line width=.9pt,-{Stealth[length=2mm]},
+      shorten <=4pt,shorten >=5pt] (p3) to[out=0,in=180,looseness=1.2] (flow-image.west);}
+
+    \node[rotate=90,anchor=south,font=\small\bfseries]
+      at (0,2.3) {$U_{\mathrm{crosswind}}$};
+    \node[anchor=north,font=\small\bfseries]
+      at (2.4,0) {$\dot{m}_{\mathrm{engine}}$};
   \end{tikzpicture}
-  \only<2->{
-  \begin{block}{Aim}
-    Characterise the shock--boundary-layer interaction unsteadiness as the flow transitions between different flow states.
-  \end{block}}
+
 \end{frame}
+
+\begin{frame}{Instabilities of transition}
+  \begin{columns}[T]
+    \column{.4\textwidth}
+    \centering
+    \begin{tikzpicture}[
+      x=1.1cm,y=1.1cm,
+      every node/.style={font=\small,text=navy},
+      point/.style={rectangle,minimum size=5pt,inner sep=0pt}
+    ]
+      \draw[navy,line width=.9pt,-{Stealth[length=2.2mm]}]
+        (0,0) -- (0,5);
+      \draw[navy,line width=.9pt,-{Stealth[length=2.2mm]}]
+        (0,0) -- (5,0);
+      
+      \node[point,draw=amber,fill=amber] (p1) at (1,1) {};
+      \node[point,draw=cyan,fill=cyan] (p2) at (4,1) {};
+  
+      \node[point,draw=red,fill=red] (p3) at (4,4) {};
+      \draw[navy!65,line width=.7pt,-{Stealth[length=1.8mm]},
+        shorten <=5pt,shorten >=5pt]
+        (p1) -- (p2);
+      \draw[navy!65,line width=.7pt,-{Stealth[length=1.8mm]},
+        shorten <=5pt,shorten >=5pt]
+        (p2) -- (p3);
+      \node[point,shape=regular polygon,regular polygon sides=3,
+        shape border rotate=180,minimum size=10pt,
+        draw=magenta,fill=magenta] at (4,2.5) {};
+      \uncover<4->{
+      \node[point,minimum size=10pt,fill=magenta,opacity=.3]
+        at (4,2.5) {};
+      \node[point,minimum size=10pt,fill=magenta,opacity=.3]
+        at (4,2.82) {};
+      \node[point,minimum size=10pt,fill=magenta,opacity=.3]
+        at (4,2.18) {};
+      }
+      \node[rotate=90,anchor=south,font=\small\bfseries]
+        at (0,2.3) {$U_{\mathrm{crosswind}}$};
+      \node[anchor=north,font=\small\bfseries]
+        at (2.4,0) {$\dot{m}_{\mathrm{engine}}$};
+    \end{tikzpicture}
+    \column{.62\textwidth}
+    \begin{itemize}\setlength\itemsep{0.7em}
+      % \setlength{\itemindent}{-1em}
+      % \setlength{\leftmargin}{-3em}
+      \item Point of instability at the onset of SBLI separation.
+      \item \uncover<2->{Bad for the engine.}
+    \end{itemize} 
+    \vspace{1em}
+    % \uncover<3->{This transition region is not as discrete as we thought. So far, little to no research on:}
+    \uncover<3->{So far, little to no research on:}
+    \vspace{1em}
+    \uncover<4->{
+    \begin{enumerate}\setlength\itemsep{0.7em}
+      \setlength\itemindent{0em}
+      % \setlength{\leftmargin}{1em}  
+      \item \uncover<4->{The speed envelope of the transition region.}
+      \item \uncover<5->{Oscillation characteristics.}
+      \item \uncover<6->{The underlying physics.}
+    \end{enumerate}
+    }
+  \end{columns}
+  
+\end{frame}
+
+\begin{frame}{Separation unsteadiness}
+  \centering
+  % Multipage PDF exported from videos/run15_gif.gif for PDF animation.
+  \animategraphics[
+    autoplay,loop,controls,poster=first,width=.7\linewidth
+  ]{30}{videos/run15_gif_frames}{}{}
+\end{frame}
+
+\begin{frame}{Separation unsteadiness and aim}
+  \begin{columns}[c]
+    \begin{column}{.50\textwidth}
+      \centering
+      % Multipage PDF exported from videos/run15_gif.gif for PDF animation.
+      \animategraphics[
+        autoplay,loop,controls,poster=first,width=\linewidth
+      ]{30}{videos/run15_gif_frames}{}{}
+    \end{column}
+    \only<1-3>{
+    \begin{column}{.50\textwidth}
+      \centering
+      \begin{tikzpicture}[
+        state/.style={align=center, inner sep=0pt, font=\tiny},
+        transition/.style={<->, >=Stealth, draw=teal, line width=1pt}
+      ]
+        \node[state] (super-attached) at (-2,0)
+          {\includegraphics[width=2.1cm]{figures/round_supersonic_attached.png}\\[-1pt]
+          Supersonic attached};
+        \node[state] (super-separated) at (2,0)
+          {\includegraphics[width=2.1cm]{figures/round_supersonic_separated.png}\\[-1pt]
+          Supersonic separated};
+
+        \path[transition] (super-attached.22.5) to[bend left=20] (super-separated.157.5);
+        \path[transition] (super-attached.337.5) to[bend right=20] (super-separated.202.5);
+
+      \end{tikzpicture}
+    \end{column}}
+    \only<4->{
+    \begin{column}{.50\textwidth}
+      \centering
+      \begin{tikzpicture}[
+        state/.style={align=center, inner sep=0pt, font=\tiny},
+        transition/.style={<->, >=Stealth, draw=teal, line width=1pt}
+      ]
+        \node[state] (sub-attached) at (-1.6,1.3)
+          {Subsonic attached\\[-0pt]
+          \includegraphics[width=2.1cm]{figures/round_subsonic_attached.png}};
+        \node[state] (sub-separated) at (1.6,1.3)
+          {Subsonic separated\\[-0pt]
+          \includegraphics[width=2.1cm]{figures/round_subsonic_separated.png}};
+        \node[state] (super-attached) at (-1.6,-1.3)
+          {\includegraphics[width=2.1cm]{figures/round_supersonic_attached.png}\\[-1pt]
+          Supersonic attached};
+        \node[state] (super-separated) at (1.6,-1.3)
+          {\includegraphics[width=2.1cm]{figures/round_supersonic_separated.png}\\[-1pt]
+          Supersonic separated};
+
+        \path[transition] (sub-attached.north east) to[bend left=20] (sub-separated.north west);
+        \path[transition] (super-attached.south east) to[bend right=20] (super-separated.south west);
+        \path[transition] (sub-attached.202.5) to[bend right=20] (super-attached.157.5);
+        \path[transition] (sub-separated.337.5) to[bend left=20] (super-separated.22.5);
+        \path[transition] (super-attached.22.5) -- (sub-separated.202.5);
+        \path[transition] (sub-attached.337.5) -- (super-separated.157.5);
+      \end{tikzpicture}
+    \end{column}}
+    \end{columns}
+    \uncover<3->{
+    \begin{block}{Aim}
+    Characterise the shock--boundary-layer interaction unsteadiness as the flow transitions between different flow states.
+    \end{block}}
+\end{frame}
+
+
 
 \begin{frame}{Aim and research questions}
   % \card{teal}{Aim}{Characterise the shock--boundary-layer interaction unsteadiness.}
   \begin{columns}[c]
     \column{.48\textwidth}
     \centering
-    \begin{tikzpicture}[
-      state/.style={align=center, inner sep=0pt, font=\tiny},
-      transition/.style={<->, >=Stealth, draw=teal, line width=1pt}
-    ]
-      \node[state] (sub-attached) at (-1.2,1)
-        {\includegraphics[width=2cm]{figures/round_subsonic_attached.png}};
-      \node[state] (sub-separated) at (1.2,1)
-        {\includegraphics[width=2cm]{figures/round_subsonic_separated.png}};
-      \node[state] (super-attached) at (-1.2,-1)
-        {\includegraphics[width=2cm]{figures/round_supersonic_attached.png}};
-      \node[state] (super-separated) at (1.2,-1)
-        {\includegraphics[width=2cm]{figures/round_supersonic_separated.png}};
-
-      \path[transition] (sub-attached.67.5) to[bend left=20] (sub-separated.112.5);
-      \path[transition] (super-attached.292.5) to[bend right=20] (super-separated.247.5);
-      \path[transition] (sub-attached.202.5) to[bend right=20] (super-attached.157.5);
-      \path[transition] (sub-separated.337.5) to[bend left=20] (super-separated.22.5);
-      \path[transition] (super-attached.22.5) -- (sub-separated.202.5);
-      \path[transition] (sub-attached.337.5) -- (super-separated.157.5);
-    \end{tikzpicture}
+    \animategraphics[
+      autoplay,loop,controls,poster=first,width=\linewidth
+    ]{10}{videos/run_16_gif_frames}{}{}
     % \vspace{5cm}
     % \begin{tikzpicture}[
     %   legend card/.style={
@@ -226,4 +345,62 @@
       \uncover<4->{\item[\hspace{1.5pt}\hspace{.25em}\textcolor{teal}{\bfseries 5.}] How do SBLI control elements affect its onset?}
     \end{enumerate}
   \end{columns}
+\end{frame}
+
+
+% \begin{frame}{Overall aim}
+%   \centering
+%   \begin{tikzpicture}[
+%     state/.style={align=center, inner sep=0pt, font=\tiny},
+%     transition/.style={<->, >=Stealth, draw=teal, line width=1pt}
+%   ]
+%     \node[state] (sub-attached) at (-1.6,1.3)
+%       {Subsonic attached\\[-0pt]
+%       \includegraphics[width=2.1cm]{figures/round_subsonic_attached.png}};
+%     \node[state] (sub-separated) at (1.6,1.3)
+%       {Subsonic separated\\[-0pt]
+%       \includegraphics[width=2.1cm]{figures/round_subsonic_separated.png}};
+%     \node[state] (super-attached) at (-1.6,-1.3)
+%       {\includegraphics[width=2.1cm]{figures/round_supersonic_attached.png}\\[-1pt]
+%        Supersonic attached};
+%     \node[state] (super-separated) at (1.6,-1.3)
+%       {\includegraphics[width=2.1cm]{figures/round_supersonic_separated.png}\\[-1pt]
+%        Supersonic separated};
+
+%     \path[transition] (sub-attached.north east) to[bend left=20] (sub-separated.north west);
+%     \path[transition] (super-attached.south east) to[bend right=20] (super-separated.south west);
+%     \path[transition] (sub-attached.202.5) to[bend right=20] (super-attached.157.5);
+%     \path[transition] (sub-separated.337.5) to[bend left=20] (super-separated.22.5);
+%     \path[transition] (super-attached.22.5) -- (sub-separated.202.5);
+%     \path[transition] (sub-attached.337.5) -- (super-separated.157.5);
+%   \end{tikzpicture}
+%   \only<2->{
+%   \begin{block}{Aim}
+%     Characterise the shock--boundary-layer interaction unsteadiness as the flow transitions between different flow states.
+%   \end{block}}
+% \end{frame}
+
+
+\begin{frame}{How to characterize these instabilities?}
+  \centering
+  \only<1>{\includegraphics[width=10.1cm,keepaspectratio]{figures/engine_in_windtunnel.png}}
+  \only<2>{\includegraphics[width=10.1cm,keepaspectratio]{figures/wind_tunnel.png}}
+  \only<3>{\includegraphics[width=10.1cm,keepaspectratio]{figures/wind_tunnel_with_flow.png}}
+  % \only<4->{\includegraphics[width=10.1cm,keepaspectratio]{figures/wind_tunnel_tuneable.png}}
+  % \par\vspace{.10cm}
+  % \only<4->{
+  %   \vspace{.10cm}
+  %   \begin{columns}[c]
+  %     \begin{column}{0.5\textwidth}
+  %       \centering
+  %       \textbf{Tuneable $M_{entry}$}\par
+  %       \small From the angle of an aerofoil aft of the WS.
+  %     \end{column}
+  %     \begin{column}{0.5\textwidth}
+  %       \centering
+  %       \textbf{Adjustable ``engine power''}\par
+  %       \small By controlling the ``Mass Flow Split'' ($MFS$).
+  %     \end{column}
+  %   \end{columns}
+  % }
 \end{frame}

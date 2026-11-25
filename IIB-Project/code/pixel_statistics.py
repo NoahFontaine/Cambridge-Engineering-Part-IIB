@@ -8,6 +8,7 @@ import csv
 import math
 from pathlib import Path
 
+import matplotlib.pyplot as plt
 import numpy as np
 
 from shadowgraph_pipeline import (
@@ -18,7 +19,6 @@ from shadowgraph_pipeline import (
     output_path,
     ROI_NAMES,
     roi_mask,
-    save_map,
     save_spectrum,
     scaled_settings,
     video_dimensions,
@@ -89,14 +89,14 @@ def analyze(
         **{name: values.astype(np.float32) for name, values in masked_maps.items()},
         analysis_mask=mask,
     )
-    titles = {
-        "mean": ("Mean shadowgraph intensity", "grayscale level"),
-        "sd": ("Pixel-wise intensity SD", "grayscale level"),
-        "skewness": ("Pixel-wise intensity skewness", "skewness"),
-        "kurtosis": ("Pixel-wise intensity kurtosis", "kurtosis (Gaussian = 3)"),
+    colorbar_labels = {
+        "mean": "grayscale level",
+        "sd": "grayscale level",
+        "skewness": "skewness",
+        "kurtosis": "kurtosis (Gaussian = 3)",
     }
-    for name, (title, label) in titles.items():
-        save_map(output / f"{name}.png", masked_maps[name], title, label)
+    for name, label in colorbar_labels.items():
+        save_pixel_map(output / f"{name}.png", masked_maps[name], label)
 
     # The first pass establishes the temporal mean; this pass forms an ROI-only
     # instantaneous signal suitable for scalar unsteadiness and frequency work.
@@ -159,6 +159,18 @@ def analyze(
     }
     json_summary(output / "summary.json", summary)
     return summary
+
+
+def save_pixel_map(path: Path, values: np.ndarray, colorbar_label: str) -> None:
+    fig, axis = plt.subplots(figsize=(10, 5))
+    image = axis.imshow(
+        np.ma.masked_invalid(values), cmap="inferno", origin="upper", aspect="equal"
+    )
+    axis.set(xlabel="x pixel index", ylabel="y pixel index")
+    fig.colorbar(image, ax=axis, label=colorbar_label)
+    fig.tight_layout()
+    fig.savefig(path, dpi=160)
+    plt.close(fig)
 
 
 def main() -> None:
