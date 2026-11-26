@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.10.1)  26 NOV 2026 17:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.10.1)  26 NOV 2026 19:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1067,27 +1067,27 @@ Package pdftex.def Info: figures/supersonic_separated.png  used on input line 93
 <figures/round_subsonic_separated_yellow.png, id=132, 832.10875pt x 827.09pt>
 File: figures/round_subsonic_separated_yellow.png Graphic file (type png)
 <use figures/round_subsonic_separated_yellow.png>
-Package pdftex.def Info: figures/round_subsonic_separated_yellow.png  used on input line 148.
+Package pdftex.def Info: figures/round_subsonic_separated_yellow.png  used on input line 168.
 (pdftex.def)             Requested size: 108.12054pt x 107.46237pt.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 148.
+(Font)              scaled to size 9.19998pt on input line 168.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 148.
+(Font)              scaled to size 6.43999pt on input line 168.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 148.
+(Font)              <10> on input line 168.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 148.
+(Font)              <7> on input line 168.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 148.
+(Font)              scaled to size 6.43999pt on input line 168.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 148.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 168.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 9.19998pt on input line 148.
+(Font)              scaled to size 9.19998pt on input line 168.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 148.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 168.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 6.43999pt on input line 148.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 148.
+(Font)              scaled to size 6.43999pt on input line 168.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 168.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [14
@@ -1096,7 +1096,7 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 <figures/round_supersonic_attached.png, id=142, 1009.7725pt x 1007.765pt>
 File: figures/round_supersonic_attached.png Graphic file (type png)
 <use figures/round_supersonic_attached.png>
-Package pdftex.def Info: figures/round_supersonic_attached.png  used on input line 148.
+Package pdftex.def Info: figures/round_supersonic_attached.png  used on input line 168.
 (pdftex.def)             Requested size: 108.12054pt x 107.90205pt.
  [15
 
@@ -1104,47 +1104,47 @@ Package pdftex.def Info: figures/round_supersonic_attached.png  used on input li
 <figures/round_supersonic_separated_red.png, id=150, 1009.7725pt x 1007.765pt>
 File: figures/round_supersonic_separated_red.png Graphic file (type png)
 <use figures/round_supersonic_separated_red.png>
-Package pdftex.def Info: figures/round_supersonic_separated_red.png  used on input line 148.
+Package pdftex.def Info: figures/round_supersonic_separated_red.png  used on input line 168.
 (pdftex.def)             Requested size: 108.12054pt x 107.90205pt.
  [16
 
  <./figures/round_supersonic_separated_red.png>]
-Overfull \hbox (14.85448pt too wide) in paragraph at lines 212--212
+Overfull \hbox (14.85448pt too wide) in paragraph at lines 251--251
  [][] 
  []
 
 [17
 
 ]
-Overfull \hbox (14.85448pt too wide) in paragraph at lines 212--212
+Overfull \hbox (14.85448pt too wide) in paragraph at lines 251--251
  [][] 
  []
 
 [18
 
 ]
-Overfull \hbox (14.85448pt too wide) in paragraph at lines 212--212
+Overfull \hbox (14.85448pt too wide) in paragraph at lines 251--251
  [][] 
  []
 
 [19
 
 ]
-Overfull \hbox (14.85448pt too wide) in paragraph at lines 212--212
+Overfull \hbox (14.85448pt too wide) in paragraph at lines 251--251
  [][] 
  []
 
 [20
 
 ]
-Overfull \hbox (14.85448pt too wide) in paragraph at lines 212--212
+Overfull \hbox (14.85448pt too wide) in paragraph at lines 251--251
  [][] 
  []
 
 [21
 
 ]
-Overfull \hbox (14.85448pt too wide) in paragraph at lines 212--212
+Overfull \hbox (14.85448pt too wide) in paragraph at lines 251--251
  [][] 
  []
 
@@ -1154,643 +1154,624 @@ Overfull \hbox (14.85448pt too wide) in paragraph at lines 212--212
 <videos/run15_gif_frames.pdf, id=197, page=1, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 1>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page1 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page1 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr0>
 <videos/run15_gif_frames.pdf, id=202, page=2, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 2>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page2 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page2 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr1>
 <videos/run15_gif_frames.pdf, id=206, page=3, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 3>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page3 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page3 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr2>
 <videos/run15_gif_frames.pdf, id=210, page=4, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 4>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page4 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page4 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr3>
 <videos/run15_gif_frames.pdf, id=214, page=5, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 5>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page5 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page5 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr4>
 <videos/run15_gif_frames.pdf, id=218, page=6, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 6>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page6 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page6 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr5>
 <videos/run15_gif_frames.pdf, id=222, page=7, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 7>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page7 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page7 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr6>
 <videos/run15_gif_frames.pdf, id=226, page=8, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 8>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page8 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page8 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr7>
 <videos/run15_gif_frames.pdf, id=230, page=9, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 9>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page9 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page9 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr8>
 <videos/run15_gif_frames.pdf, id=234, page=10, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 10>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page10 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page10 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr9>
 <videos/run15_gif_frames.pdf, id=238, page=11, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 11>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page11 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page11 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr10>
 <videos/run15_gif_frames.pdf, id=242, page=12, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 12>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page12 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page12 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr11>
 <videos/run15_gif_frames.pdf, id=246, page=13, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 13>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page13 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page13 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr12>
 <videos/run15_gif_frames.pdf, id=250, page=14, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 14>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page14 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page14 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr13>
 <videos/run15_gif_frames.pdf, id=254, page=15, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 15>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page15 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page15 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr14>
 <videos/run15_gif_frames.pdf, id=258, page=16, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 16>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page16 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page16 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr15>
 <videos/run15_gif_frames.pdf, id=262, page=17, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 17>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page17 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page17 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr16>
 <videos/run15_gif_frames.pdf, id=266, page=18, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 18>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page18 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page18 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr17>
 <videos/run15_gif_frames.pdf, id=270, page=19, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 19>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page19 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page19 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr18>
 <videos/run15_gif_frames.pdf, id=274, page=20, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 20>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page20 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page20 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr19>
 <videos/run15_gif_frames.pdf, id=278, page=21, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 21>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page21 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page21 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr20>
 <videos/run15_gif_frames.pdf, id=282, page=22, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 22>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page22 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page22 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr21>
 <videos/run15_gif_frames.pdf, id=286, page=23, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 23>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page23 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page23 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr22>
 <videos/run15_gif_frames.pdf, id=290, page=24, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 24>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page24 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page24 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr23>
 <videos/run15_gif_frames.pdf, id=294, page=25, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 25>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page25 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page25 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr24>
 <videos/run15_gif_frames.pdf, id=298, page=26, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 26>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page26 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page26 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr25>
 <videos/run15_gif_frames.pdf, id=302, page=27, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 27>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page27 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page27 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr26>
 <videos/run15_gif_frames.pdf, id=306, page=28, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 28>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page28 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page28 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr27>
 <videos/run15_gif_frames.pdf, id=310, page=29, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 29>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page29 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page29 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr28>
 <videos/run15_gif_frames.pdf, id=314, page=30, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 30>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page30 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page30 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr29>
 <videos/run15_gif_frames.pdf, id=318, page=31, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 31>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page31 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page31 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr30>
 <videos/run15_gif_frames.pdf, id=322, page=32, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 32>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page32 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page32 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr31>
 <videos/run15_gif_frames.pdf, id=326, page=33, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 33>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page33 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page33 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr32>
 <videos/run15_gif_frames.pdf, id=330, page=34, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 34>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page34 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page34 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr33>
 <videos/run15_gif_frames.pdf, id=334, page=35, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 35>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page35 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page35 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr34>
 <videos/run15_gif_frames.pdf, id=338, page=36, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 36>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page36 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page36 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr35>
 <videos/run15_gif_frames.pdf, id=342, page=37, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 37>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page37 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page37 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr36>
 <videos/run15_gif_frames.pdf, id=346, page=38, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 38>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page38 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page38 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr37>
 <videos/run15_gif_frames.pdf, id=350, page=39, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 39>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page39 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page39 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr38>
 <videos/run15_gif_frames.pdf, id=354, page=40, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 40>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page40 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page40 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr39>
 <videos/run15_gif_frames.pdf, id=358, page=41, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 41>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page41 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page41 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr40>
 <videos/run15_gif_frames.pdf, id=362, page=42, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 42>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page42 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page42 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr41>
 <videos/run15_gif_frames.pdf, id=366, page=43, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 43>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page43 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page43 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr42>
 <videos/run15_gif_frames.pdf, id=370, page=44, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 44>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page44 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page44 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr43>
 <videos/run15_gif_frames.pdf, id=374, page=45, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 45>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page45 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page45 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr44>
 <videos/run15_gif_frames.pdf, id=378, page=46, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 46>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page46 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page46 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr45>
 <videos/run15_gif_frames.pdf, id=382, page=47, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 47>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page47 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page47 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr46>
 <videos/run15_gif_frames.pdf, id=386, page=48, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 48>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page48 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page48 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr47>
 <videos/run15_gif_frames.pdf, id=390, page=49, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 49>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page49 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page49 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr48>
 <videos/run15_gif_frames.pdf, id=394, page=50, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 50>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page50 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page50 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr49>
 <videos/run15_gif_frames.pdf, id=398, page=51, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 51>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page51 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page51 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr50>
 <videos/run15_gif_frames.pdf, id=402, page=52, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 52>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page52 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page52 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr51>
 <videos/run15_gif_frames.pdf, id=406, page=53, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 53>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page53 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page53 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr52>
 <videos/run15_gif_frames.pdf, id=410, page=54, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 54>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page54 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page54 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr53>
 <videos/run15_gif_frames.pdf, id=414, page=55, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 55>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page55 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page55 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr54>
 <videos/run15_gif_frames.pdf, id=418, page=56, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 56>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page56 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page56 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr55>
 <videos/run15_gif_frames.pdf, id=422, page=57, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 57>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page57 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page57 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr56>
 <videos/run15_gif_frames.pdf, id=426, page=58, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 58>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page58 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page58 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr57>
 <videos/run15_gif_frames.pdf, id=430, page=59, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 59>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page59 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page59 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr58>
 <videos/run15_gif_frames.pdf, id=434, page=60, 462.52798pt x 303.534pt>
 File: videos/run15_gif_frames.pdf Graphic file (type pdf)
 <use videos/run15_gif_frames.pdf, page 60>
-Package pdftex.def Info: videos/run15_gif_frames.pdf , page60 used on input line 220.
+Package pdftex.def Info: videos/run15_gif_frames.pdf , page60 used on input line 259.
 (pdftex.def)             Requested size: 462.52684pt x 303.53325pt.
  <./videos/run15_gif_frames.pdf> <a0,fr59> [23
 
 ] <a1,fr0> <a1,fr1> <a1,fr2> <a1,fr3> <a1,fr4> <a1,fr5> <a1,fr6> <a1,fr7> <a1,fr8> <a1,fr9> <a1,fr10> <a1,fr11> <a1,fr12> <a1,fr13> <a1,fr14> <a1,fr15> <a1,fr16> <a1,fr17> <a1,fr18> <a1,fr19> <a1,fr20> <a1,fr21> <a1,fr22> <a1,fr23> <a1,fr24> <a1,fr25> <a1,fr26> <a1,fr27> <a1,fr28> <a1,fr29> <a1,fr30> <a1,fr31> <a1,fr32> <a1,fr33> <a1,fr34> <a1,fr35> <a1,fr36> <a1,fr37> <a1,fr38> <a1,fr39> <a1,fr40> <a1,fr41> <a1,fr42> <a1,fr43> <a1,fr44> <a1,fr45> <a1,fr46> <a1,fr47> <a1,fr48> <a1,fr49> <a1,fr50> <a1,fr51> <a1,fr52> <a1,fr53> <a1,fr54> <a1,fr55> <a1,fr56> <a1,fr57> <a1,fr58> <a1,fr59>
 File: figures/round_supersonic_attached.png Graphic file (type png)
 <use figures/round_supersonic_attached.png>
-Package pdftex.def Info: figures/round_supersonic_attached.png  used on input line 283.
+Package pdftex.def Info: figures/round_supersonic_attached.png  used on input line 322.
 (pdftex.def)             Requested size: 59.75095pt x 59.61754pt.
 <figures/round_supersonic_separated.png, id=734, 1009.7725pt x 1007.765pt>
 File: figures/round_supersonic_separated.png Graphic file (type png)
 <use figures/round_supersonic_separated.png>
-Package pdftex.def Info: figures/round_supersonic_separated.png  used on input line 283.
+Package pdftex.def Info: figures/round_supersonic_separated.png  used on input line 322.
 (pdftex.def)             Requested size: 59.75095pt x 59.61754pt.
  [24
 
  <./figures/round_supersonic_separated.png>] <a2,fr0> <a2,fr1> <a2,fr2> <a2,fr3> <a2,fr4> <a2,fr5> <a2,fr6> <a2,fr7> <a2,fr8> <a2,fr9> <a2,fr10> <a2,fr11> <a2,fr12> <a2,fr13> <a2,fr14> <a2,fr15> <a2,fr16> <a2,fr17> <a2,fr18> <a2,fr19> <a2,fr20> <a2,fr21> <a2,fr22> <a2,fr23> <a2,fr24> <a2,fr25> <a2,fr26> <a2,fr27> <a2,fr28> <a2,fr29> <a2,fr30> <a2,fr31> <a2,fr32> <a2,fr33> <a2,fr34> <a2,fr35> <a2,fr36> <a2,fr37> <a2,fr38> <a2,fr39> <a2,fr40> <a2,fr41> <a2,fr42> <a2,fr43> <a2,fr44> <a2,fr45> <a2,fr46> <a2,fr47> <a2,fr48> <a2,fr49> <a2,fr50> <a2,fr51> <a2,fr52> <a2,fr53> <a2,fr54> <a2,fr55> <a2,fr56> <a2,fr57> <a2,fr58> <a2,fr59>
 File: figures/round_supersonic_attached.png Graphic file (type png)
 <use figures/round_supersonic_attached.png>
-Package pdftex.def Info: figures/round_supersonic_attached.png  used on input line 283.
+Package pdftex.def Info: figures/round_supersonic_attached.png  used on input line 322.
 (pdftex.def)             Requested size: 59.75095pt x 59.61754pt.
 File: figures/round_supersonic_separated.png Graphic file (type png)
 <use figures/round_supersonic_separated.png>
-Package pdftex.def Info: figures/round_supersonic_separated.png  used on input line 283.
+Package pdftex.def Info: figures/round_supersonic_separated.png  used on input line 322.
 (pdftex.def)             Requested size: 59.75095pt x 59.61754pt.
  [25
 
-] <a3,fr0> <a3,fr1> <a3,fr2> <a3,fr3> <a3,fr4> <a3,fr5> <a3,fr6> <a3,fr7> <a3,fr8> <a3,fr9> <a3,fr10> <a3,fr11> <a3,fr12> <a3,fr13> <a3,fr14> <a3,fr15> <a3,fr16> <a3,fr17> <a3,fr18> <a3,fr19> <a3,fr20> <a3,fr21> <a3,fr22> <a3,fr23> <a3,fr24> <a3,fr25> <a3,fr26> <a3,fr27> <a3,fr28> <a3,fr29> <a3,fr30> <a3,fr31> <a3,fr32> <a3,fr33> <a3,fr34> <a3,fr35> <a3,fr36> <a3,fr37> <a3,fr38> <a3,fr39> <a3,fr40> <a3,fr41> <a3,fr42> <a3,fr43> <a3,fr44> <a3,fr45> <a3,fr46> <a3,fr47> <a3,fr48> <a3,fr49> <a3,fr50> <a3,fr51> <a3,fr52> <a3,fr53> <a3,fr54> <a3,fr55> <a3,fr56> <a3,fr57> <a3,fr58> <a3,fr59>
-<figures/round_subsonic_attached.png, id=1148, 1009.7725pt x 1007.765pt>
-File: figures/round_subsonic_attached.png Graphic file (type png)
-<use figures/round_subsonic_attached.png>
-Package pdftex.def Info: figures/round_subsonic_attached.png  used on input line 283.
-(pdftex.def)             Requested size: 59.75095pt x 59.61754pt.
-<figures/round_subsonic_separated.png, id=1149, 832.10875pt x 827.09pt>
-File: figures/round_subsonic_separated.png Graphic file (type png)
-<use figures/round_subsonic_separated.png>
-Package pdftex.def Info: figures/round_subsonic_separated.png  used on input line 283.
-(pdftex.def)             Requested size: 59.75095pt x 59.37878pt.
-File: figures/round_supersonic_attached.png Graphic file (type png)
-<use figures/round_supersonic_attached.png>
-Package pdftex.def Info: figures/round_supersonic_attached.png  used on input line 283.
-(pdftex.def)             Requested size: 59.75095pt x 59.61754pt.
-File: figures/round_supersonic_separated.png Graphic file (type png)
-<use figures/round_supersonic_separated.png>
-Package pdftex.def Info: figures/round_supersonic_separated.png  used on input line 283.
-(pdftex.def)             Requested size: 59.75095pt x 59.61754pt.
- [26
-
- <./figures/round_subsonic_attached.png> <./figures/round_subsonic_separated.png>]
-<videos/run_16_gif_frames.pdf, id=1159, page=1, 274.626pt x 182.84311pt>
+]
+<videos/run_16_gif_frames.pdf, id=950, page=1, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 1>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page1 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page1 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr0>
-<videos/run_16_gif_frames.pdf, id=1164, page=2, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr0>
+<videos/run_16_gif_frames.pdf, id=955, page=2, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 2>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page2 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page2 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr1>
-<videos/run_16_gif_frames.pdf, id=1168, page=3, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr1>
+<videos/run_16_gif_frames.pdf, id=959, page=3, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 3>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page3 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page3 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr2>
-<videos/run_16_gif_frames.pdf, id=1172, page=4, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr2>
+<videos/run_16_gif_frames.pdf, id=963, page=4, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 4>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page4 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page4 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr3>
-<videos/run_16_gif_frames.pdf, id=1176, page=5, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr3>
+<videos/run_16_gif_frames.pdf, id=967, page=5, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 5>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page5 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page5 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr4>
-<videos/run_16_gif_frames.pdf, id=1180, page=6, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr4>
+<videos/run_16_gif_frames.pdf, id=971, page=6, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 6>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page6 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page6 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr5>
-<videos/run_16_gif_frames.pdf, id=1184, page=7, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr5>
+<videos/run_16_gif_frames.pdf, id=975, page=7, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 7>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page7 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page7 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr6>
-<videos/run_16_gif_frames.pdf, id=1188, page=8, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr6>
+<videos/run_16_gif_frames.pdf, id=979, page=8, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 8>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page8 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page8 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr7>
-<videos/run_16_gif_frames.pdf, id=1192, page=9, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr7>
+<videos/run_16_gif_frames.pdf, id=983, page=9, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 9>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page9 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page9 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr8>
-<videos/run_16_gif_frames.pdf, id=1196, page=10, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr8>
+<videos/run_16_gif_frames.pdf, id=987, page=10, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 10>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page10 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page10 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr9>
-<videos/run_16_gif_frames.pdf, id=1200, page=11, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr9>
+<videos/run_16_gif_frames.pdf, id=991, page=11, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 11>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page11 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page11 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr10>
-<videos/run_16_gif_frames.pdf, id=1204, page=12, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr10>
+<videos/run_16_gif_frames.pdf, id=995, page=12, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 12>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page12 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page12 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr11>
-<videos/run_16_gif_frames.pdf, id=1208, page=13, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr11>
+<videos/run_16_gif_frames.pdf, id=999, page=13, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 13>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page13 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page13 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr12>
-<videos/run_16_gif_frames.pdf, id=1212, page=14, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr12>
+<videos/run_16_gif_frames.pdf, id=1003, page=14, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 14>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page14 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page14 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr13>
-<videos/run_16_gif_frames.pdf, id=1216, page=15, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr13>
+<videos/run_16_gif_frames.pdf, id=1007, page=15, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 15>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page15 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page15 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr14>
-<videos/run_16_gif_frames.pdf, id=1221, page=16, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr14>
+<videos/run_16_gif_frames.pdf, id=1011, page=16, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 16>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page16 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page16 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr15>
-<videos/run_16_gif_frames.pdf, id=1225, page=17, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr15>
+<videos/run_16_gif_frames.pdf, id=1015, page=17, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 17>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page17 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page17 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr16>
-<videos/run_16_gif_frames.pdf, id=1229, page=18, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr16>
+<videos/run_16_gif_frames.pdf, id=1019, page=18, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 18>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page18 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page18 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr17>
-<videos/run_16_gif_frames.pdf, id=1233, page=19, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr17>
+<videos/run_16_gif_frames.pdf, id=1023, page=19, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 19>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page19 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page19 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr18>
-<videos/run_16_gif_frames.pdf, id=1237, page=20, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr18>
+<videos/run_16_gif_frames.pdf, id=1027, page=20, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 20>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page20 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page20 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr19>
-<videos/run_16_gif_frames.pdf, id=1241, page=21, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr19>
+<videos/run_16_gif_frames.pdf, id=1031, page=21, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 21>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page21 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page21 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr20>
-<videos/run_16_gif_frames.pdf, id=1245, page=22, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr20>
+<videos/run_16_gif_frames.pdf, id=1035, page=22, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 22>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page22 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page22 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr21>
-<videos/run_16_gif_frames.pdf, id=1249, page=23, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr21>
+<videos/run_16_gif_frames.pdf, id=1039, page=23, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 23>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page23 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page23 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr22>
-<videos/run_16_gif_frames.pdf, id=1253, page=24, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr22>
+<videos/run_16_gif_frames.pdf, id=1043, page=24, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 24>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page24 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page24 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr23>
-<videos/run_16_gif_frames.pdf, id=1257, page=25, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr23>
+<videos/run_16_gif_frames.pdf, id=1047, page=25, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 25>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page25 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page25 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr24>
-<videos/run_16_gif_frames.pdf, id=1261, page=26, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr24>
+<videos/run_16_gif_frames.pdf, id=1051, page=26, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 26>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page26 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page26 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr25>
-<videos/run_16_gif_frames.pdf, id=1265, page=27, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr25>
+<videos/run_16_gif_frames.pdf, id=1055, page=27, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 27>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page27 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page27 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr26>
-<videos/run_16_gif_frames.pdf, id=1269, page=28, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr26>
+<videos/run_16_gif_frames.pdf, id=1059, page=28, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 28>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page28 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page28 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr27>
-<videos/run_16_gif_frames.pdf, id=1273, page=29, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr27>
+<videos/run_16_gif_frames.pdf, id=1063, page=29, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 29>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page29 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page29 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr28>
-<videos/run_16_gif_frames.pdf, id=1277, page=30, 274.626pt x 182.84311pt>
+ <./videos/run_16_gif_frames.pdf> <a3,fr28>
+<videos/run_16_gif_frames.pdf, id=1067, page=30, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 30>
-Package pdftex.def Info: videos/run_16_gif_frames.pdf , page30 used on input line 350.
+Package pdftex.def Info: videos/run_16_gif_frames.pdf , page30 used on input line 389.
 (pdftex.def)             Requested size: 274.62532pt x 182.84265pt.
- <./videos/run_16_gif_frames.pdf> <a4,fr29>
-Overfull \hbox (1.68132pt too wide) in paragraph at lines 350--350
+ <./videos/run_16_gif_frames.pdf> <a3,fr29>
+Overfull \hbox (1.68132pt too wide) in paragraph at lines 389--389
+ [][][]\T1/phv/b/n/8 Comparison[] 
+ []
+
+[26
+
+] <a4,fr0> <a4,fr1> <a4,fr2> <a4,fr3> <a4,fr4> <a4,fr5> <a4,fr6> <a4,fr7> <a4,fr8> <a4,fr9> <a4,fr10> <a4,fr11> <a4,fr12> <a4,fr13> <a4,fr14> <a4,fr15> <a4,fr16> <a4,fr17> <a4,fr18> <a4,fr19> <a4,fr20> <a4,fr21> <a4,fr22> <a4,fr23> <a4,fr24> <a4,fr25> <a4,fr26> <a4,fr27> <a4,fr28> <a4,fr29>
+Overfull \hbox (1.68132pt too wide) in paragraph at lines 389--389
  [][][]\T1/phv/b/n/8 Comparison[] 
  []
 
 [27
 
 ] <a5,fr0> <a5,fr1> <a5,fr2> <a5,fr3> <a5,fr4> <a5,fr5> <a5,fr6> <a5,fr7> <a5,fr8> <a5,fr9> <a5,fr10> <a5,fr11> <a5,fr12> <a5,fr13> <a5,fr14> <a5,fr15> <a5,fr16> <a5,fr17> <a5,fr18> <a5,fr19> <a5,fr20> <a5,fr21> <a5,fr22> <a5,fr23> <a5,fr24> <a5,fr25> <a5,fr26> <a5,fr27> <a5,fr28> <a5,fr29>
-Overfull \hbox (1.68132pt too wide) in paragraph at lines 350--350
+Overfull \hbox (1.68132pt too wide) in paragraph at lines 389--389
  [][][]\T1/phv/b/n/8 Comparison[] 
  []
 
 [28
 
 ] <a6,fr0> <a6,fr1> <a6,fr2> <a6,fr3> <a6,fr4> <a6,fr5> <a6,fr6> <a6,fr7> <a6,fr8> <a6,fr9> <a6,fr10> <a6,fr11> <a6,fr12> <a6,fr13> <a6,fr14> <a6,fr15> <a6,fr16> <a6,fr17> <a6,fr18> <a6,fr19> <a6,fr20> <a6,fr21> <a6,fr22> <a6,fr23> <a6,fr24> <a6,fr25> <a6,fr26> <a6,fr27> <a6,fr28> <a6,fr29>
-Overfull \hbox (1.68132pt too wide) in paragraph at lines 350--350
+Overfull \hbox (1.68132pt too wide) in paragraph at lines 389--389
  [][][]\T1/phv/b/n/8 Comparison[] 
  []
 
 [29
 
-] <a7,fr0> <a7,fr1> <a7,fr2> <a7,fr3> <a7,fr4> <a7,fr5> <a7,fr6> <a7,fr7> <a7,fr8> <a7,fr9> <a7,fr10> <a7,fr11> <a7,fr12> <a7,fr13> <a7,fr14> <a7,fr15> <a7,fr16> <a7,fr17> <a7,fr18> <a7,fr19> <a7,fr20> <a7,fr21> <a7,fr22> <a7,fr23> <a7,fr24> <a7,fr25> <a7,fr26> <a7,fr27> <a7,fr28> <a7,fr29>
-Overfull \hbox (1.68132pt too wide) in paragraph at lines 350--350
- [][][]\T1/phv/b/n/8 Comparison[] 
- []
-
-[30
-
-] [31
+] [30
 
 ]
-<figures/engine_in_windtunnel.png, id=1506, 1215.03937pt x 766.36313pt>
+<figures/engine_in_windtunnel.png, id=1295, 1215.03937pt x 766.36313pt>
 File: figures/engine_in_windtunnel.png Graphic file (type png)
 <use figures/engine_in_windtunnel.png>
-Package pdftex.def Info: figures/engine_in_windtunnel.png  used on input line 408.
+Package pdftex.def Info: figures/engine_in_windtunnel.png  used on input line 447.
 (pdftex.def)             Requested size: 287.373pt x 181.25304pt.
- [32
+ [31
 
  <./figures/engine_in_windtunnel.png>]
-<figures/wind_tunnel.png, id=1514, 1347.53438pt x 677.53125pt>
+<figures/wind_tunnel.png, id=1304, 1347.53438pt x 677.53125pt>
 File: figures/wind_tunnel.png Graphic file (type png)
 <use figures/wind_tunnel.png>
-Package pdftex.def Info: figures/wind_tunnel.png  used on input line 408.
+Package pdftex.def Info: figures/wind_tunnel.png  used on input line 447.
 (pdftex.def)             Requested size: 287.373pt x 144.48781pt.
- [33
+ [32
 
  <./figures/wind_tunnel.png>]
-<figures/wind_tunnel_with_flow.png, id=1522, 1040.88875pt x 521.95pt>
+<figures/wind_tunnel_with_flow.png, id=1312, 1040.88875pt x 521.95pt>
 File: figures/wind_tunnel_with_flow.png Graphic file (type png)
 <use figures/wind_tunnel_with_flow.png>
-Package pdftex.def Info: figures/wind_tunnel_with_flow.png  used on input line 408.
+Package pdftex.def Info: figures/wind_tunnel_with_flow.png  used on input line 447.
 (pdftex.def)             Requested size: 287.373pt x 144.09818pt.
- [34
+ [33
 
- <./figures/wind_tunnel_with_flow.png>]) (./sections/03-background.tex) (./sections/04-methods.tex [35
+ <./figures/wind_tunnel_with_flow.png>]) (./sections/03-background.tex) (./sections/04-methods.tex [34
+
+] [35
 
 ] [36
 
@@ -1798,9 +1779,9 @@ Package pdftex.def Info: figures/wind_tunnel_with_flow.png  used on input line 4
 
 ] [38
 
-] [39
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}] [39
 
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}] [40
+] [40
 
 ] [41
 
@@ -1808,900 +1789,139 @@ Package pdftex.def Info: figures/wind_tunnel_with_flow.png  used on input line 4
 
 ] [43
 
-] [44
-
 ]) (./sections/05-results.tex
-<figures/run15_sd.png, id=1593, 579.06337pt x 361.35pt>
-File: figures/run15_sd.png Graphic file (type png)
-<use figures/run15_sd.png>
-Package pdftex.def Info: figures/run15_sd.png  used on input line 29.
-(pdftex.def)             Requested size: 194.90155pt x 121.62228pt.
-<figures/run17_sd.png, id=1594, 523.9575pt x 361.35pt>
-File: figures/run17_sd.png Graphic file (type png)
-<use figures/run17_sd.png>
-Package pdftex.def Info: figures/run17_sd.png  used on input line 29.
-(pdftex.def)             Requested size: 176.407pt x 121.65538pt.
- [45
-
- <./figures/run15_sd.png> <./figures/run17_sd.png>]
-<figures/run16_sd.png, id=1603, 575.44987pt x 361.35pt>
+<figures/run16_sd.png, id=1384, 575.44987pt x 361.35pt>
 File: figures/run16_sd.png Graphic file (type png)
 <use figures/run16_sd.png>
-Package pdftex.def Info: figures/run16_sd.png  used on input line 29.
+Package pdftex.def Info: figures/run16_sd.png  used on input line 40.
+(pdftex.def)             Requested size: 274.85217pt x 172.5914pt.
+ [44
+
+ <./figures/run16_sd.png>]
+File: figures/run16_sd.png Graphic file (type png)
+<use figures/run16_sd.png>
+Package pdftex.def Info: figures/run16_sd.png  used on input line 40.
 (pdftex.def)             Requested size: 274.85217pt x 172.5914pt.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.27998pt on input line 29.
- [46
+(Font)              scaled to size 8.27998pt on input line 40.
+ [45
 
- <./figures/run16_sd.png>] [47
+] [46
 
 ]
-<figures/shock_tracking_shadowgraph.png, id=1618, 1398.22375pt x 1463.4675pt>
+<figures/shock_tracking_shadowgraph.png, id=1404, 1398.22375pt x 1463.4675pt>
 File: figures/shock_tracking_shadowgraph.png Graphic file (type png)
 <use figures/shock_tracking_shadowgraph.png>
-Package pdftex.def Info: figures/shock_tracking_shadowgraph.png  used on input line 78.
+Package pdftex.def Info: figures/shock_tracking_shadowgraph.png  used on input line 89.
 (pdftex.def)             Requested size: 125.65013pt x 131.50542pt.
-<figures/shock_position_psd_run15.png, id=1619, 521.42805pt x 282.93706pt>
+<figures/shock_position_psd_run15.png, id=1405, 521.42805pt x 282.93706pt>
 File: figures/shock_position_psd_run15.png Graphic file (type png)
 <use figures/shock_position_psd_run15.png>
-Package pdftex.def Info: figures/shock_position_psd_run15.png  used on input line 78.
+Package pdftex.def Info: figures/shock_position_psd_run15.png  used on input line 89.
 (pdftex.def)             Requested size: 266.99753pt x 144.88313pt.
- [48
+ [47
 
  <./figures/shock_tracking_shadowgraph.png> <./figures/shock_position_psd_run15.png>]
-<figures/BL_tracking_shadowgraph.png, id=1628, 1043.9pt x 531.9875pt>
+<figures/BL_tracking_shadowgraph.png, id=1414, 1043.9pt x 531.9875pt>
 File: figures/BL_tracking_shadowgraph.png Graphic file (type png)
 <use figures/BL_tracking_shadowgraph.png>
-Package pdftex.def Info: figures/BL_tracking_shadowgraph.png  used on input line 85.
+Package pdftex.def Info: figures/BL_tracking_shadowgraph.png  used on input line 96.
 (pdftex.def)             Requested size: 353.38051pt x 180.08595pt.
- [49
+ [48
 
  <./figures/BL_tracking_shadowgraph.png>]
-<figures/boundary_layer_motion_runs15-17.png, id=1637, 521.42805pt x 282.93706pt>
+<figures/boundary_layer_motion_runs15-17.png, id=1422, 521.42805pt x 282.93706pt>
 File: figures/boundary_layer_motion_runs15-17.png Graphic file (type png)
 <use figures/boundary_layer_motion_runs15-17.png>
-Package pdftex.def Info: figures/boundary_layer_motion_runs15-17.png  used on input line 85.
+Package pdftex.def Info: figures/boundary_layer_motion_runs15-17.png  used on input line 96.
 (pdftex.def)             Requested size: 353.38051pt x 191.75569pt.
- [50
+ [49
 
  <./figures/boundary_layer_motion_runs15-17.png>]
-<figures/BL_psd.png, id=1645, 521.42805pt x 286.9119pt>
+<figures/BL_psd.png, id=1431, 521.42805pt x 286.9119pt>
 File: figures/BL_psd.png Graphic file (type png)
 <use figures/BL_psd.png>
-Package pdftex.def Info: figures/BL_psd.png  used on input line 85.
+Package pdftex.def Info: figures/BL_psd.png  used on input line 96.
 (pdftex.def)             Requested size: 353.38051pt x 194.44955pt.
- [51
+ [50
 
- <./figures/BL_psd.png>] [52
+ <./figures/BL_psd.png>] [51
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 141.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 155.
 LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
-(Font)              scaled to size 10.07397pt on input line 141.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 5.51999pt on input line 141.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 4.59999pt on input line 141.
-<figures/pod_mode_01.png, id=1659, 673.91776pt x 361.35pt>
+(Font)              scaled to size 10.07397pt on input line 155.
+<figures/pod_mode_01.png, id=1445, 581.7735pt x 361.35pt>
 File: figures/pod_mode_01.png Graphic file (type png)
 <use figures/pod_mode_01.png>
-Package pdftex.def Info: figures/pod_mode_01.png  used on input line 141.
-(pdftex.def)             Requested size: 164.9113pt x 88.424pt.
+Package pdftex.def Info: figures/pod_mode_01.png  used on input line 155.
+(pdftex.def)             Requested size: 204.17847pt x 126.81624pt.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 141.
+(Font)              scaled to size 13.24796pt on input line 155.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 141.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 11.03998pt on input line 141.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 141.
+(Font)              <14.4> on input line 155.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <14.4> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 155.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 11.03998pt on input line 141.
-<figures/pod_mode_20.png, id=1660, 677.98294pt x 361.35pt>
+(Font)              scaled to size 13.24796pt on input line 155.
+<figures/pod_mode_20.png, id=1446, 582.22519pt x 361.35pt>
 File: figures/pod_mode_20.png Graphic file (type png)
 <use figures/pod_mode_20.png>
-Package pdftex.def Info: figures/pod_mode_20.png  used on input line 141.
-(pdftex.def)             Requested size: 164.9113pt x 87.89468pt.
- [53
+Package pdftex.def Info: figures/pod_mode_20.png  used on input line 155.
+(pdftex.def)             Requested size: 204.17847pt x 126.717pt.
+<figures/pod_legend.png, id=1447, 305.79243pt x 79.497pt>
+File: figures/pod_legend.png Graphic file (type png)
+<use figures/pod_legend.png>
+Package pdftex.def Info: figures/pod_legend.png  used on input line 155.
+(pdftex.def)             Requested size: 117.79549pt x 30.6228pt.
 
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc} <./figures/pod_mode_01.png> <./figures/pod_mode_20.png>]
-File: figures/pod_mode_01.png Graphic file (type png)
-<use figures/pod_mode_01.png>
-Package pdftex.def Info: figures/pod_mode_01.png  used on input line 141.
-(pdftex.def)             Requested size: 164.9113pt x 88.424pt.
-File: figures/pod_mode_20.png Graphic file (type png)
-<use figures/pod_mode_20.png>
-Package pdftex.def Info: figures/pod_mode_20.png  used on input line 141.
-(pdftex.def)             Requested size: 164.9113pt x 87.89468pt.
- [54
-
-]
-File: figures/pod_mode_01.png Graphic file (type png)
-<use figures/pod_mode_01.png>
-Package pdftex.def Info: figures/pod_mode_01.png  used on input line 141.
-(pdftex.def)             Requested size: 164.9113pt x 88.424pt.
-File: figures/pod_mode_20.png Graphic file (type png)
-<use figures/pod_mode_20.png>
-Package pdftex.def Info: figures/pod_mode_20.png  used on input line 141.
-(pdftex.def)             Requested size: 164.9113pt x 87.89468pt.
- [55
-
-]
-File: figures/pod_mode_01.png Graphic file (type png)
-<use figures/pod_mode_01.png>
-Package pdftex.def Info: figures/pod_mode_01.png  used on input line 141.
-(pdftex.def)             Requested size: 164.9113pt x 88.424pt.
-File: figures/pod_mode_20.png Graphic file (type png)
-<use figures/pod_mode_20.png>
-Package pdftex.def Info: figures/pod_mode_20.png  used on input line 141.
-(pdftex.def)             Requested size: 164.9113pt x 87.89468pt.
- [56
-
-]
-File: figures/pod_mode_01.png Graphic file (type png)
-<use figures/pod_mode_01.png>
-Package pdftex.def Info: figures/pod_mode_01.png  used on input line 141.
-(pdftex.def)             Requested size: 164.9113pt x 88.424pt.
-File: figures/pod_mode_20.png Graphic file (type png)
-<use figures/pod_mode_20.png>
-Package pdftex.def Info: figures/pod_mode_20.png  used on input line 141.
-(pdftex.def)             Requested size: 164.9113pt x 87.89468pt.
- [57
-
-]
-<videos/pod_gif_frames.pdf, id=1701, page=1, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 1>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page1 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr0>
-<videos/pod_gif_frames.pdf, id=1706, page=2, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 2>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page2 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr1>
-<videos/pod_gif_frames.pdf, id=1710, page=3, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 3>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page3 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr2>
-<videos/pod_gif_frames.pdf, id=1714, page=4, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 4>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page4 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr3>
-<videos/pod_gif_frames.pdf, id=1718, page=5, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 5>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page5 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr4>
-<videos/pod_gif_frames.pdf, id=1722, page=6, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 6>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page6 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr5>
-<videos/pod_gif_frames.pdf, id=1726, page=7, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 7>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page7 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr6>
-<videos/pod_gif_frames.pdf, id=1730, page=8, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 8>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page8 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr7>
-<videos/pod_gif_frames.pdf, id=1734, page=9, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 9>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page9 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr8>
-<videos/pod_gif_frames.pdf, id=1738, page=10, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 10>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page10 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr9>
-<videos/pod_gif_frames.pdf, id=1742, page=11, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 11>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page11 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr10>
-<videos/pod_gif_frames.pdf, id=1746, page=12, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 12>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page12 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr11>
-<videos/pod_gif_frames.pdf, id=1750, page=13, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 13>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page13 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr12>
-<videos/pod_gif_frames.pdf, id=1754, page=14, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 14>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page14 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr13>
-<videos/pod_gif_frames.pdf, id=1758, page=15, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 15>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page15 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr14>
-<videos/pod_gif_frames.pdf, id=1762, page=16, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 16>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page16 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr15>
-<videos/pod_gif_frames.pdf, id=1766, page=17, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 17>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page17 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr16>
-<videos/pod_gif_frames.pdf, id=1770, page=18, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 18>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page18 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr17>
-<videos/pod_gif_frames.pdf, id=1774, page=19, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 19>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page19 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr18>
-<videos/pod_gif_frames.pdf, id=1778, page=20, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 20>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page20 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr19>
-<videos/pod_gif_frames.pdf, id=1782, page=21, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 21>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page21 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr20>
-<videos/pod_gif_frames.pdf, id=1786, page=22, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 22>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page22 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr21>
-<videos/pod_gif_frames.pdf, id=1790, page=23, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 23>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page23 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr22>
-<videos/pod_gif_frames.pdf, id=1794, page=24, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 24>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page24 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr23>
-<videos/pod_gif_frames.pdf, id=1798, page=25, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 25>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page25 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr24>
-<videos/pod_gif_frames.pdf, id=1802, page=26, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 26>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page26 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr25>
-<videos/pod_gif_frames.pdf, id=1806, page=27, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 27>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page27 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr26>
-<videos/pod_gif_frames.pdf, id=1810, page=28, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 28>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page28 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr27>
-<videos/pod_gif_frames.pdf, id=1814, page=29, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 29>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page29 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr28>
-<videos/pod_gif_frames.pdf, id=1818, page=30, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 30>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page30 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr29>
-<videos/pod_gif_frames.pdf, id=1822, page=31, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 31>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page31 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr30>
-<videos/pod_gif_frames.pdf, id=1826, page=32, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 32>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page32 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr31>
-<videos/pod_gif_frames.pdf, id=1830, page=33, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 33>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page33 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr32>
-<videos/pod_gif_frames.pdf, id=1834, page=34, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 34>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page34 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr33>
-<videos/pod_gif_frames.pdf, id=1838, page=35, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 35>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page35 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr34>
-<videos/pod_gif_frames.pdf, id=1842, page=36, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 36>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page36 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr35>
-<videos/pod_gif_frames.pdf, id=1846, page=37, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 37>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page37 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr36>
-<videos/pod_gif_frames.pdf, id=1850, page=38, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 38>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page38 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr37>
-<videos/pod_gif_frames.pdf, id=1854, page=39, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 39>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page39 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr38>
-<videos/pod_gif_frames.pdf, id=1858, page=40, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 40>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page40 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr39>
-<videos/pod_gif_frames.pdf, id=1862, page=41, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 41>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page41 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr40>
-<videos/pod_gif_frames.pdf, id=1866, page=42, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 42>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page42 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr41>
-<videos/pod_gif_frames.pdf, id=1870, page=43, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 43>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page43 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr42>
-<videos/pod_gif_frames.pdf, id=1874, page=44, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 44>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page44 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr43>
-<videos/pod_gif_frames.pdf, id=1878, page=45, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 45>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page45 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr44>
-<videos/pod_gif_frames.pdf, id=1882, page=46, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 46>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page46 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr45>
-<videos/pod_gif_frames.pdf, id=1886, page=47, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 47>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page47 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr46>
-<videos/pod_gif_frames.pdf, id=1891, page=48, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 48>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page48 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr47>
-<videos/pod_gif_frames.pdf, id=1895, page=49, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 49>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page49 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr48>
-<videos/pod_gif_frames.pdf, id=1899, page=50, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 50>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page50 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr49>
-<videos/pod_gif_frames.pdf, id=1903, page=51, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 51>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page51 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr50>
-<videos/pod_gif_frames.pdf, id=1907, page=52, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 52>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page52 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr51>
-<videos/pod_gif_frames.pdf, id=1911, page=53, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 53>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page53 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr52>
-<videos/pod_gif_frames.pdf, id=1915, page=54, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 54>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page54 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr53>
-<videos/pod_gif_frames.pdf, id=1919, page=55, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 55>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page55 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr54>
-<videos/pod_gif_frames.pdf, id=1923, page=56, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 56>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page56 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr55>
-<videos/pod_gif_frames.pdf, id=1927, page=57, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 57>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page57 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr56>
-<videos/pod_gif_frames.pdf, id=1931, page=58, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 58>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page58 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr57>
-<videos/pod_gif_frames.pdf, id=1935, page=59, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 59>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page59 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr58>
-<videos/pod_gif_frames.pdf, id=1939, page=60, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 60>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page60 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr59>
-<videos/pod_gif_frames.pdf, id=1943, page=61, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 61>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page61 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr60>
-<videos/pod_gif_frames.pdf, id=1947, page=62, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 62>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page62 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr61>
-<videos/pod_gif_frames.pdf, id=1951, page=63, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 63>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page63 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr62>
-<videos/pod_gif_frames.pdf, id=1955, page=64, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 64>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page64 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr63>
-<videos/pod_gif_frames.pdf, id=1959, page=65, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 65>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page65 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr64>
-<videos/pod_gif_frames.pdf, id=1963, page=66, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 66>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page66 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr65>
-<videos/pod_gif_frames.pdf, id=1967, page=67, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 67>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page67 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr66>
-<videos/pod_gif_frames.pdf, id=1971, page=68, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 68>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page68 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr67>
-<videos/pod_gif_frames.pdf, id=1975, page=69, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 69>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page69 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr68>
-<videos/pod_gif_frames.pdf, id=1979, page=70, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 70>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page70 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr69>
-<videos/pod_gif_frames.pdf, id=1983, page=71, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 71>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page71 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr70>
-<videos/pod_gif_frames.pdf, id=1987, page=72, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 72>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page72 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr71>
-<videos/pod_gif_frames.pdf, id=1991, page=73, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 73>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page73 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr72>
-<videos/pod_gif_frames.pdf, id=1995, page=74, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 74>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page74 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr73>
-<videos/pod_gif_frames.pdf, id=1999, page=75, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 75>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page75 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr74>
-<videos/pod_gif_frames.pdf, id=2003, page=76, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 76>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page76 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr75>
-<videos/pod_gif_frames.pdf, id=2007, page=77, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 77>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page77 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr76>
-<videos/pod_gif_frames.pdf, id=2011, page=78, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 78>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page78 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr77>
-<videos/pod_gif_frames.pdf, id=2015, page=79, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 79>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page79 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr78>
-<videos/pod_gif_frames.pdf, id=2019, page=80, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 80>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page80 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr79>
-<videos/pod_gif_frames.pdf, id=2023, page=81, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 81>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page81 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr80>
-<videos/pod_gif_frames.pdf, id=2027, page=82, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 82>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page82 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr81>
-<videos/pod_gif_frames.pdf, id=2031, page=83, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 83>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page83 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr82>
-<videos/pod_gif_frames.pdf, id=2035, page=84, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 84>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page84 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr83>
-<videos/pod_gif_frames.pdf, id=2039, page=85, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 85>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page85 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr84>
-<videos/pod_gif_frames.pdf, id=2043, page=86, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 86>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page86 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr85>
-<videos/pod_gif_frames.pdf, id=2047, page=87, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 87>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page87 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr86>
-<videos/pod_gif_frames.pdf, id=2051, page=88, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 88>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page88 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr87>
-<videos/pod_gif_frames.pdf, id=2055, page=89, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 89>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page89 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr88>
-<videos/pod_gif_frames.pdf, id=2059, page=90, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 90>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page90 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr89>
-<videos/pod_gif_frames.pdf, id=2063, page=91, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 91>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page91 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr90>
-<videos/pod_gif_frames.pdf, id=2067, page=92, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 92>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page92 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr91>
-<videos/pod_gif_frames.pdf, id=2071, page=93, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 93>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page93 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr92>
-<videos/pod_gif_frames.pdf, id=2075, page=94, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 94>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page94 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr93>
-<videos/pod_gif_frames.pdf, id=2079, page=95, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 95>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page95 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr94>
-<videos/pod_gif_frames.pdf, id=2083, page=96, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 96>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page96 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr95>
-<videos/pod_gif_frames.pdf, id=2087, page=97, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 97>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page97 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr96>
-<videos/pod_gif_frames.pdf, id=2091, page=98, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 98>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page98 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr97>
-<videos/pod_gif_frames.pdf, id=2095, page=99, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 99>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page99 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr98>
-<videos/pod_gif_frames.pdf, id=2099, page=100, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 100>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page100 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr99>
-<videos/pod_gif_frames.pdf, id=2103, page=101, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 101>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page101 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr100>
-<videos/pod_gif_frames.pdf, id=2107, page=102, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 102>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page102 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr101>
-<videos/pod_gif_frames.pdf, id=2111, page=103, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 103>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page103 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr102>
-<videos/pod_gif_frames.pdf, id=2115, page=104, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 104>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page104 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr103>
-<videos/pod_gif_frames.pdf, id=2119, page=105, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 105>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page105 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr104>
-<videos/pod_gif_frames.pdf, id=2123, page=106, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 106>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page106 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr105>
-<videos/pod_gif_frames.pdf, id=2127, page=107, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 107>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page107 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr106>
-<videos/pod_gif_frames.pdf, id=2131, page=108, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 108>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page108 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr107>
-<videos/pod_gif_frames.pdf, id=2135, page=109, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 109>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page109 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr108>
-<videos/pod_gif_frames.pdf, id=2139, page=110, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 110>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page110 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr109>
-<videos/pod_gif_frames.pdf, id=2143, page=111, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 111>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page111 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr110>
-<videos/pod_gif_frames.pdf, id=2147, page=112, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 112>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page112 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr111>
-<videos/pod_gif_frames.pdf, id=2151, page=113, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 113>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page113 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr112>
-<videos/pod_gif_frames.pdf, id=2155, page=114, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 114>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page114 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr113>
-<videos/pod_gif_frames.pdf, id=2159, page=115, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 115>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page115 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr114>
-<videos/pod_gif_frames.pdf, id=2163, page=116, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 116>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page116 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr115>
-<videos/pod_gif_frames.pdf, id=2167, page=117, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 117>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page117 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr116>
-<videos/pod_gif_frames.pdf, id=2171, page=118, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 118>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page118 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr117>
-<videos/pod_gif_frames.pdf, id=2175, page=119, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 119>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page119 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr118>
-<videos/pod_gif_frames.pdf, id=2179, page=120, 578.16pt x 406.15741pt>
-File: videos/pod_gif_frames.pdf Graphic file (type pdf)
-<use videos/pod_gif_frames.pdf, page 120>
-Package pdftex.def Info: videos/pod_gif_frames.pdf , page120 used on input line 149.
-(pdftex.def)             Requested size: 578.15858pt x 406.15642pt.
- <./videos/pod_gif_frames.pdf> <a8,fr119>
-Overfull \vbox (6.03587pt too high) detected at line 149
+Overfull \vbox (10.21237pt too high) detected at line 155
  []
 
-[58
+[52
 
-]
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.43999pt on input line 167.
- [59
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc} <./figures/pod_mode_01.png> <./figures/pod_mode_20.png> <./figures/pod_legend.png>]
+File: figures/pod_mode_01.png Graphic file (type png)
+<use figures/pod_mode_01.png>
+Package pdftex.def Info: figures/pod_mode_01.png  used on input line 155.
+(pdftex.def)             Requested size: 204.17847pt x 126.81624pt.
+File: figures/pod_mode_20.png Graphic file (type png)
+<use figures/pod_mode_20.png>
+Package pdftex.def Info: figures/pod_mode_20.png  used on input line 155.
+(pdftex.def)             Requested size: 204.17847pt x 126.717pt.
+File: figures/pod_legend.png Graphic file (type png)
+<use figures/pod_legend.png>
+Package pdftex.def Info: figures/pod_legend.png  used on input line 155.
+(pdftex.def)             Requested size: 117.79549pt x 30.6228pt.
+
+Overfull \vbox (10.21237pt too high) detected at line 155
+ []
+
+[53
+
+] [54
+
+]) (./sections/06-next-steps.tex [55
+
+] [56
+
+] [57
+
+] [58
+
+] [59
 
 ] [60
 
-]) (./sections/06-next-steps.tex [61
-
-] [62
-
-] [63
-
-] [64
-
-] [65
-
-] [66
-
-] [67
+] [61
 
 ]) (./sections/07-closing.tex
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 31.27994pt on input line 7.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 31.27994pt on input line 7.
- [68
+ [62
 
 ])
 \tf@nav=\write6
@@ -2722,18 +1942,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: FFF9551099CC18F7D62372F51CF997B8;388.
  ) 
 Here is how much of TeX's memory you used:
- 29628 strings out of 469438
- 607584 string characters out of 5468410
- 986326 words of memory out of 5000000
- 57522 multiletter control sequences out of 15000+600000
- 736885 words of font info for 137 fonts, out of 8000000 for 9000
+ 28747 strings out of 469438
+ 579815 string characters out of 5468410
+ 981250 words of memory out of 5000000
+ 56654 multiletter control sequences out of 15000+600000
+ 730353 words of font info for 133 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  133i,13n,126p,517b,1193s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on build/main.pdf (68 pages, 15451875 bytes).
+</usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on build/main.pdf (62 pages, 9361587 bytes).
 PDF statistics:
- 2485 PDF objects out of 2487 (max. 8388607)
- 1464 compressed objects within 15 object streams
- 141 named destinations out of 1000 (max. 500000)
- 3777 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1603 PDF objects out of 1728 (max. 8388607)
+ 1030 compressed objects within 11 object streams
+ 129 named destinations out of 1000 (max. 500000)
+ 2056 words of extra memory for PDF output out of 10000 (max. 10000000)
 

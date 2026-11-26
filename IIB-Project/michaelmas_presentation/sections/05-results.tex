@@ -2,29 +2,40 @@
 \section{Initial results}
 
 \begin{frame}{Where is the unsteadiness?}
-  \only<1>{
-  \begin{columns}[T]
-    \column{.5\textwidth}\centering
-    \begin{figure}
-      \includegraphics[width=6.85cm]{figures/run15_sd.png}
-      \caption{S.D. of pixel intensity. Run 15 (Shot at 10,000 fps).}
-    \end{figure}
-    \column{.5\textwidth}\centering
-    \begin{figure}
-      \includegraphics[width=6.2cm]{figures/run17_sd.png}
-      \caption{S.D. of pixel intensity. Run 17 (Shot at 30,000 fps).}
-    \end{figure}
-  \end{columns}}
-  \only<2->{
+  % \only<1>{
+  % \begin{columns}[T]
+  %   \column{.5\textwidth}\centering
+  %   \begin{figure}
+  %     \includegraphics[width=6.85cm]{figures/run15_sd.png}
+  %     \caption{S.D. of pixel intensity. Run 15 (Shot at 10,000 fps).}
+  %   \end{figure}
+  %   \column{.5\textwidth}\centering
+  %   \begin{figure}
+  %     \includegraphics[width=6.2cm]{figures/run17_sd.png}
+  %     \caption{S.D. of pixel intensity. Run 17 (Shot at 30,000 fps).}
+  %   \end{figure}
+  % \end{columns}}
+  % \only<1>{
+  % \vspace{-1em}
+  % \begin{centering}
+  %   \begin{figure}
+  %     % \caption{Standard deviation of pixel intensity. Run 16 (Shot at 50,000 fps).}
+  %     % \vspace{-1.5em}
+  %     \includegraphics[width=0.8\textwidth]{figures/run15_sd.png}
+  %     \vspace{-1.5em}
+  %     \caption{S.D. of pixel intensity. Run 15 (Shot at 10,000 fps).}
+  %   \end{figure}
+  % \end{centering}
+  % }
+  \only<1->{
   \vspace{-1em}
   \begin{centering}
     \begin{figure}
-      % \caption{Standard deviation of pixel intensity. Run 16 (Shot at 50,000 fps).}
-      % \vspace{-1.5em}
       \includegraphics[width=0.7\textwidth]{figures/run16_sd.png}
     \end{figure}
   \end{centering}
-  }\only<2->{\vspace{-0.8em}
+  }
+  \only<2->{\vspace{-0.8em}
   \begin{block}{\footnotesize Takeaway}\footnotesize 2 separate unsteadiness phenomena: the shock(s) and the downstream BL.\end{block}}
 \end{frame}
 
@@ -115,56 +126,85 @@
 \end{frame}
 
 \begin{frame}{Proper orthogonal decomposition (POD)}
+  \vspace{0em}
   \begin{columns}[T]
-    \uncover<2->{
-    \column{.54\textwidth}
+    \column{.5\textwidth}
     \begin{itemize}\setlength\itemsep{.8em}
       \item Decomposes \textbf{\emph{fluctuations}} of the data into orthogonal \textbf{spatial modes} ($\phi_k$) and \textbf{time coefficients} ($a_k$):
-      \[u'(\mathbf{x}, t) \approx \sum_{k=1}^{r} a_k(t)\,\phi_k(\mathbf{x})\]
-      \uncover<3->{\item SVD, with modes ranked by energy fraction.}
-    \end{itemize}}
-    \uncover<4->{
-    \column{.42\textwidth}\centering
-    \begin{tikzpicture}[
-        state/.style={align=center, inner sep=0pt, font=\scriptsize}
-      ]
-        \node[state] (mode-1) at (0,1.8)
-          {\includegraphics[width=\textwidth]{figures/pod_mode_01.png}};
-        \uncover<5->{
-        \node[state] at (-0.25,0.1) {\large$.$};
-        \node[state] at (-0.25,0) {\large$.$};
-        \node[state] at (-0.25,-0.1) {\large$.$};
-        \node[state] (mode-20) at (0,-1.8)
-          {\includegraphics[width=\textwidth]{figures/pod_mode_20.png}};}
-      \end{tikzpicture}}
+    \end{itemize}
+    \column{.5\textwidth}
+    \begin{itemize}\setlength\itemsep{.8em}
+      \item SVD, with modes ranked by energy fraction.
+    \end{itemize}
   \end{columns}
-\end{frame}
-
-
-\begin{frame}{POD early results}
-    \centering
-      \animategraphics[
-        autoplay,loop,controls,poster=first,width=0.7\textwidth
-      ]{30}{videos/pod_gif_frames}{}{}
-\end{frame}
-
-
-
-\begin{frame}{Early lip-profile comparison}
+  \uncover<2->{
+  % \vspace{1em}
   \centering
-  \begin{columns}[T]
-    \column{.3\textwidth}\centering\placeholder{3.7cm}{2.6cm}{Thin lip}\\[3pt]\small\bfseries Thinner
-    \column{.3\textwidth}\centering\placeholder{3.7cm}{2.6cm}{Baseline}\\[3pt]\small\bfseries Baseline
-    \column{.3\textwidth}\centering\placeholder{3.7cm}{2.6cm}{Thick lip}\\[3pt]\small\bfseries Thicker
-  \end{columns}
-  \vspace{.3cm}
-  {\small
-  \begin{tabular}{@{}lccc@{}}\toprule
-     & Thinner & Baseline & Thicker\\\midrule
-    Intake thickness $D$ [mm] & 74.7 & 70.7 & 66.7\\
-    LE tip to centerlin [mm] & 100.0 & 100.0 & 100.0\\\bottomrule
-  \end{tabular}}
+  \begin{tikzpicture}[
+      state/.style={align=center, inner xsep=-3em, font=\scriptsize}
+    ]
+      \node[state] (mode-1) at (-5,0)
+        {\includegraphics[width=.52\textwidth]{figures/pod_mode_01.png}};
+      \node[state] at (-0.9,0) {\Large$\cdots$};
+      \node[state] (mode-20) at (3.2,0)
+        {\includegraphics[width=.52\textwidth]{figures/pod_mode_20.png}};
+    \end{tikzpicture}
+  \centering
+  % \vspace{-1em}
+  \includegraphics[width=0.3\textwidth]{figures/pod_legend.png}}
 \end{frame}
+
+% \begin{frame}{Proper orthogonal decomposition (POD)}
+%   \begin{columns}[T]
+%     \uncover<2->{
+%     \column{.54\textwidth}
+%     \begin{itemize}\setlength\itemsep{.8em}
+%       \item Decomposes \textbf{\emph{fluctuations}} of the data into orthogonal \textbf{spatial modes} ($\phi_k$) and \textbf{time coefficients} ($a_k$):
+%       \[u'(\mathbf{x}, t) \approx \sum_{k=1}^{r} a_k(t)\,\phi_k(\mathbf{x})\]
+%       \uncover<3->{\item SVD, with modes ranked by energy fraction.}
+%     \end{itemize}}
+%     \uncover<4->{
+%     \column{.42\textwidth}\centering
+%     \begin{tikzpicture}[
+%         state/.style={align=center, inner sep=0pt, font=\scriptsize}
+%       ]
+%         \node[state] (mode-1) at (0,1.8)
+%           {\includegraphics[width=\textwidth]{figures/pod_mode_01.png}};
+%         \uncover<5->{
+%         \node[state] at (-0.25,0.1) {\large$.$};
+%         \node[state] at (-0.25,0) {\large$.$};
+%         \node[state] at (-0.25,-0.1) {\large$.$};
+%         \node[state] (mode-20) at (0,-1.8)
+%           {\includegraphics[width=\textwidth]{figures/pod_mode_20.png}};}
+%       \end{tikzpicture}}
+%   \end{columns}
+% \end{frame}
+
+
+% \begin{frame}{POD early results}
+%     \centering
+%       \animategraphics[
+%         autoplay,loop,controls,poster=first,width=0.7\textwidth
+%       ]{30}{videos/pod_gif_frames}{}{}
+% \end{frame}
+
+
+
+% \begin{frame}{Early lip-profile comparison}
+%   \centering
+%   \begin{columns}[T]
+%     \column{.3\textwidth}\centering\placeholder{3.7cm}{2.6cm}{Thin lip}\\[3pt]\small\bfseries Thinner
+%     \column{.3\textwidth}\centering\placeholder{3.7cm}{2.6cm}{Baseline}\\[3pt]\small\bfseries Baseline
+%     \column{.3\textwidth}\centering\placeholder{3.7cm}{2.6cm}{Thick lip}\\[3pt]\small\bfseries Thicker
+%   \end{columns}
+%   \vspace{.3cm}
+%   {\small
+%   \begin{tabular}{@{}lccc@{}}\toprule
+%      & Thinner & Baseline & Thicker\\\midrule
+%     Intake thickness $D$ [mm] & 74.7 & 70.7 & 66.7\\
+%     LE tip to centerlin [mm] & 100.0 & 100.0 & 100.0\\\bottomrule
+%   \end{tabular}}
+% \end{frame}
 
 \begin{frame}{Early lip-profile comparison}
   \centering
