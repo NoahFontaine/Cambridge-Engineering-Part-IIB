@@ -7,7 +7,7 @@
   \vspace{.35cm}
   \begin{columns}[c]
     \column{.47\textwidth}\centering
-    \includegraphics[width=5.5cm,keepaspectratio]{figures/old_engine.png}
+    \includegraphics[width=5.2cm,keepaspectratio]{figures/old_engine.png}
     \column{.47\textwidth}\centering
     \includegraphics[width=6.5cm,height=4.6cm,keepaspectratio]{figures/new_engine.png}\par
   \end{columns}
@@ -19,19 +19,19 @@
     \footnotesize\textcolor{teal}{NEW: Larger fan, higher bypass ratio}
   \end{columns}
   \vspace{.35cm}
-  \only<2>{\textbf{\textcolor{red}{Problem: larger nacelles have more drag}}}
+  \uncover<2>{\textbf{\textcolor{red}{Problem: larger nacelles have more drag}}}
 \end{frame}
 
 \begin{frame}{How do we reduce nacelle drag?}
   \only<1>{\centering\includegraphics[width=7.0cm,height=5.3cm,keepaspectratio]{figures/new_engine.png}}
-  \only<2>{
-  \begin{columns}[c]
-    \column{.52\textwidth}\centering
-    \includegraphics[width=7.0cm,height=5.3cm,keepaspectratio]{figures/new_engine.png}
-    \column{.42\textwidth}
-  \end{columns}
-  }
-  \only<3->{
+  % \only<2>{
+  % \begin{columns}[c]
+  %   \column{.52\textwidth}\centering
+  %   \includegraphics[width=7.0cm,height=5.3cm,keepaspectratio]{figures/new_engine.png}
+  %   \column{.42\textwidth}
+  % \end{columns}
+  % }
+  \only<2->{
     \begin{columns}[c]
       \column{.52\textwidth}\centering
       \includegraphics[width=7.0cm,height=5.3cm,keepaspectratio]{figures/engine_shorter_nacelle.png}
@@ -51,23 +51,25 @@
 
 \begin{frame}{Crosswind creates an off-design threat}
   \begin{columns}[c]
-    \column{.62\textwidth}\centering
-    \includegraphics[width=7.2cm,height=5.2cm,keepaspectratio]{figures/engine_crosswind.png}
+    \column{.47\textwidth}\centering
+    \includegraphics[width=\textwidth]{figures/engine_crosswind.png}
 
-    \column{.50\textwidth}
+    \column{.52\textwidth}
+    \large Smaller radius of curvature at the lip:
+    \vspace{1em}
+    \uncover<2->{
     \begin{itemize}\setlength\itemsep{1em}
-      \setlength{\itemindent}{-1em}
-      \setlength{\leftmargin}{-3em}
-      \item Smaller radius of curvature at the lip
-      \uncover<2->{\item \textbf{Higher risk of separation of the flow}}
+      % \setlength{\itemindent}{-1em}
+      % \setlength{\leftmargin}{-3em}
+      \item \textbf{Higher risk of separation of the flow}
       \uncover<3->{\item Stronger acceleration of the flow}
-      \uncover<4->{\item Flow can reach supersonic speeds}
+      \uncover<4->{\item Higher flow speeds}
       \uncover<5->{\item \textbf{More frequent SBLI separation}}
-    \end{itemize}
+    \end{itemize}}
   \end{columns}
 \end{frame}
 
-\begin{frame}{Possible windward-lip flowfields}
+\begin{frame}{Possible windward-lip flow fields}
   \centering
   \begin{columns}[T]
     \column{.235\textwidth}\centering
@@ -381,11 +383,11 @@
 % \end{frame}
 
 
-\begin{frame}{How to characterize these instabilities?}
+\begin{frame}{How to answer this using the CUED wind tunnel?}
   \centering
-  \only<1>{\includegraphics[width=10.1cm,keepaspectratio]{figures/engine_in_windtunnel.png}}
-  \only<2>{\includegraphics[width=10.1cm,keepaspectratio]{figures/wind_tunnel.png}}
-  \only<3>{\includegraphics[width=10.1cm,keepaspectratio]{figures/wind_tunnel_with_flow.png}}
+  \only<2>{\includegraphics[width=10.1cm,keepaspectratio]{figures/engine_in_windtunnel.png}}
+  \only<3>{\includegraphics[width=10.1cm,keepaspectratio]{figures/wind_tunnel.png}}
+  \only<4>{\includegraphics[width=10.1cm,keepaspectratio]{figures/wind_tunnel_with_flow.png}}
   % \only<4->{\includegraphics[width=10.1cm,keepaspectratio]{figures/wind_tunnel_tuneable.png}}
   % \par\vspace{.10cm}
   % \only<4->{

@@ -24,8 +24,38 @@
       \includegraphics[width=0.7\textwidth]{figures/run16_sd.png}
     \end{figure}
   \end{centering}
-  }\only<3->{\vspace{-0.8em}
-  \begin{block}{\footnotesize Takeaway}\footnotesize Separate unsteadiness phenomenon at the shock from the downstream BL.\end{block}}
+  }\only<2->{\vspace{-0.8em}
+  \begin{block}{\footnotesize Takeaway}\footnotesize 2 separate unsteadiness phenomena: the shock(s) and the downstream BL.\end{block}}
+\end{frame}
+
+\begin{frame}{Computer vision analysis}
+  \vspace{-3em}
+  \begin{columns}[T]
+    \column{.4\textwidth}
+    \textbf{Question}\par\vspace{1em}
+    \begin{itemize}\setlength\itemsep{1.7em}
+      \item Where is the unsteadiness?
+      \item How big is it?
+      \item What frequencies?
+      \item Any underlying modes?
+    \end{itemize}
+    \column{.56\textwidth}
+    \textbf{Method}\par\vspace{1em}
+    \begin{tikzpicture}[node distance=.45cm,
+        s/.style={draw=none,fill=mist,rounded corners=3pt,minimum width=5.1cm,minimum height=.62cm,font=\scriptsize,text=navy}]
+      \node[s](a){Pixel statistics (mean, SD, kurtosis)};
+      \node[s,fill=teal,text=white,below=of a](b){\bfseries Shock tracking: $x_s(t)$, $\sigma_{x_s}$, PDF};
+      \node[s,fill=teal,text=white,below=of b](c){\bfseries Power spectral density};
+      \node[s,below=of c](d){POD / DMD modes};
+      \draw[-{Latex[length=1.5mm]},teal] (a) -- (b);
+      \draw[-{Latex[length=1.5mm]},teal] (b) -- (c);
+      % \uncover<9->{\node[s,below=of c](d){Intermittency $\gamma(x)$, bubble state, dwell times};
+      % \draw[-{Latex[length=1.5mm]},teal] (c) -- (d);
+      % }
+      \draw[-{Latex[length=1.5mm]},teal] (c) -- (d);
+      % \foreach \i/\j in {a/b,b/c,c/d,d/e}{\draw[-{Latex[length=1.5mm]},teal] (\i) -- (\j);}
+    \end{tikzpicture}
+  \end{columns}
 \end{frame}
 
 \begin{frame}{Tracking features in time - shock}
@@ -52,6 +82,36 @@
   \only<1>{\includegraphics[width=0.9\textwidth]{figures/BL_tracking_shadowgraph.png}}
   \only<2>{\includegraphics[width=0.9\textwidth]{figures/boundary_layer_motion_runs15-17.png}}
   \only<3>{\includegraphics[width=0.9\textwidth]{figures/BL_psd.png}}
+\end{frame}
+
+\begin{frame}{Computer vision analysis}
+  \vspace{-3em}
+  \begin{columns}[T]
+    \column{.4\textwidth}
+    \textbf{Question}\par\vspace{1em}
+    \begin{itemize}\setlength\itemsep{1.7em}
+      \item Where is the unsteadiness?
+      \item How big is it?
+      \item What frequencies?
+      \item Any underlying modes?
+    \end{itemize}
+    \column{.56\textwidth}
+    \textbf{Method}\par\vspace{1em}
+    \begin{tikzpicture}[node distance=.45cm,
+        s/.style={draw=none,fill=mist,rounded corners=3pt,minimum width=5.1cm,minimum height=.62cm,font=\scriptsize,text=navy}]
+      \node[s](a){Pixel statistics (mean, SD, kurtosis)};
+      \node[s,below=of a](b){Shock tracking: $x_s(t)$, $\sigma_{x_s}$, PDF};
+      \node[s,below=of b](c){Power spectral density};
+      \node[s,fill=teal,text=white,below=of c](d){\bfseries POD / DMD modes};
+      \draw[-{Latex[length=1.5mm]},teal] (a) -- (b);
+      \draw[-{Latex[length=1.5mm]},teal] (b) -- (c);
+      % \uncover<9->{\node[s,below=of c](d){Intermittency $\gamma(x)$, bubble state, dwell times};
+      % \draw[-{Latex[length=1.5mm]},teal] (c) -- (d);
+      % }
+      \draw[-{Latex[length=1.5mm]},teal] (c) -- (d);
+      % \foreach \i/\j in {a/b,b/c,c/d,d/e}{\draw[-{Latex[length=1.5mm]},teal] (\i) -- (\j);}
+    \end{tikzpicture}
+  \end{columns}
 \end{frame}
 
 \begin{frame}{Proper orthogonal decomposition (POD)}
@@ -81,12 +141,29 @@
 \end{frame}
 
 
-
 \begin{frame}{POD early results}
     \centering
       \animategraphics[
         autoplay,loop,controls,poster=first,width=0.7\textwidth
       ]{30}{videos/pod_gif_frames}{}{}
+\end{frame}
+
+
+
+\begin{frame}{Early lip-profile comparison}
+  \centering
+  \begin{columns}[T]
+    \column{.3\textwidth}\centering\placeholder{3.7cm}{2.6cm}{Thin lip}\\[3pt]\small\bfseries Thinner
+    \column{.3\textwidth}\centering\placeholder{3.7cm}{2.6cm}{Baseline}\\[3pt]\small\bfseries Baseline
+    \column{.3\textwidth}\centering\placeholder{3.7cm}{2.6cm}{Thick lip}\\[3pt]\small\bfseries Thicker
+  \end{columns}
+  \vspace{.3cm}
+  {\small
+  \begin{tabular}{@{}lccc@{}}\toprule
+     & Thinner & Baseline & Thicker\\\midrule
+    Intake thickness $D$ [mm] & 74.7 & 70.7 & 66.7\\
+    LE tip to centerlin [mm] & 100.0 & 100.0 & 100.0\\\bottomrule
+  \end{tabular}}
 \end{frame}
 
 \begin{frame}{Early lip-profile comparison}
