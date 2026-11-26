@@ -54,17 +54,50 @@
   \only<3>{\includegraphics[width=0.9\textwidth]{figures/BL_psd.png}}
 \end{frame}
 
+\begin{frame}{Proper orthogonal decomposition (POD)}
+  \begin{columns}[T]
+    \uncover<2->{
+    \column{.54\textwidth}
+    \begin{itemize}\setlength\itemsep{.8em}
+      \item Decomposes \textbf{\emph{fluctuations}} of the data into orthogonal \textbf{spatial modes} ($\phi_k$) and \textbf{time coefficients} ($a_k$):
+      \[u'(\mathbf{x}, t) \approx \sum_{k=1}^{r} a_k(t)\,\phi_k(\mathbf{x})\]
+      \uncover<3->{\item SVD, with modes ranked by energy fraction.}
+    \end{itemize}}
+    \uncover<4->{
+    \column{.42\textwidth}\centering
+    \begin{tikzpicture}[
+        state/.style={align=center, inner sep=0pt, font=\scriptsize}
+      ]
+        \node[state] (mode-1) at (0,1.8)
+          {\includegraphics[width=\textwidth]{figures/pod_mode_01.png}};
+        \uncover<5->{
+        \node[state] at (-0.25,0.1) {\large$.$};
+        \node[state] at (-0.25,0) {\large$.$};
+        \node[state] at (-0.25,-0.1) {\large$.$};
+        \node[state] (mode-20) at (0,-1.8)
+          {\includegraphics[width=\textwidth]{figures/pod_mode_20.png}};}
+      \end{tikzpicture}}
+  \end{columns}
+\end{frame}
+
+
+
+\begin{frame}{POD early results}
+    \centering
+      \animategraphics[
+        autoplay,loop,controls,poster=first,width=0.7\textwidth
+      ]{30}{videos/pod_gif_frames}{}{}
+\end{frame}
+
 \begin{frame}{Early lip-profile comparison}
   \centering
   {\small
   \begin{tabular}{@{}lccc@{}}\toprule
      & Thinner & Baseline & Thicker\\\midrule
-    Critical $M_{\mathrm{entry}}$ & -- & 0.1575 & --\\
-    Peak $M_{is}$ at onset & -- & 1.44 & --\\
-    Dominant $f$ [Hz] & -- & $\sim$600 & --\\
-    $St$ & -- & -- & --\\
-    $\sigma_{x_s}/D$ & -- & -- & --\\
-    Footprint $\Delta x_{\mathrm{foot}}/D$ & -- & -- & --\\\bottomrule
+    Onset of separation $M_{\mathrm{entry}}$ & -- & 0.155 & --\\
+    Critical $M_{\mathrm{entry}}$ & -- & 0.160 & --\\
+    End of separation $M_{\mathrm{entry}}$ & -- & 0.170 & --\\
+    Peak $M_{is}$ in unsteady region & -- & 1.44 & --\\
+    Dominant $f$ [Hz] & -- & $\approx$172 & --\\
   \end{tabular}}\\[6pt]
-  {\scriptsize\color{navy!60}Baseline values taken from the earlier thesis; fill in the rest as data are processed.}
 \end{frame}

@@ -114,13 +114,13 @@ Create one four-panel video per run from the four modes with the highest energy 
 ```bash
 uv run python pod_mode_videos.py \
   --pod-dir results/pod \
-  --output-dir results/pod_mode_videos_smooth \
+  --output-dir results/pod_mode_videos_slow_color \
   --video-fps 30 \
-  --display-frequency-hz 1 \
+  --display-frequency-hz 0.25 \
   --cycles 3
 ```
 
-Each panel shows one mode's spatial field multiplied by an idealized sinusoidal-harmonic coefficient. Its frequency is estimated from the saved POD coefficient spectrum and fitted to the coefficient history; the animation then slows each mode to the chosen display frequency (1 Hz by default) so oscillations are easy to see. Playback stays at 30 fps, giving 30 frames per cycle, and the default three cycles make a smooth, three-second video. The panel and `pod_mode_videos.csv` report both the measured POD frequency and the displayed frequency. These are illustrative SHM animations, not reconstructions of the original time-varying flow. The color scale remains fixed during each mode's animation.
+Each panel shows one mode's spatial field multiplied by an idealized sinusoidal-harmonic coefficient. Its frequency is estimated from the saved POD coefficient spectrum and fitted to the coefficient history; the animation then slows each mode to the chosen display frequency (0.25 Hz by default) so oscillations are easy to see. Playback stays at 30 fps, giving 120 frames per cycle, and the default three cycles make a smooth, twelve-second video. The diverging field palette has a dark, non-white midpoint; the plot background and area outside the analysis mask remain white. The panel and `pod_mode_videos.csv` report both the measured POD frequency and the displayed frequency. These are illustrative SHM animations, not reconstructions of the original time-varying flow. The color scale remains fixed during each mode's animation.
 
 ## Single-video example
 

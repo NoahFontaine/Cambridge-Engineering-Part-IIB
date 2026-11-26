@@ -4,7 +4,13 @@ from pathlib import Path
 import cv2
 import numpy as np
 
-from pod_mode_videos import _fit_shm, create_videos
+from pod_mode_videos import PALETTE, _fit_shm, create_videos
+
+
+def test_diverging_palette_avoids_white():
+    assert PALETTE.shape == (256, 3)
+    assert np.all(np.max(PALETTE, axis=1) < 245)
+    assert np.max(PALETTE[128]) < 150
 
 
 def test_create_videos_uses_four_highest_energy_modes(tmp_path: Path):
@@ -32,7 +38,7 @@ def test_create_videos_uses_four_highest_energy_modes(tmp_path: Path):
             ]
             writer.writerow([frame, time_s, *coefficients])
 
-    summaries = create_videos(tmp_path / "pod", output_dir, 30.0)
+    summaries = create_videos(tmp_path / "pod", output_dir, 30.0, 1.0)
 
     video_path = output_dir / "run3" / "run3_pod_top4.mp4"
     assert summaries[0]["top_modes"] == "2,4,5,1"

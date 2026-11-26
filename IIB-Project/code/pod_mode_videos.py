@@ -16,18 +16,23 @@ VIDEO_WIDTH = 1280
 VIDEO_HEIGHT = 900
 PANEL_WIDTH = VIDEO_WIDTH // 2
 PANEL_HEIGHT = VIDEO_HEIGHT // 2
-PANEL_BACKGROUND = (248, 248, 248)
+PANEL_BACKGROUND = (255, 255, 255)
 TEXT_COLOR = (35, 35, 35)
 
 
 def _diverging_palette() -> np.ndarray:
-    palette = np.empty((256, 3), dtype=np.uint8)
-    blue, neutral, red = np.array((180, 70, 30)), np.array((245, 245, 245)), np.array((40, 40, 190))
-    for value in range(128):
-        palette[value] = np.rint(blue + (neutral - blue) * (value / 127)).astype(np.uint8)
-    for value in range(128, 256):
-        palette[value] = np.rint(neutral + (red - neutral) * ((value - 128) / 127)).astype(np.uint8)
-    return palette
+    stops = np.array([
+        (120, 35, 8),
+        (200, 125, 25),
+        (120, 75, 92),
+        (45, 180, 240),
+        (35, 35, 155),
+    ], dtype=np.float64)
+    positions = np.linspace(0, 255, len(stops))
+    return np.column_stack([
+        np.interp(np.arange(256), positions, stops[:, channel])
+        for channel in range(3)
+    ]).round().astype(np.uint8)
 
 
 PALETTE = _diverging_palette()
@@ -276,7 +281,7 @@ def create_videos(
     pod_dir: Path,
     output_dir: Path,
     video_fps: float = 30.0,
-    display_frequency_hz: float = 1.0,
+    display_frequency_hz: float = 0.25,
     cycles: int = 3,
 ) -> list[dict[str, object]]:
     if not np.isfinite(video_fps) or video_fps <= 0:
@@ -310,14 +315,14 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--pod-dir", type=Path, default=Path("results/pod"))
     parser.add_argument(
-        "--output-dir", type=Path, default=Path("results/pod_mode_videos_smooth")
+        "--output-dir", type=Path, default=Path("results/pod_mode_videos_slow_color")
     )
     parser.add_argument(
         "--video-fps", type=float, default=30.0,
         help="Playback frame rate; use 30 or higher for smooth motion",
     )
     parser.add_argument(
-        "--display-frequency-hz", type=float, default=1.0,
+        "--display-frequency-hz", type=float, default=0.25,
         help="Harmonic visualization frequency, independent of the measured POD frequency",
     )
     parser.add_argument(
