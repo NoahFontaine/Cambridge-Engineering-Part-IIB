@@ -592,11 +592,11 @@ INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/helvetic/phvro8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvro8r.tfm
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/helvetic/phvr7t.vf
-INPUT ./figures/round_subsonic_attached.png
-INPUT ./figures/round_subsonic_attached.png
-INPUT ./figures/round_subsonic_attached.png
-INPUT ./figures/round_subsonic_attached.png
-INPUT ./figures/round_subsonic_attached.png
+INPUT ./figures/round_supersonic_attached.png
+INPUT ./figures/round_supersonic_attached.png
+INPUT ./figures/round_supersonic_attached.png
+INPUT ./figures/round_supersonic_attached.png
+INPUT ./figures/round_supersonic_attached.png
 INPUT ./figures/round_supersonic_separated_red.png
 INPUT ./figures/round_supersonic_separated_red.png
 INPUT ./figures/round_supersonic_separated_red.png
@@ -855,7 +855,6 @@ INPUT ./figures/round_supersonic_attached.png
 INPUT ./figures/round_supersonic_attached.png
 INPUT ./figures/round_supersonic_attached.png
 INPUT ./figures/round_supersonic_attached.png
-INPUT ./figures/round_supersonic_attached.png
 INPUT ./figures/round_supersonic_separated.png
 INPUT ./figures/round_supersonic_separated.png
 INPUT ./figures/round_supersonic_separated.png
@@ -995,6 +994,7 @@ INPUT ./videos/run15_gif_frames.pdf
 INPUT ./videos/run15_gif_frames.pdf
 INPUT ./videos/run15_gif_frames.pdf
 INPUT ./videos/run15_gif_frames.pdf
+INPUT ./figures/round_subsonic_attached.png
 INPUT ./figures/round_subsonic_attached.png
 INPUT ./figures/round_subsonic_attached.png
 INPUT ./figures/round_subsonic_attached.png

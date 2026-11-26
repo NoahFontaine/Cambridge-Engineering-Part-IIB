@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.10.1)  26 NOV 2026 13:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.10.1)  26 NOV 2026 17:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1093,14 +1093,14 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [14
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc} <./figures/round_subsonic_separated_yellow.png>]
-<figures/round_subsonic_attached.png, id=142, 1009.7725pt x 1007.765pt>
-File: figures/round_subsonic_attached.png Graphic file (type png)
-<use figures/round_subsonic_attached.png>
-Package pdftex.def Info: figures/round_subsonic_attached.png  used on input line 148.
+<figures/round_supersonic_attached.png, id=142, 1009.7725pt x 1007.765pt>
+File: figures/round_supersonic_attached.png Graphic file (type png)
+<use figures/round_supersonic_attached.png>
+Package pdftex.def Info: figures/round_supersonic_attached.png  used on input line 148.
 (pdftex.def)             Requested size: 108.12054pt x 107.90205pt.
  [15
 
- <./figures/round_subsonic_attached.png>]
+ <./figures/round_supersonic_attached.png>]
 <figures/round_supersonic_separated_red.png, id=150, 1009.7725pt x 1007.765pt>
 File: figures/round_supersonic_separated_red.png Graphic file (type png)
 <use figures/round_supersonic_separated_red.png>
@@ -1513,19 +1513,18 @@ Package pdftex.def Info: videos/run15_gif_frames.pdf , page60 used on input line
  <./videos/run15_gif_frames.pdf> <a0,fr59> [23
 
 ] <a1,fr0> <a1,fr1> <a1,fr2> <a1,fr3> <a1,fr4> <a1,fr5> <a1,fr6> <a1,fr7> <a1,fr8> <a1,fr9> <a1,fr10> <a1,fr11> <a1,fr12> <a1,fr13> <a1,fr14> <a1,fr15> <a1,fr16> <a1,fr17> <a1,fr18> <a1,fr19> <a1,fr20> <a1,fr21> <a1,fr22> <a1,fr23> <a1,fr24> <a1,fr25> <a1,fr26> <a1,fr27> <a1,fr28> <a1,fr29> <a1,fr30> <a1,fr31> <a1,fr32> <a1,fr33> <a1,fr34> <a1,fr35> <a1,fr36> <a1,fr37> <a1,fr38> <a1,fr39> <a1,fr40> <a1,fr41> <a1,fr42> <a1,fr43> <a1,fr44> <a1,fr45> <a1,fr46> <a1,fr47> <a1,fr48> <a1,fr49> <a1,fr50> <a1,fr51> <a1,fr52> <a1,fr53> <a1,fr54> <a1,fr55> <a1,fr56> <a1,fr57> <a1,fr58> <a1,fr59>
-<figures/round_supersonic_attached.png, id=734, 1009.7725pt x 1007.765pt>
 File: figures/round_supersonic_attached.png Graphic file (type png)
 <use figures/round_supersonic_attached.png>
 Package pdftex.def Info: figures/round_supersonic_attached.png  used on input line 283.
 (pdftex.def)             Requested size: 59.75095pt x 59.61754pt.
-<figures/round_supersonic_separated.png, id=735, 1009.7725pt x 1007.765pt>
+<figures/round_supersonic_separated.png, id=734, 1009.7725pt x 1007.765pt>
 File: figures/round_supersonic_separated.png Graphic file (type png)
 <use figures/round_supersonic_separated.png>
 Package pdftex.def Info: figures/round_supersonic_separated.png  used on input line 283.
 (pdftex.def)             Requested size: 59.75095pt x 59.61754pt.
  [24
 
- <./figures/round_supersonic_attached.png> <./figures/round_supersonic_separated.png>] <a2,fr0> <a2,fr1> <a2,fr2> <a2,fr3> <a2,fr4> <a2,fr5> <a2,fr6> <a2,fr7> <a2,fr8> <a2,fr9> <a2,fr10> <a2,fr11> <a2,fr12> <a2,fr13> <a2,fr14> <a2,fr15> <a2,fr16> <a2,fr17> <a2,fr18> <a2,fr19> <a2,fr20> <a2,fr21> <a2,fr22> <a2,fr23> <a2,fr24> <a2,fr25> <a2,fr26> <a2,fr27> <a2,fr28> <a2,fr29> <a2,fr30> <a2,fr31> <a2,fr32> <a2,fr33> <a2,fr34> <a2,fr35> <a2,fr36> <a2,fr37> <a2,fr38> <a2,fr39> <a2,fr40> <a2,fr41> <a2,fr42> <a2,fr43> <a2,fr44> <a2,fr45> <a2,fr46> <a2,fr47> <a2,fr48> <a2,fr49> <a2,fr50> <a2,fr51> <a2,fr52> <a2,fr53> <a2,fr54> <a2,fr55> <a2,fr56> <a2,fr57> <a2,fr58> <a2,fr59>
+ <./figures/round_supersonic_separated.png>] <a2,fr0> <a2,fr1> <a2,fr2> <a2,fr3> <a2,fr4> <a2,fr5> <a2,fr6> <a2,fr7> <a2,fr8> <a2,fr9> <a2,fr10> <a2,fr11> <a2,fr12> <a2,fr13> <a2,fr14> <a2,fr15> <a2,fr16> <a2,fr17> <a2,fr18> <a2,fr19> <a2,fr20> <a2,fr21> <a2,fr22> <a2,fr23> <a2,fr24> <a2,fr25> <a2,fr26> <a2,fr27> <a2,fr28> <a2,fr29> <a2,fr30> <a2,fr31> <a2,fr32> <a2,fr33> <a2,fr34> <a2,fr35> <a2,fr36> <a2,fr37> <a2,fr38> <a2,fr39> <a2,fr40> <a2,fr41> <a2,fr42> <a2,fr43> <a2,fr44> <a2,fr45> <a2,fr46> <a2,fr47> <a2,fr48> <a2,fr49> <a2,fr50> <a2,fr51> <a2,fr52> <a2,fr53> <a2,fr54> <a2,fr55> <a2,fr56> <a2,fr57> <a2,fr58> <a2,fr59>
 File: figures/round_supersonic_attached.png Graphic file (type png)
 <use figures/round_supersonic_attached.png>
 Package pdftex.def Info: figures/round_supersonic_attached.png  used on input line 283.
@@ -1537,11 +1536,12 @@ Package pdftex.def Info: figures/round_supersonic_separated.png  used on input l
  [25
 
 ] <a3,fr0> <a3,fr1> <a3,fr2> <a3,fr3> <a3,fr4> <a3,fr5> <a3,fr6> <a3,fr7> <a3,fr8> <a3,fr9> <a3,fr10> <a3,fr11> <a3,fr12> <a3,fr13> <a3,fr14> <a3,fr15> <a3,fr16> <a3,fr17> <a3,fr18> <a3,fr19> <a3,fr20> <a3,fr21> <a3,fr22> <a3,fr23> <a3,fr24> <a3,fr25> <a3,fr26> <a3,fr27> <a3,fr28> <a3,fr29> <a3,fr30> <a3,fr31> <a3,fr32> <a3,fr33> <a3,fr34> <a3,fr35> <a3,fr36> <a3,fr37> <a3,fr38> <a3,fr39> <a3,fr40> <a3,fr41> <a3,fr42> <a3,fr43> <a3,fr44> <a3,fr45> <a3,fr46> <a3,fr47> <a3,fr48> <a3,fr49> <a3,fr50> <a3,fr51> <a3,fr52> <a3,fr53> <a3,fr54> <a3,fr55> <a3,fr56> <a3,fr57> <a3,fr58> <a3,fr59>
+<figures/round_subsonic_attached.png, id=1148, 1009.7725pt x 1007.765pt>
 File: figures/round_subsonic_attached.png Graphic file (type png)
 <use figures/round_subsonic_attached.png>
 Package pdftex.def Info: figures/round_subsonic_attached.png  used on input line 283.
 (pdftex.def)             Requested size: 59.75095pt x 59.61754pt.
-<figures/round_subsonic_separated.png, id=1150, 832.10875pt x 827.09pt>
+<figures/round_subsonic_separated.png, id=1149, 832.10875pt x 827.09pt>
 File: figures/round_subsonic_separated.png Graphic file (type png)
 <use figures/round_subsonic_separated.png>
 Package pdftex.def Info: figures/round_subsonic_separated.png  used on input line 283.
@@ -1556,7 +1556,7 @@ Package pdftex.def Info: figures/round_supersonic_separated.png  used on input l
 (pdftex.def)             Requested size: 59.75095pt x 59.61754pt.
  [26
 
- <./figures/round_subsonic_separated.png>]
+ <./figures/round_subsonic_attached.png> <./figures/round_subsonic_separated.png>]
 <videos/run_16_gif_frames.pdf, id=1159, page=1, 274.626pt x 182.84311pt>
 File: videos/run_16_gif_frames.pdf Graphic file (type pdf)
 <use videos/run_16_gif_frames.pdf, page 1>
@@ -2724,13 +2724,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  29628 strings out of 469438
  607584 string characters out of 5468410
- 986325 words of memory out of 5000000
+ 986326 words of memory out of 5000000
  57522 multiletter control sequences out of 15000+600000
  736885 words of font info for 137 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  133i,13n,126p,517b,1193s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on build/main.pdf (68 pages, 15451836 bytes).
+Output written on build/main.pdf (68 pages, 15451875 bytes).
 PDF statistics:
  2485 PDF objects out of 2487 (max. 8388607)
  1464 compressed objects within 15 object streams
