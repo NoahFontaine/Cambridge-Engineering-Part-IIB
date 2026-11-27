@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1795776395.55744 "/home/noah-fontaine/Documents/Cambridge-Engineering-Part-IIB/IIB-Project/michaelmas_presentation/main.tex" "build/main.pdf" "main" 1795776401.80208 0
+["pdflatex"] 1795776457.81539 "/home/noah-fontaine/Documents/Cambridge-Engineering-Part-IIB/IIB-Project/michaelmas_presentation/main.tex" "build/main.pdf" "main" 1795776463.63963 0
   "/etc/texmf/web2c/texmf.cnf" 1790865727.24332 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/noah-fontaine/Documents/Cambridge-Engineering-Part-IIB/IIB-Project/michaelmas_presentation/main.tex" 1794945336.99004 566 74e05f8b28194fb7385b02678ae6b91e ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -256,9 +256,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1769369718 41603 27f93b3067076450172040dcd57ca8b3 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1791046959 5418024 d27383b0a8fadef44c19c8c5a157ff8e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1790865739 2265701 40ed2a9e10dbad775521c8219db4e9ca ""
-  "build/main.aux" 1795776401.67008 4729 a9767a60e41e8234d0b46c261687985e "pdflatex"
-  "build/main.nav" 1795776401.6712 2948 f6d21f88083a08f1ac56378a6544f050 "pdflatex"
-  "build/main.out" 1795776401.67045 388 fff9551099cc18f7d62372f51cf997b8 "pdflatex"
+  "build/main.aux" 1795776463.51996 4729 86dd703e91627bdf9f37e530d5732123 "pdflatex"
+  "build/main.nav" 1795776463.52088 2948 60db3e154ed1f8acc3d363adcc26b98e "pdflatex"
+  "build/main.out" 1795776463.52027 388 fff9551099cc18f7d62372f51cf997b8 "pdflatex"
   "figures/BL_psd.png" 1795634071.17781 395926 139dc9facabb1d6f84bbf0c42d3fef16 ""
   "figures/BL_tracking_shadowgraph.png" 1795631825.20384 319813 5e640c3a0f1423526db48d2d81028b55 ""
   "figures/engine_crosswind.png" 1795466907.56415 283311 5a184eba279d76b12e06ec89da13c4fe ""
@@ -286,7 +286,7 @@
   "preamble.tex" 1795626339.19829 4927 2c530aac18396ec625ed52abda2d9cc3 ""
   "sections/00-title.tex" 1795723070.28702 1043 100ba6d01d9993712a374a2adffaa5ff ""
   "sections/01-outline.tex" 1795696958.42909 752 8caf64d254213c6e53337d8862df74c5 ""
-  "sections/02-motivation.tex" 1795775544.53661 18716 11b5741d13d0bc59762b3da1ce975a46 ""
+  "sections/02-motivation.tex" 1795776451.78848 18674 aaba12414b00759a8fe1ec9023bfaabd ""
   "sections/03-background.tex" 1795603559.09445 2101 74adb4b926cef8149f05fd36507a03f1 ""
   "sections/04-methods.tex" 1795699657.6415 2849 e616422f868339a7f6550d68a85f3e1e ""
   "sections/05-results.tex" 1795776228.58776 8643 255f35120a4f10775956cc726e6227d8 ""

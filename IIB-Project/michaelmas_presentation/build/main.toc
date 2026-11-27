@@ -1,4 +1,4 @@
 \beamer@sectionintoc {1}{Motivation}{2}{0}{1}
-\beamer@sectionintoc {2}{Methods}{29}{0}{2}
-\beamer@sectionintoc {3}{Initial results}{39}{0}{3}
-\beamer@sectionintoc {4}{Next steps}{49}{0}{4}
+\beamer@sectionintoc {2}{Methods}{27}{0}{2}
+\beamer@sectionintoc {3}{Initial results}{37}{0}{3}
+\beamer@sectionintoc {4}{Next steps}{47}{0}{4}
